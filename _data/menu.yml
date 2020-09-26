@@ -7,20 +7,20 @@ entries:
     entries:
       - title: Undergraduate in aerospace engineering and computer science at Purdue University.
         url: false
-      - title: github.lnk
+      - title: github
         url: https://github.com/starmaid
       - title: resume.pdf
-        url: false
-      - title: social_media
-        url: social_media
+        url: https://github.com/starmaid/starmaid.github.io/blob/master/resume.pdf
+      - title: links
+        url: links
 
   - title: blog
     post_list: true
     url: false
-    entries: 
-      - title: what year is it, 2009?
-  
-  - title: projects
-    post_list: true
-    url: false
     entries: false
+  
+# if you can figure out how to separate the posts by category...this is where they go
+  #- title: projects
+  #  post_list: true
+  #  url: false
+  #  entries: false
