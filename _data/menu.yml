@@ -1,0 +1,27 @@
+# For documentation on this file, see:
+# https://github.com/riggraz/no-style-please#customize-the-menu
+
+entries:
+  - title: info
+    url: false
+    entries:
+      - title: Undergraduate in aerospace engineering and computer science at Purdue University.
+        url: false
+      - title: github.lnk
+        url: https://github.com/starmaid
+      - title: resume.pdf
+        url: false
+      - title: social_media
+        uel: social_media
+
+  - title: blog
+    post_list: true
+    url: false
+    entries: 
+      - title: what year is it, 2009?
+      - url: false
+  
+  - title: projects
+    post_list: true
+    url: false
+    entries: false

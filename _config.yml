@@ -1,3 +1,18 @@
+title: :3 # name of the site
+author: Nicholas Masso # name of site's author
+email: nicholas.masso.14@gmail.com # email of site's author
+url: https://starmaid.github.io/ # root address of the site
+description: > 
+  A (nearly) no-CSS, fast, minimalist Jekyll theme.
+
 # Build settings
 markdown: kramdown
 remote_theme: riggraz/no-style-please
+
+favicon: "./logo.png"
+
+theme_config:
+  appearance: "light" # can be "light", "dark" or "auto"
+  back_home_text: ".." # customize text for homepage link in post layout
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: false # show blog description in home page

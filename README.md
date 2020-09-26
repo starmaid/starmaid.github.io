@@ -1,6 +1,5 @@
 # starmaid.github.io
-Personal Website.
+Personal Website. Uses riggraz/no-style-please as the base. 
 
-# Build settings
-markdown: kramdown
-remote_theme: riggraz/no-style-please
+"I don't know what programmer needs to hear this, but focus on the 
+content of your personal website - don't obsess over the theme"
