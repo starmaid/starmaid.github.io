@@ -14,13 +14,16 @@ entries:
       - title: links
         url: links
 
+  - title: projects
+    post_list: false
+    url: false
+    entries:
+      - title: matrix/synapse setup on rpi
+      - url: projects/placeholder
+
   - title: blog
     post_list: true
     url: false
     entries: false
   
-# if you can figure out how to separate the posts by category...this is where they go
-  #- title: projects
-  #  post_list: true
-  #  url: false
-  #  entries: false
+
