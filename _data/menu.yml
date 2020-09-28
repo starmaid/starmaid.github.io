@@ -7,9 +7,11 @@ entries:
     entries:
       - title: Undergraduate in aerospace engineering and computer science at Purdue University.
         url: false
+      - title: nmasso@purdue.edu
+        url: mailto:nmasso@purdue.edu
       - title: github
         url: https://github.com/starmaid
-      - title: resume.pdf
+      - title: resume
         url: https://github.com/starmaid/starmaid.github.io/blob/master/resume.pdf
       - title: links
         url: links
