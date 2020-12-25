@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Daily Contributions
-tags: blog jeckyll
+tags: blog github contributions
 ---
 
 ### Lets light up that contribution chart
