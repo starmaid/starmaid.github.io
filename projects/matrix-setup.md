@@ -1,9 +1,8 @@
 ---
 layout: post
-title: matrix/synapse setup on rpi
+title: Setting up a Matrix chat server on a Raspberry Pi
+tags: matrix riot synapse raspberrypi raspberry linux development
 ---
-
-# Setting up a Matrix chat server on a Raspberry Pi
 
 By Nicholas Masso
 
@@ -53,32 +52,32 @@ This installation includes the least amount of software required to run a full D
 
 3. Create an empty file called "ssh" and copy it to the boot directory of the SD card. This will enable SSH communication on the Raspberry Pi without connecting a keyboard. 
 
-   ![](./matrix_assets/Picture3.png)
+    ![](./matrix_assets/Picture3.png)
 
-   **WARNING:** If you do not have a case for the Raspberry Pi, make sure it is not resting on a metal or otherwise conductive surface when you power it on. This could cause a short between the exposed pins of the Pi and destroy it. If necessary, put a nonconductive object underneath it.
+    **WARNING:** If you do not have a case for the Raspberry Pi, make sure it is not resting on a metal or otherwise conductive surface when you power it on. This could cause a short between the exposed pins of the Pi and destroy it. If necessary, put a nonconductive object underneath it.
 
 4. Power on the Pi and connect it to your local network using ethernet or Wi-Fi.
 
 5. Establish an SSH connection to the pi using your terminal of choice. 
-The default address is "raspberrypi.local"
-The default username is “pi”
-The default password is “raspberry”
+    The default address is "raspberrypi.local"
+    The default username is “pi”
+    The default password is “raspberry”
 
-![](./matrix_assets/Picture4.png)
+    ![](./matrix_assets/Picture4.png)
 
 6. Use the Raspberry Pi Software Configuration Tool to change defaults of the Pi. Running this command will open the graphical program to assist with changing some of the system details.
 
-   ```
-   $ sudo raspi-config
-   ```
+    ```
+    $ sudo raspi-config
+    ```
 
-   ![](./matrix_assets/Picture5.png)
+    ![](./matrix_assets/Picture5.png)
 
-   a. Change the user password to something strong. Keep track of this password. A typical way to set strong passwords is [to use 3-4 short words.](https://xkcd.com/936/) This is easy to remember and hard to break.
+    a. Change the user password to something strong. Keep track of this password. A typical way to set strong passwords is [to use 3-4 short words.](https://xkcd.com/936/) This is easy to remember and hard to break.
 
-   b. In “Network Settings” change the hostname to something recognizable like "matrix". 
+    b. In “Network Settings” change the hostname to something recognizable like "matrix". 
 
-   c. If you desire, in this tool you can also connect to a nearby Wi-Fi network.
+    c. If you desire, in this tool you can also connect to a nearby Wi-Fi network.
 
 7. Exit the utility and reboot the raspberry pi.
 
@@ -88,7 +87,7 @@ The default password is “raspberry”
 
 9. Allow ports 80, 443, and 8448 to be forwarded to the Raspberry Pi. 
 
-   Port 443 is dedicated to HTTPS encrypted data transfer and will be used by clients to receive and view messages. Port 8448 is the port used for server-to-server communications, so that users registered with other servers can get information about any groups hosted on our server. Port 80 will only be used to communicate with the certification servers, which will handle user authentication. This port will also refuse users who try to connect via HTTP protocol without encryption.
+    Port 443 is dedicated to HTTPS encrypted data transfer and will be used by clients to receive and view messages. Port 8448 is the port used for server-to-server communications, so that users registered with other servers can get information about any groups hosted on our server. Port 80 will only be used to communicate with the certification servers, which will handle user authentication. This port will also refuse users who try to connect via HTTP protocol without encryption.
 
 10. Log out of your router’s settings. Reboot the router if necessary.
 
@@ -96,26 +95,26 @@ The default password is “raspberry”
 
 12. Open the DHCPCD configuration file. We will be changing the Pi’s DHCP settings so that it knows it has a static IP address.
 
-   ```
-   $ sudo nano /etc/dhcpcd.conf
-   ```
+    ```
+    $ sudo nano /etc/dhcpcd.conf
+    ```
 
 13. Scroll down and uncomment the "example static IP configuration" options as shown in the example below. Replace "192.168.0.199" with whatever IP address you set in the router configuration. You can leave the IPv6 address commented out, unless you are using it – in which case replace it with your value as well.
 
-   ```
-   # Example static IP configuration:
-   interface eth0
-   static ip_address=192.168.0.199/24
-   #static ip6_address=fd51:42f8:caae:d92e::ff/64
-   static routers=192.168.0.1
-   static domain_name_servers=192.168.0.1
-   ```
+    ```
+    # Example static IP configuration:
+    interface eth0
+    static ip_address=192.168.0.199/24
+    #static ip6_address=fd51:42f8:caae:d92e::ff/64
+    static routers=192.168.0.1
+    static domain_name_servers=192.168.0.1
+    ```
 
 14. Reboot the pi again with this command.
 
-   ```
-   $ sudo reboot
-   ```
+    ```
+    $ sudo reboot
+    ```
 
 ### Install Prerequisites
 
@@ -123,149 +122,149 @@ Most commands we are going to run in this section of the guide will be done with
 
 15. Enter the superuser by running the command:
 
-   ```
-   $ sudo -s
-   ```
+    ```
+    $ sudo -s
+    ```
 
-   **WARNING:** be careful with all commands run while logged in as the root user. this user has the highest level of permissions on the computer and can seriously damage the operating system if not handled properly.
+    **WARNING:** be careful with all commands run while logged in as the root user. this user has the highest level of permissions on the computer and can seriously damage the operating system if not handled properly.
 
-   The command prompt should change as shown below. This terminal session now has root authority.
+    The command prompt should change as shown below. This terminal session now has root authority.
 
-   ![](./matrix_assets/Picture6.png)
+    ![](./matrix_assets/Picture6.png)
 
 16. Now we have to update all the software that came with the image for the pi. this may take a moment, as there may be several updates.
 
-   ```
-   # apt-get update
-   # apt-get upgrade
-   ```
+    ```
+    # apt-get update
+    # apt-get upgrade
+    ```
 
 17. Next we are going to install all software that is required by the matrix and synapse services.
 
-   ```
-   # apt-get install python3-pip python3-certbot-nginx libffi-dev sqlite3 libssl-dev libjpeg-dev libxslt1-dev libsodium-dev libopenjp2-7
-   # pip3 install virtualenv
-   ```
+    ```
+    # apt-get install python3-pip python3-certbot-nginx libffi-dev sqlite3 libssl-dev libjpeg-dev libxslt1-dev libsodium-dev libopenjp2-7
+    # pip3 install virtualenv
+    ```
 
 18. We are also going to set python 3 as our default python version using this command. 
 
-   Note that at the time of writing, python 3.7 is the newest version. When a later version is released, make sure to update the path to the executable.
+    Note that at the time of writing, python 3.7 is the newest version. When a later version is released, make sure to update the path to the executable.
 
-   ```
-   # update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
-   ```
+    ```
+    # update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
+    ```
 
 19. Now we will leave the superuser by typing
 
-   ```
-   # exit
-   ```
+    ```
+    # exit
+    ```
 
 ### Setting up Synapse Server
 Now we get to start installing the programs which run the server itself.
 
 20. We will create a python virtual environment in a new folder where we will keep all our files.
 
-   ```
-   $ mkdir ~/synapse
-   $ virtualenv ~/synapse/env
-   ```
+    ```
+    $ mkdir ~/synapse
+    $ virtualenv ~/synapse/env
+    ```
 
 21. Now we will enter the virtual environment with
 
-   ```
-   $ source ~/synapse/env/bin/activate
-   ```
+    ```
+    $ source ~/synapse/env/bin/activate
+    ```
 
 22. Inside the virtual environment, we must update and install some programs.
 
-   ```
-   $ pip3 install --upgrade pip virtualenv six packaging appdirs setuptools
-   ```
+    ```
+    $ pip3 install --upgrade pip virtualenv six packaging appdirs setuptools
+    ```
 
 23. Now we will install synapse in the virtual environment. This may take a while, but it will complete eventually.
 
-   ```
-   $ pip3 install matrix-synapse
-   ```
+    ```
+    $ pip3 install matrix-synapse
+    ```
 
 24. Configure the server by running the following command with "example.com" replaced with your own domain name. 
 
-   ```
-   $ python -m synapse.app.homeserver \
-      --server-name you.example.com \
-      --config-path homeserver.yaml \
-      --generate-config \
-      --report-stats=yes
-   ```
+    ```
+    $ python -m synapse.app.homeserver \
+        --server-name you.example.com \
+        --config-path homeserver.yaml \
+        --generate-config \
+        --report-stats=yes
+    ```
 
 25. Next we will activate the certification program. This will trigger a series of prompts, which you can fill out.
 
-   ```
-   $ sudo certbot certonly --nginx -d you.example.com  
-   ```
+    ```
+    $ sudo certbot certonly --nginx -d you.example.com  
+    ```
 
 26. We will abide by good practice for matrix and configure a reverse proxy with Nginx. This will involve modifying a file and restarting Nginx
 
-   ```
-   $ sudo nano /etc/nginx/conf.d/matrix.conf
-   ```
+    ```
+    $ sudo nano /etc/nginx/conf.d/matrix.conf
+    ```
 
-   Copy these contents into the empty file, with you.example.com replaced with your domain name.
+    Copy these contents into the empty file, with you.example.com replaced with your domain name.
 
-   ```
-   server {
-      listen 80;
-      listen [::]:80;
-      server_name you.example.com;
-      return 301 https://$host$request_uri;
-   }
+    ```
+    server {
+        listen 80;
+        listen [::]:80;
+        server_name you.example.com;
+        return 301 https://$host$request_uri;
+    }
 
-   server {
-      listen 443 ssl;
-      listen [::]:443 ssl;
-      server_name matrix.example.com;
+    server {
+        listen 443 ssl;
+        listen [::]:443 ssl;
+        server_name matrix.example.com;
 
-      ssl on;
-      ssl_certificate /etc/letsencrypt/live/you.example.com/fullchain.pem;
-      ssl_certificate_key /etc/letsencrypt/live/you.example.com/privkey.pem;
+        ssl on;
+        ssl_certificate /etc/letsencrypt/live/you.example.com/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/you.example.com/privkey.pem;
 
-      location / {
-         proxy_pass http://localhost:8008;
-         proxy_set_header X-Forwarded-For $remote_addr;
-      }
-   }
-   server {
-      listen 8448 ssl default_server;
-      listen [::]:8448 ssl default_server;
-      server_name you.example.com;
+        location / {
+            proxy_pass http://localhost:8008;
+            proxy_set_header X-Forwarded-For $remote_addr;
+        }
+    }
+    server {
+        listen 8448 ssl default_server;
+        listen [::]:8448 ssl default_server;
+        server_name you.example.com;
 
-      ssl on;
-      ssl_certificate /etc/letsencrypt/live/you.example.com/fullchain.pem;
-      ssl_certificate_key /etc/letsencrypt/live/you.example.com/privkey.pem;
-      location / {
-         proxy_pass http://localhost:8008;
-         proxy_set_header X-Forwarded-For $remote_addr;
-      }
-   }
-   ```
+        ssl on;
+        ssl_certificate /etc/letsencrypt/live/you.example.com/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/you.example.com/privkey.pem;
+        location / {
+            proxy_pass http://localhost:8008;
+            proxy_set_header X-Forwarded-For $remote_addr;
+        }
+    }
+    ```
 
 27. Save and close the file.
 
 28. Restart the Nginx service to apply the changes.
 
-   ```
-   $ sudo systemctl restart nginx
-   $ sudo systemctl enable nginx
-   ```
+    ```
+    $ sudo systemctl restart nginx
+    $ sudo systemctl enable nginx
+    ```
 
-   Next we will enable user registration on your server. We will still have to create an admin account manually, but this will allow friends to use your homeserver to store their accounts.
+    Next we will enable user registration on your server. We will still have to create an admin account manually, but this will allow friends to use your homeserver to store their accounts.
 
 29. First we will open the server settings file
 
-   ```
-   $ nano ~/synapse/homeserver.yaml
-   ```
+    ```
+    $ nano ~/synapse/homeserver.yaml
+    ```
 
 30. Now we will find the line we want to uncomment by searching for `enable_registration` (ctrl+w). Find the correct line and uncomment it, and change `false` to `true`
 
@@ -279,15 +278,15 @@ These steps will register the first user so that we can log into the server and 
 
 32. These steps should be performed from inside the Python virtual environment, and in the synapse folder. Make sure the command prompt looks like this:
 
-   ```
-   (env) pi@matrix:~/synapse $
-   ```
+    ```
+    (env) pi@matrix:~/synapse $
+    ```
 
 33. Start the synapse server with this command:
 
-   ```
-   $ synctl start
-   ```
+    ```
+    $ synctl start
+    ```
 
 Several messages will be printed to the screen. At the end, the program should say the program has been started.
 
@@ -295,20 +294,20 @@ Several messages will be printed to the screen. At the end, the program should s
 
 34. Run the user configuration program with
 
-   ```
-   $ register_new_matrix_user -c homeserver.yaml http://localhost:8008
-   ```
+    ```
+    $ register_new_matrix_user -c homeserver.yaml http://localhost:8008
+    ```
 
 35. Follow the prompts to enter the username, password, and “yes” to make this user an admin.
 
-   ```
-   New user localpart [root]: [your username]
-   Password: [hidden]
-   Confirm password: [hidden]
-   Make admin [no]: yes
-   Sending registration request...
-   Success.
-   ```
+    ```
+    New user localpart [root]: [your username]
+    Password: [hidden]
+    Confirm password: [hidden]
+    Make admin [no]: yes
+    Sending registration request...
+    Success.
+    ```
 
 36. You can now use a client to log into this server. Leave the python environment with 
 
