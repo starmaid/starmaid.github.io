@@ -21,7 +21,7 @@ entries:
     url: false
     entries:
       - title: matrix/synapse setup on rpi
-        url: ./projects/placeholder
+        url: ./projects/matrix-setup
 
   - title: blog
     post_list: true
