@@ -268,7 +268,7 @@ Now we get to start installing the programs which run the server itself.
 
 30. Now we will find the line we want to uncomment by searching for `enable_registration` (ctrl+w). Find the correct line and uncomment it, and change `false` to `true`
 
-![](./matrix_assets/Picture7.png)
+    ![](./matrix_assets/Picture7.png)
 
 31. Save and close the file once you are done.
 
@@ -288,9 +288,9 @@ These steps will register the first user so that we can log into the server and 
     $ synctl start
     ```
 
-Several messages will be printed to the screen. At the end, the program should say the program has been started.
+    Several messages will be printed to the screen. At the end, the program should say the program has been started.
 
-![](./matrix_assets/Picture8.png)
+    ![](./matrix_assets/Picture8.png)
 
 34. Run the user configuration program with
 
@@ -311,15 +311,15 @@ Several messages will be printed to the screen. At the end, the program should s
 
 36. You can now use a client to log into this server. Leave the python environment with 
 
-```
-$ deactivate
-```
+    ```
+    $ deactivate
+    ```
 
 37. And disconnect from the SSH session with 
 
-```
-$ logout
-```
+    ```
+    $ logout
+    ```
 
 **Note:** if you ever want to change settings for the server, stop the server first with
 
