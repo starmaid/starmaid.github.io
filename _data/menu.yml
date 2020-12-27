@@ -22,8 +22,12 @@ entries:
     entries:
       - title: matrix/synapse setup on rpi
         url: ./projects/matrix-setup
-      - title: creating a Raspberry Pi OS image.
+      - title: creating a Raspberry Pi OS image
         url: ./projects/rpi-img
+      - title: flashing a disk image on linux
+        url: ./projects/flash-img
+      - title: raspberry pi minecraft install script
+        url: ./projects/mc-install
 
   - title: blog
     post_list: true
