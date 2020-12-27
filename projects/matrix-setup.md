@@ -46,7 +46,7 @@ Your computer will also need to be able to resolve zero-configuration networking
 
 1. [Download the latest version of Raspberry Pi OS Lite from the Raspberry Pi Foundation website](https://www.raspberrypi.org/downloads/raspberry-pi-os/)
 
-This installation includes the least amount of software required to run a full Debian-based OS on the Raspberry Pi. This will save us memory and disk space for this dedicated server. It does not have a graphical desktop environment, as we do not require one.
+    This installation includes the least amount of software required to run a full Debian-based OS on the Raspberry Pi. This will save us memory and disk space for this dedicated server. It does not have a graphical desktop environment, as we do not require one.
 
 2. Flash the disk image to the SD card using your preferred disk imaging software. I use [Rufus](https://rufus.ie) for most of my disk creation.
 

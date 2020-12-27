@@ -22,6 +22,8 @@ entries:
     entries:
       - title: matrix/synapse setup on rpi
         url: ./projects/matrix-setup
+      - title: creating a Raspberry Pi OS image.
+        url: ./projects/rpi-img
 
   - title: blog
     post_list: true
