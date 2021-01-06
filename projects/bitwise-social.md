@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Bitwise
-tags: 
+tags: "web development" javascript firebase firestore google html "social media"
 ---
 
-Written December 2020
+Written January 2021
 
 [Link to the site](https://bitwise-a3c2d.web.app/)
 
@@ -36,19 +36,57 @@ I know the history is all in github, but I want to write it out here so others c
 
 ### Pre-Sprint 1
 
-we had to learn javascript. I knew how APIs worked for tumblr, twitter, and discord (https and nice wrapped ones) but had never developed a backend. 
+Firebase tutorials, javascript intro courses, doing basic things to learn the landscape. We had a fair amount of fear going into this project, but as we learned the basics that slowly dissolved.
 
-We had some preconceptions of the class, wanted to maybe make a different site. Forced to make twitter
-
-We also watched tutorials for firebase, I set up a test project to practice deploying things and how to use their interface.
-
-if you are reading this page planning on making your own firebase project, MAKE YOUR FILES A REACT PROJECT FIRST, THEN ADD FIREBASE TO THE REACT PROJECT. This prevented us from making a full react app, and had to use CDNs for things we ideally would not have.
+If you are reading this page planning on making your own firebase project, MAKE YOUR FILES A REACT PROJECT FIRST, THEN ADD FIREBASE TO THE REACT PROJECT. This prevented us from making a full react app, and had to use CDNs for things we ideally would not have.
 
 ### Sprint 1
 
-made an html-only shitty version of the site
+**Goals:** Basic UI, user accounts, posts, profiles.
+
+I was very excited to get started on the site, and I was also the only member of the group who already had a Google Cloud Developer profile. I was able to make the Firebase project while sharing my screen with the team, because I didn't have to mess with connecting my bank account and stuff and it realy streamlined things. I was also able to get the first database calls out with the Firestore API, and pointed the group to the places I implemented them. 
+
+Take a look at this section of code from the timeline page. I wrote this while referencing a tutorial that used list items to make a single page JS app. 
+
+```js
+// find the timeline by ID
+const postList = document.querySelector('#timeline');
+
+//...//
+
+// create an HTML list element to store this post
+let li = document.createElement('li');
+
+// add children to this list element with post content
+li.appendChild(topic);
+li.appendChild(title);
+li.appendChild(content);
+li.appendChild(author);
+li.appendChild(created);
+if (doc.data().image != null) {
+    li.appendChild(img);
+}
+li.appendChild(cross); // delete button
+
+// add the post to the post list
+postList.append(li);
+```
+
+![](./bitwise_assets/2.png)
+
+This section of code worked. Querying the database, creating a HTML list, and adding it to the DOM works! This was a way to access the database, and then we could do other tests like modifying, adding, and removing data and then checking by reloading the homepage. We were working with what we knew, and that was barebones HTML. Its just very hard to do anything afterwards with this model, there was no room to grow. This was one representative piece that really shows the mood of what we had at the end of the first sprint. 
+
+![](./bitwise_assets/3.png)
+
+While I was starting to get the database working, Mark was hard at work on authentication, and Zach G and Kyle were getting their hands dirty learning how to style things and even a little bit of Semantic UI and React. 
+
+By the end of the sprint, users were able to create an account, see their posts on their profile page, see other users posts in reverse chronological order, as well as make posts. Things were rough around the edges, but I think it would fall under "Minimum Viable Product" for a first sprint - and certainly much further than we thought we would get.
+
+One of the bigger issues we had this sprint was redundancy while coding. The cause was when a team member pulled from Github, and then would go several days while working on a large change. Then, they would push that change, and would have reinvented the wheel to do something that was solved in the days since they last merged. This happened twice in this first sprint, and was a real wakeup call on how to work in a collaborative group project remotely like this. It was also perhaps a symptom of the large amount of work that has to be done in creating a webpage, which soon turns into modifying things that already exist when the site is extant. Either way, this problem did not come up again. 
 
 ### Sprint 2
+
+**Goals:** 
 
 got halfway done converting it to react elements.
 
