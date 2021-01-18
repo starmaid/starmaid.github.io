@@ -24,6 +24,8 @@ entries:
     entries:
       - title: matrix/synapse setup on rpi
         url: ./projects/matrix-setup
+      - title: raspberry pi GPIO and plants
+        url: ./oprojects/plants
       - title: creating a Raspberry Pi OS image
         url: ./projects/rpi-img
       - title: flashing a disk image on linux

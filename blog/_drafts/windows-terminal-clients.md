@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Windows Terminal Clients
-tags: blog windows terminal powershell command_prompt
+tags: blog windows terminal powershell "command prompt"
 ---
 
 This post will be a formalized set of musings I have had over the past several years about various command line utilities in the Windows 10 operating system. I could make an entirely separate post detailing why I am using Windows in the first place, but this is simply not the time. Everyone has reasons to use one OS over another, and this conversation of terminals happens after that descision is made.
@@ -12,6 +12,9 @@ There are also [many third-party terminal emulators for Windows](https://www.sla
 
 ## Windows Command Prompt
 
+Developed by Therese Stowell in 1987, `cmd.exe` was developed to replace DOS's `command.com` for the Windows NT family. There are 45 built-in commands, 
+
+
 classic
 
 do some research on when it was introduced
@@ -20,12 +23,24 @@ when i started using it
 
 why i got fed up with it
 
+the fuckin ls thing
+
+![](../img/wt_1.png)
+
+no tab completion
+
+no easy "open in current directory"
+
 ## Windows Powershell
 
 
 
 ## WSL terminals
 
-## windows terminal
+
+
+## Windows Terminal
+
+
 
 ## honorable mention: putty
