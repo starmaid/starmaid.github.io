@@ -42,10 +42,6 @@ occasional light gaming to relax sounds like a good way to
 be productive, educational, and interesting. I enjoy watching that 
 content, and so producing it will be similar in my enjoyment. 
 
-{% include youtube_embed.html id="Jr_kxwRRapY" %}
-
-{% include soundcloud_embed.html id=1050991303 %}
-
 Winter break won't last forever, so it will be a challenge to see
 how this evolves going into the spring semester. Hopefully
 I will be able to keep up some sort of regular streaming.
