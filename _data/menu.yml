@@ -26,6 +26,8 @@ entries:
         url: ./projects/matrix-setup
       - title: raspberry pi GPIO and plants
         url: ./projects/plants
+      - title: jekyll media embeds
+        url: ./projects/jekyll-media
       - title: creating a Raspberry Pi OS image
         url: ./projects/rpi-img
       - title: flashing a disk image on linux
