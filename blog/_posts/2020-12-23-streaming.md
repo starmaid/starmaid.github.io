@@ -44,7 +44,7 @@ content, and so producing it will be similar in my enjoyment.
 
 {% include youtube_embed.html id="Jr_kxwRRapY" %}
 
-{% include soundcloud_embed.html %}
+{% include soundcloud_embed.html id=1050991303 %}
 
 Winter break won't last forever, so it will be a challenge to see
 how this evolves going into the spring semester. Hopefully
