@@ -1,8 +1,10 @@
-# Cat Ears Project
+---
+layout: post
+title: Cat Ears Project
+tags: blog arduino cats furry microelectronics
+---
 
 Written 12/29/2020
-
-Nicky
 
 ![image of me wearing the ears](./cat-ears_assets/1.jpg)
 

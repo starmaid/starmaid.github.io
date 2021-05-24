@@ -4,8 +4,6 @@ title: Jekyll Media Embeds
 tags: blog jekyll youtube soundcloud
 ---
 
-# Jekyll Media Embeds
-
 I just made some quick embeds for media stuff.
 
 
