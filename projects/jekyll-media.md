@@ -35,7 +35,7 @@ And insert this where you want the player
 {% raw %}{% include soundcloud_embed.html id=1050991303 %}{% endraw %}
 ```
 
-{% include soundcloud_embed.html id=1050991303 %}
+{% include soundcloud_embed.html id="1050991303" %}
 
 ## Spotify
 
@@ -47,4 +47,4 @@ And insert this where you want the player
 {% raw %}{% include spotify_embed.html id=1n7omixiROWs5q6xpWiQuL %}{% endraw %}
 ```
 
-{% include spotify_embed.html id=1n7omixiROWs5q6xpWiQuL %}
+{% include spotify_embed.html id="1n7omixiROWs5q6xpWiQuL" %}

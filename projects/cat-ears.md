@@ -43,7 +43,7 @@ The program model I used would wait for some frequency criteria to be fulfilled,
 
 However. As I said earlier, beat detection is hard. Even on a dead-simple song like [Benny Benassi - *Satisfaction*](https://open.spotify.com/track/1n7omixiROWs5q6xpWiQuL?si=818d86d16b9446ee), finding the right bass spread took a lot of fiddling with the values. And the worst part is that changes by song (as producers mix the bass differently) and even depending on what speaker is being used to play the music.
 
-{% include spotify_embed.html id=1n7omixiROWs5q6xpWiQuL %}
+{% include spotify_embed.html id="1n7omixiROWs5q6xpWiQuL" %}
 
 ![Gif of the ears behaving erratically to a standard beat. maybe a youtube clip?](./cat-ears_assets/8.gif)
 
