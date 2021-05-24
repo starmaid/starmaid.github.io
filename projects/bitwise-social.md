@@ -100,7 +100,7 @@ Infinite scroll working perfectly, I was really proud of that one.
 
 ### Further work
 
-I closed the api rules
+I closed the api rules. it was simple
 
 ## Reflections
 
