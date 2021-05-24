@@ -10,7 +10,7 @@ Written 12/29/2020
 
 ## Goals
 
-Simple streamable task. Make a set of wearable cat ears react to ambient music and sounds. 
+Make a set of wearable cat ears react to ambient music and sounds. Suggested by [@dashconbabyofficial](https://dashconbabyofficial.tumblr.com/) on Tumblr. I also wanted to complete the project while livestreaming on Twitch.
 
 ## Hardware Design
 
@@ -26,7 +26,7 @@ I had a lot of [Dollar Tree Foam Board](https://www.dollartree.com/readi-board-w
 
 ![Gif from stream of cutting some foam](./cat-ears_assets/4.gif)
 
-The rest of the parts were pretty standard, an arduino nano for contorl, and some cables and protoboard to distribute power and control, as well as a phone charger - a perfect source of regulated 5V power. The bundle of wires was a bit unruly, so I made a small distribution board and a harness to keep everything together.
+The rest of the parts were pretty standard, an arduino nano for control, and some cables and protoboard to distribute power and control, as well as a phone charger - a perfect source of regulated 5V power. The bundle of wires was a bit unruly, so I made a small distribution board and a harness to keep everything together.
 
 ![Picture of wire harness](./cat-ears_assets/5.jpg)
 
