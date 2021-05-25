@@ -10,6 +10,8 @@ With the help of [Dr. Ilias Bilionis](https://engineering.purdue.edu/ME/People/p
 
 ### [Link to presentation](https://www.youtube.com/watch?v=H6tc1JsMqLY)
 
+{% include youtube_embed.html id="H6tc1JsMqLY" %}
+
 ### Abstract
 
 To advance the Resilient ExtraTerrestrial Habitat Institute's goals of designing a habitat on a planetary surface,
@@ -29,6 +31,8 @@ wealth of data for generating exact values.
 Written with [Darya Corry](https://www.linkedin.com/in/darya-corry1234/), and the help of [Dr. Ilias Bilionis](https://engineering.purdue.edu/ME/People/ptProfile?resource_id=113500)
 
 ### [Link to presentation](https://www.youtube.com/watch?v=SNOWJaNHg_4)
+
+{% include youtube_embed.html id="SNOWJaNHg_4" %}
 
 ### Abstract
 
