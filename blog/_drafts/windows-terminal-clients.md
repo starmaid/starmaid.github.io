@@ -12,34 +12,44 @@ There are also [many third-party terminal emulators for Windows](https://www.sla
 
 ## Windows Command Prompt
 
-Developed by Therese Stowell in 1987, `cmd.exe` was developed to replace DOS's `command.com` for the Windows NT family. There are 45 built-in commands, 
+Developed by Therese Stowell in 1987, `cmd.exe` was developed to replace DOS's `command.com` for the Windows NT family. There are 45 built-in commands, as essential to the windows experience as any. 
 
+*"we aren't in unix anymore, toto"*
 
-classic
+The biggest upside of using the Command Prompt is just the classic feel, and the closeness it feels to the windows base. As all those "ls is not recognized" memes go, it really is unapolagetically itself. You have all your `$PATH` variables just as you expect them, which is great when installing your Python versions or other programs.
 
-do some research on when it was introduced
+However, its not the best. There is no easy way to open directly to a desired folder you have open already, which is something I want to do fairly frequently. Also, there is no tab completion - not even for filenames. There are also some advanced windows features that are not accessible through the plain command prompt, so I moved onto the next built-in solution...
 
-when i started using it
-
-why i got fed up with it
-
-the fuckin ls thing
 
 ![](../img/wt_1.png)
 
-no tab completion
 
-no easy "open in current directory"
 
 ## Windows Powershell
+
+This is Microsoft's current pet project for interfacing with a Windows computer. More powerful, more commands, and some nice ease-of-use changes make this shell feel more modern. It is baked right into Windows explorer, and opening a folder with Powershell is right in the `file` menu. 
+
+Tab completion makes a nice arrival, and so does some extra tools like task scheduling (not quite as easy as cron, but still useful). The scripting language is also slightly different, and I think a bit more pleasant than batch. Of course, good luck sharing them with anyone, as the hoops to run external `.ps` files are pretty extensive - and I don't blame em, because really who is trying to run a powershell script. I would block them too.
 
 
 
 ## WSL terminals
 
 
+I didn't learn about WSL until mid-2020, which was way after it had left beta and was already in all win10 boxes. I was so suprised that I rushed and installed it as soon as I could, and was so sure it was going to be a game changer!
+
+In a way, it totally is. I installed Ubuntu 20.04, the classic verison, and was amazed I could run whatever CLI utils I wanted. I could `neofetch` my windows box, and messed around in those virtual directories to see what was up. It is nice that the area is sort of quarantined off, but when it came time to actually do some sort of work with it, you can't just copy and paste a path to `cd` into. You have to modify the leading `/mnt/c:` instead of just `C:` which like, idk it just takes a sec. 
+
+Honestly, as I type this I'm realizing that I could totally `alias` something in there, a quick script to turn a cd command into something that dynamically changes windows-internal paths to be in the apropriate mounted drive. I will do that and perhaps release it on my page here...hmmmmmmm...
+
 
 ## Windows Terminal
+
+Another tool that I didnt find out about until around when I learned about WSL, I was initially thinking this would be a gamechanger - and maybe it still will be. As far as I can tell, there are two main things that this adds to the commandline experience on Windows:
+
+First, it allows tabbing of various other terminal instances. If you want to quickly open a powershell next to an Ubuntu, and then add a tab of Kali next to it, you can easily switch between the three of them. I might simply prefer having three separate windows open, but if you like the the tabbed workflow then this is a totally cool addition. 
+
+The next gamechanger is a contextmenu entry for "open this folder in Windows Terminal", which really brings that linux ease to your Windows gui usage patterns.
 
 
 
