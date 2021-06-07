@@ -72,11 +72,11 @@ li.appendChild(cross); // delete button
 postList.append(li);
 ```
 
-![](./bitwise_assets/2.png)
+![](./bitwise_assets/2.PNG)
 
 This section of code worked. Querying the database, creating a HTML list, and adding it to the DOM works! This was a way to access the database, and then we could do other tests like modifying, adding, and removing data and then checking by reloading the homepage. We were working with what we knew, and that was barebones HTML. Its just very hard to do anything afterwards with this model, there was no room to grow. This was one representative piece that really shows the mood of what we had at the end of the first sprint. 
 
-![](./bitwise_assets/3.png)
+![](./bitwise_assets/3.PNG)
 
 While I was starting to get the database working, Mark was hard at work on authentication, and Zach G and Kyle were getting their hands dirty learning how to style things and even a little bit of Semantic UI and React. 
 
