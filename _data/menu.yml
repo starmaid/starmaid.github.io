@@ -24,6 +24,8 @@ entries:
     entries:
       - title: motorized cat ears
         url: ./projects/cat-ears
+      - title: bitwise social media site
+        url: ./projects/bitwise-social
       - title: matrix/synapse setup on rpi
         url: ./projects/matrix-setup
       - title: raspberry pi GPIO and plants
