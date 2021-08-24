@@ -12,7 +12,7 @@ There are also [many third-party terminal emulators for Windows](https://www.sla
 
 ## Windows Command Prompt
 
-Developed by Therese Stowell in 1987, `cmd.exe` was developed to replace DOS's `command.com` for the Windows NT family. There are 45 built-in commands, as essential to the windows experience as any. 
+Developed by Therese Stowell in 1987, `cmd.exe` was developed to replace DOS's `command.com` for the Windows NT family. There are 45 built-in commands, as essential to the windows experience as any.
 
 *"we aren't in unix anymore, toto"*
 
@@ -45,7 +45,7 @@ Honestly, as I type this I'm realizing that I could totally `alias` something in
 
 ## Windows Terminal
 
-Another tool that I didnt find out about until around when I learned about WSL, I was initially thinking this would be a gamechanger - and maybe it still will be. As far as I can tell, there are two main things that this adds to the commandline experience on Windows:
+Another tool that I didnt find out about until around when I learned about WSL is Windows Terminal. This one isn't connecting to a different command set like the first three are, it's an emulator that does tabbing and theme management for the terminals you have already. I was initially thinking this would be a gamechanger - and maybe it still will be. As far as I can tell, there are two main things that this adds to the commandline experience on Windows:
 
 First, it allows tabbing of various other terminal instances. If you want to quickly open a powershell next to an Ubuntu, and then add a tab of Kali next to it, you can easily switch between the three of them. I might simply prefer having three separate windows open, but if you like the the tabbed workflow then this is a totally cool addition. 
 
@@ -54,3 +54,13 @@ The next gamechanger is a contextmenu entry for "open this folder in Windows Ter
 
 
 ## honorable mention: putty
+
+I like putty because it doesn't have that annoying ssh key storage thing where you have to edit a text file before it lets you connect to an unrecognized host, it just makes you click "yes". I spend a lot of time wiping and resetting raspberry pis, so the same MAC address comes up a lot and it can be annoying. Very helpful for those quick activities where you need to connect to a random computer. It also has serial connections built in, so you could 2-wire your way through putty and be totally cool.
+
+
+
+## honorable mention: VSCode Terminal
+
+Any good IDE lets you open a terminal window inside it. VSCode is super nice and lets you set your default emulator, manage tabs, etc. All the cool stuff you get in Windows Terminal, none of the hassle. I probably wouldnt use it to quickly work with a remote machine, its really made for when you are working with source files and testing them as you go. I have the default set to PowerShell right now, as I mentioned it has all the ease of use i really need right now.
+
+![](../img/wt_2.PNG)
