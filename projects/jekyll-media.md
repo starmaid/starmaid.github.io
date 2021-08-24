@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Jekyll Media Embeds
+comments: true
 tags: blog jekyll youtube soundcloud
 ---
 

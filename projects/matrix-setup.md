@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Setting up a Matrix chat server on a Raspberry Pi
+comments: true
 tags: matrix riot synapse raspberrypi raspberry linux development
 ---
 
@@ -9,6 +10,8 @@ By Nicholas Masso
 Written July 2020
 
 ![Image of an rpi 3B+](./matrix_assets/Picture1.png)
+
+Update August 2021: Added a comments section.
 
 ## Introduction
 

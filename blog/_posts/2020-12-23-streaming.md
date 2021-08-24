@@ -4,8 +4,6 @@ title: Streaming
 tags: blog streaming twitch
 ---
 
-### Streaming
-
 Two of my friends have started streaming on twitch fairly
 frequently. While their content is wildly different from one another's,
 they are each gaining a following. One thing that I was told is that

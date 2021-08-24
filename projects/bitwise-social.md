@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Bitwise
-tags: "web development" javascript firebase firestore google html "social media"
+comments: true
+tags: ["web development", javascript, firebase, firestore, google, html, "social media"]
 ---
 
 Written January 2021
