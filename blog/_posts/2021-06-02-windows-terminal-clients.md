@@ -21,7 +21,7 @@ Developed by Therese Stowell in 1987, `cmd.exe` was developed to replace DOS's `
 
 The biggest upside of using the Command Prompt is just the classic feel, and the closeness it feels to the Windows core. As all those "ls is not recognized" memes go, it really is unapolagetically itself. You have all your `$PATH` variables just as you expect them, which is great when installing your Python versions or other programs.
 
-![](/blog/img/wt_1.png)
+![](/blog/img/wt_1.PNG)
 
 However, its not the best. There is no easy way to navigate to a folder in File Explorer and open it in Command Prompt, which is something I want to do fairly frequently. Also, there is no `tab` completion - not even for filenames. There are also some advanced windows features that are not accessible through the plain command prompt, so I moved onto the next built-in solution...
 
