@@ -2,10 +2,10 @@
 layout: post
 title: Windows Terminal Clients
 tags: [blog, windows, terminal, powershell, "command prompt"]
-comments:true
+comments: true
 ---
 
-![](../img/wt_0.PNG)
+![](/blog/img/wt_0.PNG)
 
 This post will be a formalized set of musings I have had over the past several years about various command line utilities in the Windows 10 operating system. I could make an entirely separate post detailing why I am using Windows in the first place, but this is simply not the time. Everyone has reasons to use one OS over another, and this conversation of terminals happens after that descision is made.
 
@@ -21,7 +21,7 @@ Developed by Therese Stowell in 1987, `cmd.exe` was developed to replace DOS's `
 
 The biggest upside of using the Command Prompt is just the classic feel, and the closeness it feels to the Windows core. As all those "ls is not recognized" memes go, it really is unapolagetically itself. You have all your `$PATH` variables just as you expect them, which is great when installing your Python versions or other programs.
 
-![](../img/wt_1.png)
+![](/blog/img/wt_1.png)
 
 However, its not the best. There is no easy way to navigate to a folder in File Explorer and open it in Command Prompt, which is something I want to do fairly frequently. Also, there is no `tab` completion - not even for filenames. There are also some advanced windows features that are not accessible through the plain command prompt, so I moved onto the next built-in solution...
 
@@ -54,7 +54,7 @@ The next gamechanger is a contextmenu entry for "open this folder in Windows Ter
 
 Big problem? It only supports Acrylic Opacity. And heres the thing. Sometimes I want to read something thats behind my terminal! That's why I enable translucency on all my terminals. I do, also, enjoy the gaussian blur, but its too much for my tastes here. See what the terminal looks like on 100% acrylic. 
 
-![image of acrylicopacity 0](../img/wt_3.PNG)
+![image of acrylicopacity 0](/blog/img/wt_3.PNG)
 
 This is an [open issue in Windows Terminal's development](https://github.com/microsoft/terminal/issues/1753), but I don't see it getting resolved anytime soon. The nerds in the comments have been sated by a clean AutoHotKey script that does exactly what they want, and I might try it out. Sure I have AHK installed, but I'm evaluating the STOCK terminal applications here without any hacks. Installing another program and having to run it at the same time isn't just a matter of dotfiles, its severely out of the way for functioning as desired.
 
@@ -63,7 +63,7 @@ This is an [open issue in Windows Terminal's development](https://github.com/mic
 
 Any good IDE lets you open a terminal window inside it. VSCode is super nice and lets you set your default emulator, manage tabs, etc. All the cool stuff you get in Windows Terminal, none of the hassle. I probably wouldnt use it to quickly work with a remote machine, its really made for when you are working with source files and testing them as you go. I have the default set to PowerShell right now, as I mentioned it has all the ease of use I really need right now.
 
-![](../img/wt_2.PNG)
+![](/blog/img/wt_2.PNG)
 
 
 ## honorable mention: KiTTY
