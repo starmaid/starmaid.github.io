@@ -13,9 +13,7 @@ layout: default
 
   {{ content }}
 
-  {% if page.comments %}
-
-  {%-include disqus_embed.html-%}
-  
-  {% endif %}
+  {%-if page.comments and jekyll.environment == "production"-%}
+    {%-include disqus_embed.html-%}
+  {%-endif-%}
 </article>
