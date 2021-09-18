@@ -42,5 +42,7 @@ entries:
   - title: blog
     post_list: true
     url: false
-    entries: false
+    entries:
+      - title: subscribe to this blog!
+        url: /feed
 
