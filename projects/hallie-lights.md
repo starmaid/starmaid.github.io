@@ -94,7 +94,19 @@ You will then have to do a lot of crimping and soldering to get JST on the exten
 
 ![Image of the hot glue joint]()
 
+Once the connectors are done and on, you can add the 3D printed parts to the base of the lights. insert the aluminum into one of the bases, and then fasten the cover on the aluminum so that the cover is flush with the base. A dab of hot glue might be perfect to make sure that nothing shifts.
 
+At this point, I try powering on the lights. Sometimes the underside of the cables or pads will be in contact with the aluminum, or some stray strand of conductor is shorting something, so I go around with some electrical tape to secure all the connections. Some electrical tape around the top and bottom of the LED strips also keeps them from peeling off the alumunum...but make sure to use good electrical tape.
+
+## Usage and Testing
+
+Here are some images. 
+
+![images]()
+
+Here is Hallie's first show where she used them, Friday September 24th at the Basement in Columbus OH. 
+
+![images]()
 
 
 
