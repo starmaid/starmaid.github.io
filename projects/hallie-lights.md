@@ -37,5 +37,64 @@ I also took a look at some prior art in the realm of freestanding stage lighting
 
 ## Control
 
-My first idea for controlling the lights was lofty and involved.
+My first idea for controlling the lights was lofty and involved. I wanted it to be just as clean and easy to use as the professional ones, but that was going to require some real trickery. Each light stand would have its own microcontroller, an Arduino Nano that would drive them. The battery could be self contained, or feed from a central pwoer supply. The only kind of connector between things would be USB-C for robustness, even though it wouldnt use the protocol. It would just eliminate need for orientation.
+
+![sketch of something probably]()
+
+The brain would be a Raspberry Pi hosting a web server and acting as a router, so you could connect over wifi and view a page on node that would manage the light control. Changing the lights would send serial data to the connected arduino nanos. The individual nanos could be skipped by simply having a single arduino with enough PWM outputs on the central hub, but each light would have to be connected to it constantly. Power would also be centralized.
+
+I tallied up the cost of parts and the probably 20 hours of coding I would have to do to make a functional web server hosted on the access point, and got some number around like $400+. This was, to Hallie, pretty unacceptable. She pointed out that there are commercially availible light controllers that function over bluetooth. This was, as I had not actually done research on the low end, news to me. I immediately realized that was a much better idea, even though it gave less control over the lights, but it opens things up to Hallie for easily programming them on her own. Plus it came with a handy remote.
+
+![picture of something? hallway demo vid?]()
+
+
+## Construction
+
+Finally, the part you are looking for. I made four lightsticks, but this could easily be expanded.
+
+### Parts List
+
+- 5V Addressable RGB Light strip 60 px/m black
+- 5V 15A Power Supply
+- 3-wire extension cable 22 AWG
+- Bluetooth-enabled Addressable RGB Light Controller
+- JST Connector pack
+- 2x 8ft x 3/16 in aluminum C-channel
+- Matte Black Spray Paint
+- Black PLA
+- 4 ft^2 of 1/2 in plywood sheet
+- Wood screws
+- Electrical Tape
+- Soldering equipment
+- Hot Glue
+
+### Physical Preparation
+
+Cut the wood sheets into four squares, roughly a foot on each side.
+
+Cut the aluminum channels in half, creating four 4ft-long sections.
+
+Paint these all black with the spray paint. Use many light coats and let them dry between applications. Avoid runny paint or soaked spots.
+
+![images of the painting]()
+
+I designed some basic parts in Solidworks. These would serve as the mount to the wood panel, as well as the cover for the ugly wire joint on the bars themselves. The slide to disconnect would make packing them up easier.
+
+![Image of the 3D models]()
+
+Print them out with black PLA. Be mindful of the long print times and dont mess them up. I used 3 perimeters, 0.15mm layer height, and something like 10% infill. I had to do a couple prints to make sure that everything had proper fit and tolerances, but things worked out.
+
+Next we will work on the lights. Cut the strips into 1m (60px) lengths (there are handy solder joints after every 30 LEDs, so you just need to find those) using some good wire cutters. Make sure you leave enough  of the pads to get a good solder joint. Next you can use the included adhesive to stick them onto the aluminum rails. Make sure the control direction is correct. Offset the end of the lights about an inch from the top of the pole.
+
+Once the lights are on, you can solder short connector wires to them. 
+
+![picture of light side connectors]()
+
+You will then have to do a lot of crimping and soldering to get JST on the extension wires. I cut about 9ft lengths of the wire, which was my rough estimate of how much it would take to cross a stage at the venues Hallie usually performs at. I know they are pure crimp connectors, but a drop of solder will make that connection much more reliable and i always make sure to have it. Additionally, after the crimped connectors are inside the plastic housing, I put a drop of hot glue around the joint to keep them from pulling out of the plastic during use.
+
+![Image of the hot glue joint]()
+
+
+
+
 
