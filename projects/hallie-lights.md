@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Onstage Lighting for HALLIE
-comments: false
+comments: true
 tags: [rgb, lighting, "stage lights", HALLIE]
 ---
 
@@ -112,5 +112,5 @@ Here is Hallie's first live show where she used them, Friday September 24th at [
 
 ![gif from hallies instagram](./hallielights_assets/14.gif)
 
-
+Thanks for reading! Leave a comment about what you think, or what might have been done differently.
 
