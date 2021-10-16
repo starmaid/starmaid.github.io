@@ -22,6 +22,8 @@ entries:
     post_list: false
     url: false
     entries:
+      - title: HALLIE custom lighting
+        url: ./projects/hallie-lights
       - title: motorized cat ears
         url: ./projects/cat-ears
       - title: bitwise social media site
