@@ -37,7 +37,7 @@ I also took a look at some prior art in the realm of freestanding stage lighting
 
 ## Control
 
-My first idea for controlling the lights was lofty and involved. I wanted it to be just as clean and easy to use as the professional ones, but that was going to require some real trickery. Each light stand would have its own microcontroller, an Arduino Nano that would drive them. The battery could be self contained, or feed from a central pwoer supply. The only kind of connector between things would be USB-C for robustness, even though it wouldnt use the protocol. It would just eliminate need for orientation.
+My first idea for controlling the lights was lofty and involved. I wanted it to be just as clean and easy to use as the professional ones, but that was going to require some real trickery. Each light stand would have its own microcontroller, an Arduino Nano that would drive them. The battery could be self contained, or feed from a central power supply. The only kind of connector between things would be USB-C for robustness, even though it wouldnt use the protocol. It would just eliminate need for orientation.
 
 ![sketch of something probably](./hallielights_assets/7.PNG)
 
