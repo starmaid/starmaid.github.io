@@ -7,7 +7,7 @@ comments: false
 
 ![image of my keyboard](../img/manifesto/1.jpg)
 
-This is a manifesto for the modern blogger. It is a MANIFESTO in the sense that it [states and describes my ideas, views, and goals.](https://www.merriam-webster.com/dictionary/manifesto) It is also a somewhat of an ART MANIFESTO, where I outline what THE BLOGGER is, what they stand for, and how to be one. When i use THE BLOGGER as a proper noun, it refers to only the type of creator as outlined in this document. I do not overwrite any other definitions of a blogger. This is an opinion piece for what I see in my life and on the web. I do not write technical details on how to run a blog.
+This is a manifesto for the modern blogger. These are not technical details on how to run a blog. It is a MANIFESTO in the sense that it [states and describes my ideas, views, and goals.](https://www.merriam-webster.com/dictionary/manifesto) It is also a somewhat of an ART MANIFESTO, where I outline what THE BLOGGER is, what they stand for, and how to be one. This is an opinion piece for what I see in my life and on the web. 
 
 There is no shortage of blog manifestos, in fact by 2012 it seems [every](http://jamesgstewart.com/blogging-manifesto/) [blog](https://www.socialmediatoday.com/content/manifesto-blogging) [had](https://chrisbrogan.com/stories/social-media/if-you-intend-to-blog-seriously/) [their](https://cbcmanifesto.blogspot.com/) [own](http://www.ocdqblog.com/home/the-mullet-blogging-manifesto.html). But I am here, a decade later, to approach what is different. There has been a cementing of WEB 2.0, with a concentration onto the few major social media sites. I think this is helpful for some things (more people can easily share digestible ideas) but detrimental for others (a platform serves advertisers, not users).
 
@@ -21,17 +21,17 @@ WHAT DO WE WANT THE MODERN BLOGGER TO BE? HOW WILL IT BE BETTER?
 
 ## 1. The Blogger Exists
 
-THE BLOGGER has three options. First, to blog publicly and openly as their OFFLINE IDENTITY. Second, to blog in a restricted sphere, but still as their OFFLINE IDENTITY. This results in a RESTRICTED IDENTITY. Third, to blog truly anonymously, as a PERSONA. THE BLOGGER must make this choice, and resist temptation to mix these spheres.
+THE BLOGGER has three options. First, to blog publicly and openly as their OFFLINE IDENTITY. Second, to blog in a restricted sphere, but still as their OFFLINE IDENTITY. This results in a RESTRICTED IDENTITY. Third, to blog truly anonymously, as a PERSONA. THE BLOGGER must make this choice, and resist temptation to mix these spheres. WEB 2.0 aims to destroy the boundary between a PERSONA and an OFFLINE IDENTITY, but THE BLOGGER crafts their own existence.
 
 
 ## 2. The Blogger Posts
 
-THE BLOGGER must make public posts on the internet. It is recommended there be a regular schedule. There doesn't have to be. A common trend among content creators is the struggle to determine if something is 'good enough' for public view. Published is better than perfect. Now is better than when the topic doesn't matter anymore. 
+THE BLOGGER must make public posts on the internet. WEB 2.0 platforms often reward regular schedules, but THE BLOGGER posts when possible without forcing unripe content. However the direct opposing force is the struggle to determine if something is 'good enough' for public view. Published is better than perfect. Now is better than when the topic doesn't matter anymore. THE BLOGGER finds their own balance.
 
 
 ## 3. The Blogger Thinks
 
-THE BLOGGER thinks about the content on the blog. Who is the AUDIENCE, and how will the content be recieved? Is the FORMAT appropriate for the content? What is the PURPOSE of writing and publishing the content? Should the IDEAS be distilled into their purest form, or should no DETAIL be spared? What are the DANGERS of posting this content? What must be said, and what can be left unsaid?
+THE BLOGGER thinks about the content on the blog. Who is the AUDIENCE, and how will the content be recieved? Is the FORMAT appropriate for the content? What is the PURPOSE of writing and publishing the content? Should the IDEAS be distilled into their purest form, or should no DETAIL be spared? What are the DANGERS of posting this content? What must be said, and what can be left unsaid? THE BLOGGER is the only person who can make these descisions, and enriches their ideas through them.
 
 
 ## 4. The Blogger is Authentic
