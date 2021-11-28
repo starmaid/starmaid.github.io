@@ -15,10 +15,13 @@ I'm mixing this manifesto with some other tech/hacker mindsets. The [1999 Anarch
 
 [A companion piece will be linked here for more detail.](https://nickmasso.com)
 
+EDITING NOTES: GO BACK AND LOOK FOR WHAT IS NEW, WHAT IS OBVIOUS, AND WHAT IS ESTABLISHING MATERIAL
+
+WHAT DO WE WANT THE MODERN BLOGGER TO BE? HOW WILL IT BE BETTER?
 
 ## 1. The Blogger Exists
 
-THE BLOGGER has three options. First, to blog publicly and openly as their OFFLINE IDENTITY. Second, to blog in a restricted sphere, but still as their OFFLINE IDENTITY. This results in a RESTRICTED IDENTITY. Third, to blog truly ANONYMOUSLY, as a PERSONA. THE BLOGGER must make this choice, and resist temptation to mix these spheres.
+THE BLOGGER has three options. First, to blog publicly and openly as their OFFLINE IDENTITY. Second, to blog in a restricted sphere, but still as their OFFLINE IDENTITY. This results in a RESTRICTED IDENTITY. Third, to blog truly anonymously, as a PERSONA. THE BLOGGER must make this choice, and resist temptation to mix these spheres.
 
 
 ## 2. The Blogger Posts
