@@ -5,6 +5,10 @@ tags: internet,web
 comments: false
 ---
 
+EDITING NOTES: GO BACK AND LOOK FOR WHAT IS NEW, WHAT IS OBVIOUS, AND WHAT IS ESTABLISHING MATERIAL
+
+WHAT DO WE WANT THE MODERN BLOGGER TO BE? HOW WILL IT BE BETTER?
+
 ![image of my keyboard](../img/manifesto/1.jpg)
 
 This is a manifesto for the modern blogger. These are not technical details on how to run a blog. It is a MANIFESTO in the sense that it [states and describes my ideas, views, and goals.](https://www.merriam-webster.com/dictionary/manifesto) It is also a somewhat of an ART MANIFESTO, where I outline what THE BLOGGER is, what they stand for, and how to be one. This is an opinion piece for what I see in my life and on the web. 
@@ -15,9 +19,6 @@ I'm mixing this manifesto with some other tech/hacker mindsets. The [1999 Anarch
 
 [A companion piece will be linked here for more detail.](https://nickmasso.com)
 
-EDITING NOTES: GO BACK AND LOOK FOR WHAT IS NEW, WHAT IS OBVIOUS, AND WHAT IS ESTABLISHING MATERIAL
-
-WHAT DO WE WANT THE MODERN BLOGGER TO BE? HOW WILL IT BE BETTER?
 
 ## 1. The Blogger Exists
 
@@ -26,12 +27,12 @@ THE BLOGGER has three options. First, to blog publicly and openly as their OFFLI
 
 ## 2. The Blogger Posts
 
-THE BLOGGER must make public posts on the internet. WEB 2.0 platforms often reward regular schedules, but THE BLOGGER posts when possible without forcing unripe content. However the direct opposing force is the struggle to determine if something is 'good enough' for public view. Published is better than perfect. Now is better than when the topic doesn't matter anymore. THE BLOGGER finds their own balance.
+THE BLOGGER must make public posts on the internet. WEB 2.0 platforms often reward controversial posts at regular schedules, but THE BLOGGER posts when possible without forcing unripe content. However the direct opposing force is the struggle to determine if something is 'good enough' for public view. Published is better than perfect. Now is better than when the topic doesn't matter anymore. THE BLOGGER finds their own balance. The LONG FORM post???
 
 
 ## 3. The Blogger Thinks
 
-THE BLOGGER thinks about the content on the blog. Who is the AUDIENCE, and how will the content be recieved? Is the FORMAT appropriate for the content? What is the PURPOSE of writing and publishing the content? Should the IDEAS be distilled into their purest form, or should no DETAIL be spared? What are the DANGERS of posting this content? What must be said, and what can be left unsaid? THE BLOGGER is the only person who can make these descisions, and enriches their ideas through them.
+THE BLOGGER thinks about the content on the blog. Who is the AUDIENCE, and how will the content be recieved? Is the FORMAT appropriate for the content? What is the PURPOSE of writing and publishing the content? Should the IDEAS be distilled into their purest form, or should no DETAIL be spared? What are the DANGERS of posting this content? What must be said, and what can be left unsaid? THE BLOGGER is the only person who can make these descisions, and enriches their ideas through them. The LONG FORM leaves room for a complete idea.
 
 
 ## 4. The Blogger is Authentic
@@ -48,7 +49,12 @@ Hosting sites rise and fall, and sites implement changes or censorship at short 
 Not only is the primary content vulnerable, but supporting content can be destroyed by LINK ROT. THE BLOGGER minds the ephemerable nature of web content and saves all things necessary to them. Remote content that is critical to the message of a post should be SAVED. Remote content that adds value but is not necessary should be CLEAR in what it contains.
 
 
-## 6. The Blogger Chooses
+## 6. The Blogger Logs Out
+
+Gamification of social media targets our addictive tendencies. THE BLOGGER does not produce content for points, they instead try to enrich their own lives as well as the lives of others. Pageviews may be tracked, but should not inflate the ego. 
+
+
+## 7. The Blogger Chooses
 
 At the end of it all, THE BLOGGER is free to do whatever they please. Burn these rules, flame me in the comments. Engage with an audience, or don't. Everything is up to interpretation, something could be consistent or stagnant, depending on the viewer. 
 
