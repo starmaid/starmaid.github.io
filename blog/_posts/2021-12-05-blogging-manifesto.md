@@ -2,10 +2,10 @@
 layout: post
 title: Manifesto of the Modern Blogger
 tags: internet,web
-comments: true
+comments: false
 ---
 
-![image of my keyboard](../img/manifesto/1.jpg)
+![image of my keyboard](/blog/img/manifesto/1.jpg)
 
 This is a manifesto for the modern blogger. It is a MANIFESTO in the sense that it [states and describes my ideas, views, and goals.](https://www.merriam-webster.com/dictionary/manifesto) It is also a somewhat of an ART MANIFESTO, where I outline what THE BLOGGER is, what they stand for, and how to be one. When i use THE BLOGGER, I refer to only the type of creator as outlined in this document. This is an opinion piece for what I see in my life and on the web. This does not contain technical details on how to run a blog.
 
