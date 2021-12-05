@@ -2,12 +2,8 @@
 layout: post
 title: Manifesto of the Modern Blogger
 tags: internet,web
-comments: false
+comments: true
 ---
-
-EDITING NOTES: GO BACK AND LOOK FOR WHAT IS NEW, WHAT IS OBVIOUS, AND WHAT IS ESTABLISHING MATERIAL
-
-WHAT DO WE WANT THE MODERN BLOGGER TO BE? HOW WILL IT BE BETTER?
 
 ![image of my keyboard](../img/manifesto/1.jpg)
 
@@ -51,7 +47,7 @@ Not only is the primary content vulnerable, but supporting content can be destro
 
 ## 6. The Blogger Logs Out
 
-Gamification of social media targets our addictive tendencies. THE BLOGGER does not produce content for points, they instead try to enrich their own lives as well as the lives of others. Pageviews may be tracked, but should not inflate the ego. 
+Gamification of social media targets our addictive tendencies. THE BLOGGER does not produce content for points, they instead try to enrich their own lives as well as the lives of others. Pageviews may be tracked, but should not inflate the ego of THE BLOGGER. 
 
 
 ## 7. The Blogger Chooses
@@ -76,8 +72,6 @@ At the end of it all, THE BLOGGER is free to do whatever they please. Burn these
 
 *"We live in an era of fear. An era where everything happens fast. S/he who posts first and frequently gets to determine the course of the conversation. We also live in an era of commentary. There is almost nothing in the common media that can be taken objectively now."*
 
-[1999 AnarchoHacker Manifesto](https://www.digitalmanifesto.net/manifestos/219/)  
-
-
-
 [Rosa Menkman's Glitch Studies Manifesto](http://amodern.net/wp-content/uploads/2016/05/2010_Original_Rosa-Menkman-Glitch-Studies-Manifesto.pdf)
+
+This one is just a really well-put together art manifesto. Worthy of a read.
