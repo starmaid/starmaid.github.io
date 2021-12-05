@@ -7,11 +7,11 @@ comments: false
 
 ![image of my keyboard](../img/manifesto/1.jpg)
 
-This is a manifesto for the modern blogger. It is a MANIFESTO in the sense that it [states and describes my ideas, views, and goals.](https://www.merriam-webster.com/dictionary/manifesto) It is also a somewhat of an ART MANIFESTO, where I outline what THE BLOGGER is, what they stand for, and how to be one. When i use THE BLOGGER as a proper noun, it refers to only the type of creator as outlined in this document. I do not overwrite any other definitions of a blogger. This is an opinion piece for what I see in my life and on the web. I do not write technical details on how to run a blog.
+This is a manifesto for the modern blogger. It is a MANIFESTO in the sense that it [states and describes my ideas, views, and goals.](https://www.merriam-webster.com/dictionary/manifesto) It is also a somewhat of an ART MANIFESTO, where I outline what THE BLOGGER is, what they stand for, and how to be one. When i use THE BLOGGER, I refer to only the type of creator as outlined in this document. This is an opinion piece for what I see in my life and on the web. This does not contain technical details on how to run a blog.
 
-There is no shortage of blog manifestos, in fact by 2012 it seems [every](http://jamesgstewart.com/blogging-manifesto/) [blog](https://www.socialmediatoday.com/content/manifesto-blogging) [had](https://chrisbrogan.com/stories/social-media/if-you-intend-to-blog-seriously/) [their](https://cbcmanifesto.blogspot.com/) [own](http://www.ocdqblog.com/home/the-mullet-blogging-manifesto.html). But I am here, a decade later, to approach what is different. There has been a cementing of WEB 2.0, with a concentration onto the few major social media sites. I think this is helpful for some things (more people can easily share digestible ideas) but detrimental for others (a platform serves advertisers, not users).
+There is no shortage of blog manifestos, in fact by 2012 it seems [every](http://jamesgstewart.com/blogging-manifesto/) [blog](https://www.socialmediatoday.com/content/manifesto-blogging) [had](https://chrisbrogan.com/stories/social-media/if-you-intend-to-blog-seriously/) [their](https://cbcmanifesto.blogspot.com/) [own](http://www.ocdqblog.com/home/the-mullet-blogging-manifesto.html). But I am here, a decade later, to approach what is different. There has been a cementing of WEB 2.0, with a concentration of users onto the few major social media sites. I think this is helpful for some things (more people can easily share digestible ideas) but detrimental for others (a platform serves advertisers, not users).
 
-I'm mixing this manifesto with some other tech/hacker mindsets. The [1999 AnarchoHacker Manifesto](https://www.digitalmanifesto.net/manifestos/219/) or [Rosa Menkman's Glitch Studies Manifesto](http://amodern.net/wp-content/uploads/2016/05/2010_Original_Rosa-Menkman-Glitch-Studies-Manifesto.pdf) have some of these ideas, but there are others I've absorbed through the ether. These will be added to this post as i find them.
+I'm mixing this manifesto with some other tech/hacker mindsets. See the *Other Readings* section at the end for some influences. More will be added to this post as i find them.
 
 [A companion piece will be linked here for more detail.](https://nickmasso.com)
 
@@ -21,12 +21,12 @@ WHAT DO WE WANT THE MODERN BLOGGER TO BE? HOW WILL IT BE BETTER?
 
 ## 1. The Blogger Exists
 
-THE BLOGGER has three options. First, to blog publicly and openly as their OFFLINE IDENTITY. Second, to blog in a restricted sphere, but still as their OFFLINE IDENTITY. This results in a RESTRICTED IDENTITY. Third, to blog truly anonymously, as a PERSONA. THE BLOGGER must make this choice, and resist temptation to mix these spheres.
+THE BLOGGER has three options. First, to blog publicly and openly as their OFFLINE IDENTITY. Second, to blog in a restricted sphere, but still as their OFFLINE IDENTITY - a RESTRICTED IDENTITY. Third, to blog truly anonymously, as a PERSONA. THE BLOGGER must make this choice, and resist temptation to mix these spheres.
 
 
 ## 2. The Blogger Posts
 
-THE BLOGGER must make public posts on the internet. It is recommended there be a regular schedule. There doesn't have to be. A common trend among content creators is the struggle to determine if something is 'good enough' for public view. Published is better than perfect. Now is better than when the topic doesn't matter anymore. 
+THE BLOGGER must make public posts on the internet. It is recommended there be a regular schedule. There doesn't have to be. A common trend among content creators is the struggle to determine if something is 'good enough' for public view. Published is better than perfect. Now is better than when the topic doesn't matter anymor, but never slave to an algorithm. THE BLOGGER finds a balance.
 
 
 ## 3. The Blogger Thinks
@@ -36,7 +36,7 @@ THE BLOGGER thinks about the content on the blog. Who is the AUDIENCE, and how w
 
 ## 4. The Blogger is Authentic
 
-THE BLOGGER has no responsibility for TRUTH (it is simply recommended, and desired by readers), but misrepresenting a community, emotion, or experience is untenable. THE BLOGGER should mind the line between OPINION and TRUTH, using sources when appropriate. There is no reason a blog should be separate from art. But UNTRUTHS can be as harmful for THE BLOGGER as they are for the SUBJECT.
+THE BLOGGER has a responsibility for AUTHENTICITY, and to a lesser extent, TRUTH. Misrepresenting a community, emotion, or experience is untenable. Finding sources is expected. THE BLOGGER should mind the line between OPINION and TRUTH, using sources when appropriate. There is no reason a blog should be separate from art. But UNTRUTHS can be as harmful for THE BLOGGER as they are for the SUBJECT.
 
 AUTHENTICITY comes with a corrolary of RELEVANCE and CONTEXT. THE BLOGGER uses their medium to include information that would have to be assumed on other platforms. Specific ideas only make sense when their time and surroundings are explicit. Outdated ideas can be discussed, but should not be presented as current.
 
@@ -70,3 +70,8 @@ At the end of it all, THE BLOGGER is free to do whatever they please. Burn these
 
 *"We live in an era of fear. An era where everything happens fast. S/he who posts first and frequently gets to determine the course of the conversation. We also live in an era of commentary. There is almost nothing in the common media that can be taken objectively now."*
 
+[1999 AnarchoHacker Manifesto](https://www.digitalmanifesto.net/manifestos/219/)  
+
+
+
+[Rosa Menkman's Glitch Studies Manifesto](http://amodern.net/wp-content/uploads/2016/05/2010_Original_Rosa-Menkman-Glitch-Studies-Manifesto.pdf)
