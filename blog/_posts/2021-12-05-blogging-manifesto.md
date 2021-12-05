@@ -2,7 +2,7 @@
 layout: post
 title: Manifesto of the Modern Blogger
 tags: internet,web
-comments: false
+comments: true
 ---
 
 ![image of my keyboard](/blog/img/manifesto/1.jpg)
