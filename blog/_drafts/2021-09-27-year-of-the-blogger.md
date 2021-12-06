@@ -61,6 +61,8 @@ what's the difference between a homepage and a blog? research THAT lol. homepage
 i kind of want to touch on what social media looks like in other parts of the world? where are all the chinese citizens? what about india/middle east? these are the ones im most unsure about, so obviously those are the ones that i need to look into.
 
 
+using other social media platforms have the advantage of finding new people far outside your social sphere with almost zero effort. For this reason, I have zero expectation of dropping things like twitter outright. in fact, i think it would be detrimental to stop using these platforms. however, they should be treated like foreplay for the more intimate long form blogging. when you find an artist you care about, or someone who posts analysis you find interesting, then interact on the realer post.
+
 
 This sounds like an exerpt from [a course on web media](https://public.wsu.edu/~campbelld/blogmanifesto.htm), but there is a price to pay for not attempting to answer these questions before posting. These may also sound ridiculous to ask of a product review blog, or when the 'ideas' are long-form rambles about an everyday experience, but deciding "I am writing a post so I have a record of these thoughts" and "I am writing this post to spread an idea" are completely different things. 
 
