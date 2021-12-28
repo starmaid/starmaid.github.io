@@ -21,7 +21,7 @@ Read my [manifesto](http://www.nickmasso.com/blog/2021/12/05/blogging-manifesto.
 
 The question is not an absurd one. Near the end of 2021, the [general userbase of Twitter](https://twitter.com/search?q=hellsite&src=typed_query) has adapted the term 'hellsite'. Whether it be affectionate or derogatory, it is alarming to see what was once used to lament a poorly-managed, hastily-programmed site with only a few million users (Tumblr) apply to the platform where the President of the United States gives official information.
 
-![screenshot of joe biden's tweet https://twitter.com/POTUS/status/1474886536990703616](/blog/img/bidentweet.png)
+![screenshot of joe biden's tweet https://twitter.com/POTUS/status/1474886536990703616](/blog/img/2022/bidentweet.png)
 
 Forums are facing deactivation (like [Eurogamer](https://kotaku.com/please-stop-closing-forums-and-moving-people-to-discord-1847684851)) or cultural stagnation (like [StackOverflow](https://insights.dice.com/2019/10/17/stack-overflow-moderators-toxic-culture/)). Platforms are unreliable (the [Geocities archive](https://blog.geocities.institute/) is useful, but often [half-baked](https://oneterabyteofkilobyteage.tumblr.com/) for some deeper elements) but I can easily read a blog that has been standing for [20 years](http://www.ex-parrot.com/~chris/wwwitter/20020428.html). 
 
