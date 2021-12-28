@@ -2,7 +2,7 @@
 layout: post
 title: 2022 Is the Year of the Blogger
 tags: internet,web
-comments: false
+comments: true
 ---
 
 [The oligarchy](https://en.wikipedia.org/wiki/Meta_Platforms) of [tech companies](https://en.wikipedia.org/wiki/Alphabet_Inc.) are tightening their strangle hold on internet media. Yet, I rely on these platforms to interact with people outside of my close personal circle and immeidate geographical region. These platforms are also how I connect with others in interest circles, political groups, art groups, and anything else. The internet was built to enable these links, but it seems the towers are built too tall. Social media has commodified and gamified to unbearable levels. This is a sickness.
