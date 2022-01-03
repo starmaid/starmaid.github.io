@@ -2,6 +2,7 @@
 layout: post
 title: Robot Arm
 tags: arduino cnc "raspberry pi" gcode plotter
+comments: false
 ---
 
 Written January 2022
@@ -144,18 +145,123 @@ On August 3rd, 2020, I was discouraged enough after crashing my drone into a lak
 
 ![](./robotarm_assets/2020.jpg)
 
+![](./robotarm_assets/2021-4.png)
+
 I also breadboarded and got the actual motors working, but I don't have any media of that. I just have this picture from Thursday August 27th at 1:27 in the morning, in the middle of an apartment party. I don't remember what was going on, but theres ice in the bin. No components were harmed.
 
 ![](./robotarm_assets/ice.jpg)
 
-The semester started, I forgot about the device. On Saturday March 13th, 2021, I pulled the falling-apart breadboard out of the bin and soldered everything onto a protoboard. 
+The semester started, I forgot about the device. On Saturday March 13th, 2021, I pulled the falling-apart breadboard out of the bin and soldered everything onto a protoboard. Simple and functional.
 
 ![](./robotarm_assets/2021.png)
 
+![](./robotarm_assets/2021-2.png)
+
+Then I printed a mount to secure the shoulder servo to a piece of wood, some bumpers for the limit switches, and thats it for the fourth and final version. 
+
+![](./robotarm_assets/2021-3.gif)
+
+I wrote a bare minimum GCODE parsing section on the arduino, and got the SD card SHIELD plugged in. I was going to write more of the cases, but Cura slicer breaks all curves into very small straight line segments. There would be no reason to use the arcs, which would be hard to do anyway.
+
+```c
+void interpret(char gline[]) {
+  arm_moving = true;
+  switch (gline[0]) {
+    case 'G': 
+      switch (gline[1]) {
+        case '0': 
+        case '1': // parse the x,y, and z
+                  line(parseNumber(gline, 'X'), parseNumber(gline, 'Y'), parseNumber(gline, 'Z'));
+                  Serial.println("completed");
+                  break;
+        default: return;
+      }
+  }
+  arm_moving = false;
+}
+```
+
+For testing, I wrote a Python script that sends GCODE files line by line over the serial port. That way I could make sure it was actually working.
+
+```py
+import serial
+import time
+
+arduino = serial.Serial(port='COM4', baudrate=9600, timeout=.1) 
+f = open('./out.gcode','r')
+x = 5;
+
+while x > 0:
+	x = arduino.write(f.readline().encode('utf-8'))
+	time.sleep(0.5)
+```
+
+![](./robotarm_assets/2021-5.gif)
+
+One problem I was thinking about was 'drawing straight lines'. This is solved on rectangular machines by a neat velocity calculation, but is a bit more complex on arms. I thought about doing some set of intermediate points along the line that are indefinitely close to each other - classic calculus approach. However, I realized my angular precision was still not very high. I set the drivers to 16th step mode on my 200 step motor, 0.1125 deg/step, but the motors didn't actually have that kind of precision. Additionally, Cura already breaks lines into very short line segments, possibly to improve print time remaining estimates? That way number of lines in the file ~= time left in the print? Haven't looked into it.
+
+![](./robotarm_assets/2021-6.gif)
+
+That problem that I mentioned earlier, about the end of the arm flexing and dragging? Still here. There just isn't enough rigidity on the arm to smoothly move the sharpie. Getting that perfect Z-height is also pretty difficult, because to keep the weight down i just masking-taped the sharpie to the servo arm. 
+
+Second problem is how hot the stepper motors get. The drivers I bought are the cheapest ones availible, so the current tuning is just enough to keep the motors from shaking. Without a metal frame acting as a heat sink, the motors themselves get hot enough to melt the PLA parts they are attached to if I run it for too long. That, in turn, makes the arm movement sloppier.
+
+As a fun use case for no reason, I actually integrated it with a discord bot. As a novelty telepresence, I removed the whole arm and attacehed a camera to the shoulder motor. I added a bot command that read `/pan ANGLE` and sent it as an X-Y position to the arm over serial. This just moved the camera side to side, so people on voice call could pan the camera. It was...functional. I don't have any media of it working, as I used it at my graduation party and then never used it again.
+
+(In the discord bot)
+
+```py
+@commands.command(pass_context=True)
+async def pan(ctx):
+    global ARDUINO
+
+    if ARDUINO is None or ARDUINO.ready == False:
+        msg = "ARDUINO NOT INITIALIZED. USE ./initArduino"
+    else:
+        cmd = ctx.message.content.lower().split()
+        l = len(cmd)
+        if l == 2:
+            angle = int(cmd[1])
+            if angle <= 90 and angle >= -90:
+                # do it
+                async with ctx.channel.typing():
+                    ARDUINO.pan(angle)
+                    msg = "MOVE COMPLETE"
+            else:
+                msg = "PLEASE ENTER AN ANGLE BETWEEN -90 AND 90"
+        else:
+            msg = "INVALID COMMAND. ENTER A VALUE"
+
+    msg = "`" + msg + "`"
+    await ctx.send(msg)
+
+    return
+```
+
+(In the control.py module)
+
+```py
+def move(self, x, y):
+    text = "G1 X{:.2f} Y{:.2f}".format(x,y)
+    x = self.arduino.write(text.encode('utf-8'))
+    msg = self.arduino.readline()
+    while b'completed' not in msg:
+        #print(msg)
+        msg = self.arduino.readline()
+        time.sleep(0.1)
+    return
 
 
-i finished the mount and got everything running that weekend. the code i wrote so many years ago was working! now i needed to figure out how to control the speed....
+def pan(self, angle):
+    r = 100
+    theta = m.radians(angle)
+    x = r * m.cos(theta)
+    y = r * m.sin(theta)
 
-switched from manually stepping the motors to using some stepper library. allowed me to control speed and run two concurrently. simplified the program a little bit.
+    self.move(x,y)
+    return
+```
 
+All in all, this was a fun novelty and good learning experience. It followed my knowledge in software and hardware through university, culminating with using it at my graduation party. It just shows how long one person can drag out a mildly interesting project, if they are determined. I might use the parts to make a rectangular plotter thats actually good, like [this one](https://www.thingiverse.com/thing:2349232).
 
+*Until next time.*
