@@ -22,6 +22,8 @@ entries:
     post_list: false
     url: false
     entries:
+      - title: CNC Drawing Arm
+        url: ./projects/robot-arm
       - title: HALLIE custom lighting
         url: ./projects/hallie-lights
       - title: motorized cat ears
