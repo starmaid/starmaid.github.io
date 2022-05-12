@@ -4,55 +4,66 @@ title: Pulse of Exploration (mini)
 tags: Raspberry Pi, LED, lights
 ---
 
-[picture opf the lights]
+![](../img/pulse/pic1.gif)
+
+A fun decorative light that reacts when a downlink or uplink travels over the Deep Space Network. [View project on GitHub.](https://github.com/starmaid/pulseofexploration)
 
 ## Timeline
 
-Pre-2018
+**Pre-2018**
 
-Is the ISS above me rn
+- I saw the [ISS-Above project](http://www.issabove.com/), and it had an effect on me.
 
-July 2019
+**July 2019**
 
-Found out abt them at a party or something briar maybe
+- Was talking about the [Deep Space Network](https://en.wikipedia.org/wiki/NASA_Deep_Space_Network) and the [Pulse of Exploration](https://vimeo.com/93420747) with my friends on the Mars Helicopter team who went down to JPL.
+- While talking to different friend about visualizing data in cool and fun ways. Reminded of DSN.
+- Found a project blog post about polling DSN Now. (Can't find it anymore).
 
-Found a blog post
+**Oct 2020**
 
-Oct 2020
+- Remember these ideas while reading the sequel to [17776](https://www.sbnation.com/a/17776-football), [20020](https://www.sbnation.com/c/secret-base/21410129/20020).
+- [Make a Discord bot to use in the server, DSNBot](https://github.com/starmaid/dsnbot). This bot polls from DSN on command from a user.
 
-Remember it while thinking about 17776
+I continually updated DSNBot until mid 2021, adding new features and using it as a testing ground.
 
-Make DSNBot
+**August 2021**
 
-Continually update DSNBot
+- The [discord.py fiasco](https://gist.github.com/Rapptz/4a2f62751b9600a31a0d3c78100287f1) happens.
 
+**October 2021**
 
-August 27, 2021
-
-discord.py fiasco [](https://gist.github.com/Rapptz/4a2f62751b9600a31a0d3c78100287f1)
-
-October 2021
-
-(I find out about this) and realize I cant have all my work dependent on a single framework
-
-Remember the desire to make my own mini pulse of exp
-
+- (I find out about discord.py) 
+- I realize I cant have all my work dependent on a single framework.
+- Remember the desire to make my own verison of the Pulse of Exploration.
 
 ## Design
 
-i wanted this to be something my friends could actually build. This would require minimal soldering or any physical work if possible. This makes a single line of LEDS make the most sense.
+I got the idea of using a single LED strip instead of a much more complex setp - this would be the core of the project, keeping everything simple and easily replicable.
 
-application where threading would be simple, and i always want more practice at this
+### Requirements
 
-kept my DSN code at the beginning but ended up rewriting it almost entirely
+- Conveys information from DSN
+- Looks interesting
+- Easy to build (no soldering?)
+- Adaptable for many setups
+- Extensible in the future for other uses
 
-Had my breakthrough about how to efficiently store 1D pixel animations as images that would be pixel art of the planets
+### Build
 
-had more thoughts about collaboration. see the collaboration section
+I saw a good opportunity to refresh my knowledge of multithreading in Python, and it was basically textbook. Three threads (Lights, SequenceManager, and DSN) passing data around with an asynchronus queue.
+
+My original plan was to use DSN polling code from DSNBot, but I had structured it in a method that didn't get me the data I wanted. I ended up rewriting most of it.
+
+I knew I wanted to play custom animations on the sky section, but was not sure how I would store them. Until now, I control all my lights with sine curves and raw RGB values. I had a breakthrough about how to store a set of 1D frames efficiently, and how to edit them quickly. The idea of 2D images felt amazing to think of, even if its not original. I havent researched it or anything. A second idea came when I realized the animations could be, in 2D, pixel art of the planets they represent.
+
+As for physical setup, I was thinking about 3D printing something. But I got lazy and tired, and just made it out of Dollar Tree Redi-Board.
 
 ## Collaborate
 
-First - the themes are collaborative
+### Themes
+
+
 
 The themes are more than just playing the pictures, see this key line in the `main.py`:
 
@@ -77,5 +88,5 @@ the transmission and ground are a little less intentionally flexible, but thats 
 
 I kind of want to put this project to rest. the DSN brainrot has lasted for almost two years, I want to move on. However, I would love for this project to get a little size and see what people do with it. I'll do whatever work is required to make it easy and fun for other people to build their own. 
 
-Im mad about the RPI shortage. 10x prices, and raiesed prices for the forseeable future. this will affect the trout population
+Im mad about the RPI shortage. 10x prices, and raiesd prices for the forseeable future. [This will affect the project completion rate I think.](https://img.ifunny.co/images/3cda13b1552639d8ec84701bdcb205179f6a4b143e1907bdf1fac2fbf843eac4_1.webp)
 
