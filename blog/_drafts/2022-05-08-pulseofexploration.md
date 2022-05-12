@@ -6,6 +6,8 @@ tags: Raspberry Pi, LED, lights
 
 ![](../img/pulse/pic1.gif)
 
+*Written in May 2022*
+
 A fun decorative light that reacts when a downlink or uplink travels over the Deep Space Network. [View project on GitHub.](https://github.com/starmaid/pulseofexploration)
 
 ## Timeline
@@ -27,6 +29,8 @@ A fun decorative light that reacts when a downlink or uplink travels over the De
 
 I continually updated DSNBot until mid 2021, adding new features and using it as a testing ground.
 
+![dsnbot gif?]()
+
 **August 2021**
 
 - The [discord.py fiasco](https://gist.github.com/Rapptz/4a2f62751b9600a31a0d3c78100287f1) happens.
@@ -46,10 +50,15 @@ I got the idea of using a single LED strip instead of a much more complex setp -
 - Conveys information from DSN
 - Looks interesting
 - Easy to build (no soldering?)
+- Cheap to build (under $50?)
 - Adaptable for many setups
 - Extensible in the future for other uses
 
+I believe I met all of the requirements.
+
 ### Build
+
+![image of the pile of supplies]()
 
 I saw a good opportunity to refresh my knowledge of multithreading in Python, and it was basically textbook. Three threads (Lights, SequenceManager, and DSN) passing data around with an asynchronus queue.
 
@@ -57,17 +66,21 @@ My original plan was to use DSN polling code from DSNBot, but I had structured i
 
 I knew I wanted to play custom animations on the sky section, but was not sure how I would store them. Until now, I control all my lights with sine curves and raw RGB values. I had a breakthrough about how to store a set of 1D frames efficiently, and how to edit them quickly. The idea of 2D images felt amazing to think of, even if its not original. I havent researched it or anything. A second idea came when I realized the animations could be, in 2D, pixel art of the planets they represent.
 
-As for physical setup, I was thinking about 3D printing something. But I got lazy and tired, and just made it out of Dollar Tree Redi-Board.
+![pic of pixel art as frames in an animation]()
 
-## Collaborate
+As for physical setup, I was thinking about 3D printing something. But I got lazy and tired, and just made it out of Dollar Tree Redi-Board. This is faster and more prototype-style than a full 3D print, and it gets the job done.
 
-### Themes
+### Collaborate
 
+I made sure to have the lighting patterns be the most extensible part of the code. Signals from DSN trigger these sequences, so in a display they will probably be the largest focus. The logic flow to put a set of colors on the lights is as follows:
 
+1. A signal comes down from DSN with a shortname
+2. That shortname is looked up in the `theme.json` file to find the associated location
+3. That location is compared against availible classes in Lights.py
+4. If a class exists, it is instantiated and run
+4. If no class matches, the an image with that filename is looked up in the folder defined in `config.json`
 
-The themes are more than just playing the pictures, see this key line in the `main.py`:
-
-```
+```python
 try:
     # Attempt to load the class from lights.py
     classname = getattr(lights,locname)
@@ -80,13 +93,26 @@ except AttributeError:
             self.themeName,locname,ship=q.activeSignals[s])
 ```
 
-A dev can extend the *LightSequence* class and a user can set a ship to trigger it in `theme.json` for programatically custom lights. I have moved most helpful functions in there so anyone has access.
+This way, a user can specify exactly which sequence is triggered, and then has two options for that sequence - it can either be an image (easy for a user to make) or it could be a custom class.
 
-the transmission and ground are a little less intentionally flexible, but thats because they do slightly more complex things. Sorry :/
+The images, as an extra treat, I started with pixel art of planets. Everyone loves a good pixel art, so its fun to promote and get people involved and looking at the project. Its also nice to get credit when its added to a wider theme pack!
+
+To make a custom class, a dev just extends the *LightSequence* class and implement the `run()` function. This is the function that gets a single frame of lights. It is blocking, so the user does not have to interact with asynchronus weirdness.
+
+I haven't fully thought of how to integrate new implementations of *LightSequence* into the main repository. For now, I expect most of the contributions to come as pictures instead of new code.
+
+One thing I did not intend to be as flexible are the the transmission and ground. Those do some slightly more complex things, and I only implemented the bare minimum. Anything that another developer does will probably be an improvement and I'll just merge with master.
+
+### Anticipated Problems
+
+The cheapest build is not the easiest build. I'm pretty sure most Pi Zero W models don't come with pins soldered on. This means the user will have to solder to connect the lights to it. I might change the instructions to default use the 3B+ as the preferred version, so they can have a platform for other projects in the future - but have a simple to build option here.
+
+There is currently (May 2022) a shortage of all Raspberry Pi computers.. 10x prices, and raiesd prices for the forseeable future. [This will affect the project completion rate I think.](https://img.ifunny.co/images/3cda13b1552639d8ec84701bdcb205179f6a4b143e1907bdf1fac2fbf843eac4_1.webp) 
 
 ## Future
 
-I kind of want to put this project to rest. the DSN brainrot has lasted for almost two years, I want to move on. However, I would love for this project to get a little size and see what people do with it. I'll do whatever work is required to make it easy and fun for other people to build their own. 
+![idk. picture of another setup maybe? if anyone makes one]()
 
-Im mad about the RPI shortage. 10x prices, and raiesd prices for the forseeable future. [This will affect the project completion rate I think.](https://img.ifunny.co/images/3cda13b1552639d8ec84701bdcb205179f6a4b143e1907bdf1fac2fbf843eac4_1.webp)
+I kind of want to put this project to rest. the DSN brainrot has lasted for almost two years, I want to move on. However, I would love for this project to get a little size and see what people do with it. I'll do whatever work is required to make it easy and fun for other people to build their own. Comments and issues on GitHub will decide the future of the project.
 
+Thanks for reading.
