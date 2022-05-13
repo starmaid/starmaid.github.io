@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Pulse of Exploration (mini)
+title: Pulse of Exploration
 tags: Raspberry Pi, LED, lights
 ---
 
-![](../img/pulse/pic1.gif)
+![](/blog/img/pulse/pic1.gif)
 
 *Written in May 2022*
 
@@ -29,7 +29,7 @@ A fun decorative light that reacts when a downlink or uplink travels over the De
 
 I continually updated DSNBot until mid 2021, adding new features and using it as a testing ground.
 
-![dsnbot gif?]()
+![dsnbot gif?](/blog/img/pulse/dsn.gif)
 
 **August 2021**
 
@@ -58,15 +58,22 @@ I believe I met all of the requirements.
 
 ### Build
 
-![image of the pile of supplies]()
+![image of the pile of supplies](/blog/img/pulse/supplies.jpg)
 
 I saw a good opportunity to refresh my knowledge of multithreading in Python, and it was basically textbook. Three threads (Lights, SequenceManager, and DSN) passing data around with an asynchronus queue.
 
 My original plan was to use DSN polling code from DSNBot, but I had structured it in a method that didn't get me the data I wanted. I ended up rewriting most of it.
 
-I knew I wanted to play custom animations on the sky section, but was not sure how I would store them. Until now, I control all my lights with sine curves and raw RGB values. I had a breakthrough about how to store a set of 1D frames efficiently, and how to edit them quickly. The idea of 2D images felt amazing to think of, even if its not original. I havent researched it or anything. A second idea came when I realized the animations could be, in 2D, pixel art of the planets they represent.
+I knew I wanted to play custom animations on the sky section, but was not sure how I would store them. Until now, I control all my lights with sine curves and raw RGB values. I had a breakthrough about how to store a set of 1D frames efficiently, and how to edit them quickly - 2D images.
 
-![pic of pixel art as frames in an animation]()
+![](/blog/img/pulse/frame1.png)
+![](/blog/img/pulse/frame2.png)
+
+A second idea came when I realized the animations could be, in 2D, pixel art of the planets they represent.
+
+![](/blog/img/pulse/Mars.png)
+
+![](/blog/img/pulse/pic2.gif)
 
 As for physical setup, I was thinking about 3D printing something. But I got lazy and tired, and just made it out of Dollar Tree Redi-Board. This is faster and more prototype-style than a full 3D print, and it gets the job done.
 
@@ -111,8 +118,9 @@ There is currently (May 2022) a shortage of all Raspberry Pi computers.. 10x pri
 
 ## Future
 
-![idk. picture of another setup maybe? if anyone makes one]()
+![](/blog/img/pulse/pic2.gif)
 
 I kind of want to put this project to rest. the DSN brainrot has lasted for almost two years, I want to move on. However, I would love for this project to get a little size and see what people do with it. I'll do whatever work is required to make it easy and fun for other people to build their own. Comments and issues on GitHub will decide the future of the project.
 
 Thanks for reading.
+
