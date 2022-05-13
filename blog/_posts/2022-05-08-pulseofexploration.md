@@ -18,8 +18,8 @@ A fun decorative light that reacts when a downlink or uplink travels over the De
 
 **July 2019**
 
-- Was talking about the [Deep Space Network](https://en.wikipedia.org/wiki/NASA_Deep_Space_Network) and the [Pulse of Exploration](https://vimeo.com/93420747) with my friends on the Mars Helicopter team who went down to JPL.
-- While talking to different friend about visualizing data in cool and fun ways. Reminded of DSN.
+- Was talking about the [Deep Space Network](https://en.wikipedia.org/wiki/NASA_Deep_Space_Network) with my friends on the Mars Helicopter team who went down to JPL.
+- A friend brough up the [Pulse of Exploration](https://vimeo.com/93420747) while talking about visualizing data in cool and fun ways.
 - Found a project blog post about polling DSN Now. (Can't find it anymore).
 
 **Oct 2020**
