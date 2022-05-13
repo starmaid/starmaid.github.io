@@ -118,7 +118,7 @@ There is currently (May 2022) a shortage of all Raspberry Pi computers.. 10x pri
 
 ## Future
 
-![](/blog/img/pulse/pic2.gif)
+![](/blog/img/pulse/pic3.gif)
 
 I kind of want to put this project to rest. the DSN brainrot has lasted for almost two years, I want to move on. However, I would love for this project to get a little size and see what people do with it. I'll do whatever work is required to make it easy and fun for other people to build their own. Comments and issues on GitHub will decide the future of the project.
 
