@@ -2,6 +2,8 @@
 layout: post
 title: Pulse of Exploration
 tags: Raspberry Pi, LED, lights
+image:
+  path: /blog/img/pulse/pic1.gif
 ---
 
 ![](/blog/img/pulse/pic1.gif)
