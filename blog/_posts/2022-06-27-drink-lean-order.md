@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Miku Drink Lean Shirt Order
+title: Drink Lean Shirt Order
 tags: shirt sale
 image:
   path: /blog/img/mikudrinklean/2.jpg
