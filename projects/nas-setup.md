@@ -3,6 +3,8 @@ layout: post
 title: Setting up a NAS on a Raspberry Pi
 comments: false
 tags: NAS wireguard vpn raspberrypi raspberry linux development
+image:
+  path: /projects/nas-setup_assets/nas.jpg
 ---
 
 ![image.](./nas-setup_assets/nas.jpg)
@@ -208,7 +210,7 @@ Sorry I only know about Windows and Linux. When youre on your home network? Just
 
 ![windows network discovery](./nas-setup_assets/win-network.png)
 
-When you're connected to VPN, it might be different. By default, PIVPN will set `10.0.6.1` as the address for your VPN, which is also your NAS (remember?). Just map a network drive to that address.
+When you're connected to VPN, it might be different. By default, PIVPN will set `10.6.0.1` as the address for your VPN, which is also your NAS (remember?). Just map a network drive to that address.
 
 ### Phone
 
