@@ -7,7 +7,7 @@ image:
   path: /projects/nas-setup_assets/nas.jpg
 ---
 
-![image.](./nas-setup_assets/nas.jpg)
+![image.](/projects/nas-setup_assets/nas.jpg)
 
 *Written October 2022*
 
@@ -65,7 +65,7 @@ you can save this file as `wpa_supplicant.conf` to the root of the `boot` direct
 ### The Dorm Setup
 
 - You use internet provided by your housing
-- The network is an enterprise-managed
+- The network is enterprise-managed
 
 You may have a saving grace here depending on your setup. Many universities got on the Internet Train early, and give each wired Ethernet port a unique, exposed, public IP address, for students to do cool things like this. Purdue offered this (when I was there) in at least Honors, TSS, and Shreve.  
 
@@ -222,8 +222,8 @@ I enabled FTP on my NAS, and set a separate share that allows only certain users
 
 ```
 ftp -i starmaid.us.to
-public
-starsfiles
+username
+password
 binary
 cd /Public/cyber
 mget .
@@ -231,5 +231,5 @@ bye
 ```
 
 ```
-wget -r ftp://public:starsfiles@starmaid.us.to/Public/cyber/
+wget -r ftp://username:password@starmaid.us.to/Public/cyber/
 ```
