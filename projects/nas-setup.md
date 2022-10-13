@@ -5,7 +5,9 @@ comments: false
 tags: NAS wireguard vpn raspberrypi raspberry linux development
 ---
 
-Written October 2022
+![image.](./nas-setup_assets/nas.jpg)
+
+*Written October 2022*
 
 This guide walks through ALL the steps for setting up a truly useful NAS (Network Attached Storage) with a Raspberry Pi on your network, wherever you live.
 
@@ -138,8 +140,94 @@ TLDR:
     wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash
     ```
 
+Afterwards you can navigate to the server in a web browser and configure it how you like. You will have to
+
+- Format and set your USB drive as a storage drive
+- Enable SMB/FTP/whatever other services you want
+- Set credentials for users etc.
+
 ## VPN Software
 
-I use WireGuard.
+I use [PIVPN](https://pivpn.io/), which uses [Wireguard](https://www.wireguard.com/). 
+
+### Installation
+
+You're still SSH'd into that RPi, right?
+
+```
+curl -L https://install.pivpn.io | bash
+```
+
+Now you can use all the fun PIVPN commands
+
+```
+# figure out wtf youre doing
+sudo pivpn -h
+
+# add a client
+sudo pivpn add
+
+# show the status of an interface, or its configuration
+sudo wg show wg0
+sudo wg showconf wg0
+
+sudo pivpn -c
+
+sudo pivpn -r name
+```
+
+[Download the WireGuard VPN Client](https://www.wireguard.com/install/). Add a client for yourself. Add one for your phone.
+
+### Monitoring
+
+If you're like me, you like to share access to things. I have a few close people with VPN keys. But I like to know whos in my house. I have a cron script that reports who was connected and when. Its a work in progress. And by that i mean I used zero effort and will parse this into real output later, and add notifications.
+
+in `/home/pi/logconn.sh`
+```
+#!/bin/bash
+
+FILE="/home/pi/connections.log"
+
+date >> $FILE
+sudo wg show wg0 >> $FILE
+echo "" >> $FILE
+```
+
+in crontab, run daily at midnight.
+```
+0 0 * * * sudo /home/pi/logconn.sh
+```
 
 ## Connecting Devices
+
+Once you have everything set up, you want to put some files on there!
+
+### Computers
+
+Sorry I only know about Windows and Linux. When youre on your home network? Just go to Local Network, and the hostname should show up.
+
+![windows network discovery](./nas-setup_assets/win-network.png)
+
+When you're connected to VPN, it might be different. By default, PIVPN will set `10.0.6.1` as the address for your VPN, which is also your NAS (remember?). Just map a network drive to that address.
+
+### Phone
+
+I use CX File Explorer on Android, which can connect to network file shares easily.
+
+### FTP
+
+I enabled FTP on my NAS, and set a separate share that allows only certain users to connect. Theres guides on how to use FTP.
+
+```
+ftp -i starmaid.us.to
+public
+starsfiles
+binary
+cd /Public/cyber
+mget .
+bye
+```
+
+```
+wget -r ftp://public:starsfiles@starmaid.us.to/Public/cyber/
+```

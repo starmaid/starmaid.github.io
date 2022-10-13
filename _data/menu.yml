@@ -22,6 +22,8 @@ entries:
     post_list: false
     url: false
     entries:
+      - title: NAS+VPN Raspberry Pi Setup
+        url: ./projects/nas-setup
       - title: 2022 Stuff Post
         url: ./projects/2022_art
       - title: CNC Drawing Arm
