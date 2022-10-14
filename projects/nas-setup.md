@@ -195,10 +195,44 @@ sudo wg show wg0 >> $FILE
 echo "" >> $FILE
 ```
 
-in crontab, run daily at midnight.
+## Crontab
+
+Cron, and its configuration tool Crontab, handle scheduled tasks on Unix. We need to schedule two tasks.
+
+On your rpi, enter the configuration with
+
+```
+crontab -e
+```
+
+It may prompt you to select a text editor, use whichever one you like. 
+
+Remember the script we saved from FreeDNS.afraid? In the crontab, paste the line that executes. I changed the line to only run once an hour, instead of every 5 minutes.
+
+```
+0 * * * * sleep 23 ; curl -s http://sync.afraid.org/u/xxxxxxxxxxxx/ >> /tmp/file.log 2>/dev/null
+```
+
+Additionally, add a line for running your vpn connection monitoring command daily at midnight. PIVPN removes logs 24 hours after the connection was lost, so we need to get them at least every 24 hours. You will also need to periodically delete this file. I'm saving it so it keeps the last two years maximum. It will grow around about 1KB per day, depending on how many connections you have. 
+
 ```
 0 0 * * * sudo /home/pi/logconn.sh
+@yearly sudo mv /home/pi/connections.log /home/pi/conLastYear.log
 ```
+
+There are aliases for things like daily and yearly. Look it up.
+
+## Router Configuration
+
+You need to do two things on your router. You can usually get to the admin control by web browsing to `192.168.0.1`. 
+
+First is assign your Pi a static DHCP allocation. This makes sure that it is always at the same local IP address.
+
+![](./nas-setup_assets/dhcp.png)
+
+Second is to forward the PIVPN port to the address you jsut saved. By default the port number for VPN connections is 51820.
+
+![](./nas-setup_assets/portforward.png)
 
 ## Connecting Devices
 
