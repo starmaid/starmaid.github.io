@@ -1,0 +1,25 @@
+<div style="display: flex; justify-content: center">
+    <div>
+        <button onclick='
+            if (document.getElementById("t{{ include.id }}").style.visibility == "visible") {
+                document.getElementById("t{{ include.id }}").style.visibility="hidden"
+                
+                hush()
+            } else {
+                document.getElementById("t{{ include.id }}").style.visibility="visible"
+                eval("{{ include.script }}")
+            }
+            '>Click to toggle hydra embed</button>
+    </div>
+    
+    <div id="t{{ include.id }}" style="visibility: hidden;">
+        <canvas id={{ include.id }} style="height: 15rem; max-width: 20rem;">
+            <script>
+            var hydra = new Hydra({ 
+                canvas: document.getElementById("{{ include.id }}"), 
+                //makeGlobal: false, 
+                detectAudio: eval("{{ include.audio }}") })
+            </script>
+        </canvas>
+    </div>
+</div>

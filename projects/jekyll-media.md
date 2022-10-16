@@ -47,3 +47,13 @@ And insert this where you want the player
 ```
 
 {% include spotify_embed.html id="1n7omixiROWs5q6xpWiQuL" %}
+
+## Hydra
+
+Check out [The hydra-synth github](https://github.com/hydra-synth/hydra-synth) for more information.
+
+{% include hydra_header.html %}
+
+{% include hydra_embed.html id="whatever2" audio="false" script="osc(4, 0.1, 1.2).out()" %}
+
+{% include hydra_embed.html id="whatever3" audio="false" script="osc(20, 0.1, 2.1).out()" %}
