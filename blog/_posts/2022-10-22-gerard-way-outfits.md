@@ -1,4 +1,4 @@
-may---
+---
 layout: post
 title: Gerard Way's 2022 NA Tour Outfits
 tags: MCR, My Chemical Romance, Gerard Way, MCR 2022
