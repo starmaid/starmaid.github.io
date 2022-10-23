@@ -6,7 +6,7 @@ tags: MCR, My Chemical Romance, Gerard Way, MCR 2022
 
 I like making lists. Heres every outfit from the 2022 North America tour, in order, with links.
 
-### Camo Jacket
+### Camo Clown
 
 ![](/blog/img/gerardway/20220820.jpg)
 
