@@ -8,30 +8,16 @@ image:
 
 ![](/blog/img/mikudrinklean/1.jpg)
 
-Heres the rundown folks:
+Thanks for checking out this page! The original run for this shirt ended on July 4th 2022, but that doesn't mean you can't still get your hands on one. I have a limited supply of shirts in most sizes.
 
-- Its 10 US dollars to cover cost
-- I will ship anywhere. Idgaf. In the US thats probably going to be like another 10 bucks. International...that might be more.
-- Every shirt is printed by hand, there will be unique variations, paint color may change slightly between shirts.
+- a shirt + shipping in the US is $40. I'm just combining them for an easy number
+- a shirt + shipping international will be more, depending where you are. Email me for queries.
 
-I'll close orders on July 4th, so I can move onto the next design.
+How to get a shirt:
 
-## How this is going to work:
-
-1. You fill out this form
-2. I stop accepting responses on July 4
-3. I start making shirts
-
-### IF IM HANDING U THE SHIRT ($10)
-
-4. u pay me when i hand it to u
-
-### IF IM SHIPPING U THE SHIRT ($10+shipping)
-
-4. I find how much it'll cost and tell you
-5. you send me tha money
-6. I put it in the mail
-
-[Order Form!!!!!!!!!!!!!!!!!!!!!!!!!!!!!](https://forms.gle/Rg2izUXAWPdzk4uE8)
+1. Email me at nmasso [at] protonmail.com with your size and color preference (b/w)
+2. I will email you back if I have it/the closest thing I have, as well as how to pay me (paypal or venmo)
+3. You send tha $$$
+4. I send the shirt
 
 ![](/blog/img/mikudrinklean/2.jpg)

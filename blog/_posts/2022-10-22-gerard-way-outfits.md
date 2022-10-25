@@ -134,7 +134,7 @@ I like making lists. Heres every outfit from the 2022 North America tour, in ord
 
 [2022-09-20 - Prudential Center, Newark, NJ, US](https://velvetdestroya.tumblr.com/post/695969997213810688/super-heroes-do-exist-gee-slaying-it-during-day-1)
 
-### Caisno Brawl
+### Casino Brawl
 
 ![](/blog/img/gerardway/20220921-2.jpg)
 
