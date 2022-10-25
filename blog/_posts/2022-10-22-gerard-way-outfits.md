@@ -233,3 +233,4 @@ I like making lists. Heres every outfit from the 2022 North America tour, in ord
 [2022-10-17 - Kia Forum, Inglewood, CA, US Day 5](https://velvetdestroya.tumblr.com/post/698536297820815360/you-only-live-forever-in-the-lights-you-make-day)
 
 
+More outfits pending as the tour continues
