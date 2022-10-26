@@ -24,12 +24,8 @@ entries:
     entries:
       - title: NAS+VPN Raspberry Pi Setup
         url: ./projects/nas-setup
-      - title: 2022 Stuff Post
-        url: ./projects/2022_art
       - title: CNC Drawing Arm
         url: ./projects/robot-arm
-      - title: 2021 Stuff Post
-        url: ./projects/2021_art
       - title: HALLIE custom lighting
         url: ./projects/hallie-lights
       - title: motorized cat ears
