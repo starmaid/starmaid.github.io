@@ -6,7 +6,7 @@ tags: dorm, stanford university
 
 ![](/blog/img/bed/3.jpg)
 
-This post describes how my friend [Briar](website.com) and I made a width extender for a twin -> full sized bed. This one is for sure compatible with the dorm bedframes at Stanford University, but might come in handy in your dorm too! The design is far from original.
+This post describes how my friend [Briar](https://www.instagram.com/belaphabet/) and I made a width extender for a twin -> full sized bed. This one is for sure compatible with the dorm bedframes at Stanford University, but might come in handy in your dorm too! The design is far from original.
 
 All dimensions are in US Imperial Units, because you are probably going to a US hardware store.
 
@@ -15,6 +15,8 @@ All dimensions are in US Imperial Units, because you are probably going to a US 
 ### The bedframe
 
 A Twin XL bedframe is `36" x 80"`, theoretically. Your bedframe should be this size.
+
+A full-sized mattress is `54" x 75"`. We need to increase the width to match this.
 
 ### Tools
 
@@ -46,7 +48,7 @@ Use the jigsaw and make all these cuts.
 
 ![](/blog/img/bed/cuts.png)
 
-Then, for all `52"` pieces, use the jigsaw to round the corners. Be careful and keep control of the blade.
+Then, for all `52"` pieces, use the jigsaw to round the corners. Be careful and keep control of the blade. Also, dont leave extra material. These are the width pieces, which should be slightly less than the width of your full-sized mattress (`54"`).
 
 ![](/blog/img/bed/rounded.png)
 
