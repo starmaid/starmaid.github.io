@@ -10,7 +10,7 @@ Written 12/29/2020
 
 ## Goals
 
-Make a set of wearable cat ears react to ambient music and sounds. Suggested by [@dashconbabyofficial](https://dashconbabyofficial.tumblr.com/) on Tumblr. I also wanted to complete the project while livestreaming on Twitch.
+Make a set of wearable cat ears react to ambient music and sounds. Suggested by [bonnie](https://littlemisspipebomb.tumblr.com/) on Tumblr. I also wanted to complete the project while livestreaming on Twitch.
 
 ## Hardware Design
 
