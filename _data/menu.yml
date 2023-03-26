@@ -12,7 +12,7 @@ entries:
       - title: github
         url: https://github.com/starmaid
       - title: resume
-        url: https://github.com/starmaid/starmaid.github.io/blob/master/resume.pdf
+        url: resume
       - title: links
         url: links
       - title: conferences
