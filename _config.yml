@@ -12,6 +12,9 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
 
+# default path is feed.xml but ive historically had it at /feed
+feed:
+  path: /feed
 
 #remote_theme: riggraz/no-style-please
 
