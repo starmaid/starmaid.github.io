@@ -48,11 +48,11 @@ I liked the idea of a super slim row of knobs, that can be oriented however fits
 
 ### Aside about CAD
 
-I started modeling this in blender using the [CAD Sketcher Plugin](), but found one massive limitation: **You cannot reference geometry from a different out-of-plane sketch.** Especially if that geometry has since been extruded. By the looks of it, this is a limitation that will never be fixed. The 'Thicken' modifier that functions as extrude will forever create meshes, not parameterized geometry. Also, even creating a sketch on a face seems to be missing. This plugin, while awesome, will never match true parameterized modeling (but I will keep using it for my Blender-native projects as needed, to quickly generate properly-sized objects).
+I started modeling this in blender using the [CAD Sketcher Plugin](https://www.cadsketcher.com/), but found one massive limitation: **You cannot reference geometry from a different out-of-plane sketch.** Especially if that geometry has since been extruded. By the looks of it, this is a limitation that will never be fixed. The 'Thicken' modifier that functions as extrude will forever create meshes, not parameterized geometry. Also, even creating a sketch on a face seems to be missing. This plugin, while awesome, will never match true parameterized modeling (but I will keep using it for my Blender-native projects as needed, to quickly generate properly-sized objects).
 
 ![](/blog/img/midiknobs/4_blender.png)
 
-So I opened up [FreeCAD](), something I had put down about two years ago when I got frustrated after not immediately understanding everything about it. I read their (very helpful) wiki and got to work. It was much easier than I remembered! I must have been drunk or impatient when I tried it the first time. I even used the spreadsheet for named parameters. And I didn't even need to pirate solidworks!
+So I opened up [FreeCAD](https://www.freecad.org/), something I had put down about two years ago when I got frustrated after not immediately understanding everything about it. I read their (very helpful) wiki and got to work. It was much easier than I remembered! I must have been drunk or impatient when I tried it the first time. I even used the spreadsheet for named parameters. And I didn't even need to pirate solidworks!
 
 ![](/blog/img/midiknobs/5_freecad.png)
 
@@ -64,7 +64,7 @@ Heres a list of the stuff inside one knob bank:
 
 |   Item    |   Qty.  |   I paid...    |
 |   ---     |   ---   |   ---     |
-| [3D printed case (0.04 kg)]() | 1 | $1 |
+| [3D printed case (0.04 kg)](https://www.thingiverse.com/thing:5989952) | 1 | $1 |
 | [Arduino Pro Micro](https://www.amazon.com/dp/B08THVMQ46) | 1 | $7
 | [B10K Potentiometer](https://www.amazon.com/dp/B07VQTFFGC) | 8 | $5 |
 | (optional stuff below) | --- | --- |
