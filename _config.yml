@@ -5,6 +5,8 @@ url: https://starmaid.github.io # root address of the site
 description: > 
   I am Calypso and this page is my island
 
+permalink: /:categories/:title/
+
 # Build settings
 markdown: kramdown
 plugins: 

@@ -9,7 +9,7 @@ By Nicholas Masso
 
 Written July 2020
 
-![Image of an rpi 3B+](./matrix_assets/Picture1.png)
+![Image of an rpi 3B+](/projects/img//matrix_assets/Picture1.png)
 
 Update August 2021: Added a comments section.
 
@@ -41,7 +41,7 @@ Your computer will also need to be able to resolve zero-configuration networking
 - All computers running a Unix-based OS (including all Mac OS versions) can do this by default. No action is required.
 - Computers running Windows must install a Zeroconf resolution service. Apple has a patent on [Bonjour](https://support.apple.com/kb/DL999) which you will have to download and install. 
 
-![Another image of an RPI 3B+](./matrix_assets/Picture2.jpg)
+![Another image of an RPI 3B+](/projects/img//matrix_assets/Picture2.jpg)
  
 ## Steps
 
@@ -55,7 +55,7 @@ Your computer will also need to be able to resolve zero-configuration networking
 
 3. Create an empty file called "ssh" and copy it to the boot directory of the SD card. This will enable SSH communication on the Raspberry Pi without connecting a keyboard. 
 
-    ![](./matrix_assets/Picture3.png)
+    ![](/projects/img//matrix_assets/Picture3.png)
 
     **WARNING:** If you do not have a case for the Raspberry Pi, make sure it is not resting on a metal or otherwise conductive surface when you power it on. This could cause a short between the exposed pins of the Pi and destroy it. If necessary, put a nonconductive object underneath it.
 
@@ -66,7 +66,7 @@ Your computer will also need to be able to resolve zero-configuration networking
     The default username is “pi”
     The default password is “raspberry”
 
-    ![](./matrix_assets/Picture4.png)
+    ![](/projects/img//matrix_assets/Picture4.png)
 
 6. Use the Raspberry Pi Software Configuration Tool to change defaults of the Pi. Running this command will open the graphical program to assist with changing some of the system details.
 
@@ -74,7 +74,7 @@ Your computer will also need to be able to resolve zero-configuration networking
     $ sudo raspi-config
     ```
 
-    ![](./matrix_assets/Picture5.png)
+    ![](/projects/img//matrix_assets/Picture5.png)
 
     a. Change the user password to something strong. Keep track of this password. A typical way to set strong passwords is [to use 3-4 short words.](https://xkcd.com/936/) This is easy to remember and hard to break.
 
@@ -133,7 +133,7 @@ Most commands we are going to run in this section of the guide will be done with
 
     The command prompt should change as shown below. This terminal session now has root authority.
 
-    ![](./matrix_assets/Picture6.png)
+    ![](/projects/img//matrix_assets/Picture6.png)
 
 16. Now we have to update all the software that came with the image for the pi. this may take a moment, as there may be several updates.
 
@@ -271,7 +271,7 @@ Now we get to start installing the programs which run the server itself.
 
 30. Now we will find the line we want to uncomment by searching for `enable_registration` (ctrl+w). Find the correct line and uncomment it, and change `false` to `true`
 
-    ![](./matrix_assets/Picture7.png)
+    ![](/projects/img//matrix_assets/Picture7.png)
 
 31. Save and close the file once you are done.
 
@@ -293,7 +293,7 @@ These steps will register the first user so that we can log into the server and 
 
     Several messages will be printed to the screen. At the end, the program should say the program has been started.
 
-    ![](./matrix_assets/Picture8.png)
+    ![](/projects/img//matrix_assets/Picture8.png)
 
 34. Run the user configuration program with
 
@@ -340,19 +340,19 @@ $ synctl start 
 
 Now that the server is running, you can download a messaging client to your computer, smartphone, or simply navigate to [https://riot.im/app/#/login](https://riot.im/app/#/login) with a web browser. 
 
-![](./matrix_assets/Picture9.png)
+![](/projects/img//matrix_assets/Picture9.png)
 
 When you are at the login screen, click “change” to specify your own homeserver to log into.
 
-![](./matrix_assets/Picture10.png)
+![](/projects/img//matrix_assets/Picture10.png)
 
 Enter your domain name here, and click next.
 
-![](./matrix_assets/Picture11.png)
+![](/projects/img//matrix_assets/Picture11.png)
 
 You should be able to enter the username and password you created in the earlier steps. You will be greeted by a homepage, were you can create and join communities.
 
-![](./matrix_assets/Picture12.png)
+![](/projects/img//matrix_assets/Picture12.png)
 
 ## Conclusion
 
@@ -360,12 +360,12 @@ At the end of this document, you should have logged in to your server. You will 
 
 You also need to be mindful of the Raspberry Pi running the server. If you unplug the device, nobody who has an account on the server will be able to send messages – you could possibly invest in an uninterruptible power supply (UPS) to power your router and Raspberry Pi with, in the event your house loses power. Perhaps supply your email address to your members so that they can contact you if a problem arises.
 
-![](./matrix_assets/Picture13.jpg)
+![](/projects/img//matrix_assets/Picture13.jpg)
 
 *An Uninterruptible Power Supply could last without mains power for a long time!*
 
 As the owner and administrator of your server, you need to be responsible for the things that go on inside your server. Perhaps create a set of rules for people who join, and make sure to remove people who spread hate or are not trustworthy. The security of your server’s content depends on the least trustworthy person who can read your messages! Most of all, have fun! You are now a pioneer of a new, safer form of communication.
 
-![](./matrix_assets/Picture14.png)
+![](/projects/img//matrix_assets/Picture14.png)
  
 *Make sure rooms you chat in have a notification like this.*

@@ -6,6 +6,4 @@ layout: post
 
 [youtube](https://www.youtube.com/channel/UCivBhBxzvCoFis6yRGE5o2A)
 
-[RETHi research lab](https://www.purdue.edu/rethi/)
 
-[Purdue Orbital](https://www.purdueorbital.com/)

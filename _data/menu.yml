@@ -19,36 +19,20 @@ entries:
         url: conferences
 
   - title: projects
-    post_list: false
-    url: false
-    entries:
-      - title: NAS+VPN Raspberry Pi Setup
-        url: ./projects/nas-setup
-      - title: CNC Drawing Arm
-        url: ./projects/robot-arm
-      - title: HALLIE custom lighting
-        url: ./projects/hallie-lights
-      - title: motorized cat ears
-        url: ./projects/cat-ears
-      - title: bitwise social media site
-        url: ./projects/bitwise-social
-      - title: matrix/synapse setup on rpi
-        url: ./projects/matrix-setup
-      - title: raspberry pi GPIO and plants
-        url: ./projects/plants
-      - title: jekyll media embeds
-        url: ./projects/jekyll-media
-      - title: creating a Raspberry Pi OS image
-        url: ./projects/rpi-img
-      - title: flashing a disk image on linux
-        url: ./projects/flash-img
-      - title: raspberry pi minecraft install script
-        url: ./projects/mc-install
+    post_list:
+      category: projects
+      limit: 10
+      show_more: true
+      show_more_text: see all projects...
+      show_more_url: ./archives/archive-project
 
   - title: blog
-    post_list: true
-    url: false
-    entries:
-      - title: subscribe to this blog!
-        url: /feed
-
+    post_list:
+      category: blog
+      limit: 5
+      show_more: true
+      show_more_text: see all posts...
+      show_more_url: ./archives/archive-blog
+  
+  - title: subscribe to this blog!
+    url: /feed

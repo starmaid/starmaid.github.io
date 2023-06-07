@@ -2,6 +2,7 @@
 layout: post
 title: Raspberry Pi Minecraft Install Script
 tags: raspberrypi, rpi, minecraft, java, install
+category: project
 ---
 
 Written May 2020

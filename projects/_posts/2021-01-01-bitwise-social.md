@@ -3,6 +3,7 @@ layout: post
 title: Bitwise
 comments: true
 tags: ["web development", javascript, firebase, firestore, google, html, "social media"]
+category: project
 ---
 
 Written January 2021
@@ -11,7 +12,7 @@ Written January 2021
 
 [Link to the project github repo](https://github.com/mchartigan/bitwise/)
 
-![logo](./bitwise_assets/logo.png)
+![logo](/projects/img//bitwise_assets/logo.png)
 
 ## Introduction
 
@@ -73,11 +74,11 @@ li.appendChild(cross); // delete button
 postList.append(li);
 ```
 
-![](./bitwise_assets/2.PNG)
+![](/projects/img//bitwise_assets/2.PNG)
 
 This section of code worked. Querying the database, creating a HTML list, and adding it to the DOM works! This was a way to access the database, and then we could do other tests like modifying, adding, and removing data and then checking by reloading the homepage. We were working with what we knew, and that was barebones HTML. Its just very hard to do anything afterwards with this model, there was no room to grow. This was one representative piece that really shows the mood of what we had at the end of the first sprint. 
 
-![](./bitwise_assets/3.PNG)
+![](/projects/img//bitwise_assets/3.PNG)
 
 While I was starting to get the database working, Mark was hard at work on authentication, and Zach G and Kyle were getting their hands dirty learning how to style things and even a little bit of Semantic UI and React. 
 
@@ -91,13 +92,13 @@ One of the bigger issues we had this sprint was redundancy while coding. The cau
 
 The conversion to React elements for the whole website was our next big project. Zach G and Mark spearheaded this effort, and did some amazing work on creating these dynamic elements. Mark attempted to turn the firebase project into a react project, but that didnt quite seem to work. The proper order should be to create a React.js project, and then add Firebase integration. To get the functionality though, he was able to implement React without making the whole project compliant.
 
-![](./bitwise_assets/4.gif)
+![](/projects/img//bitwise_assets/4.gif)
 
 Zach, who then got to work on converting the UI elements, kept the basic design of the pages as we outlined in the first sprint. Keeping in mind the objective of having a light mode/dark mode, he added some top-level variables that would set the color of UI elements dynamically. He also recreated the Post as a react element, with much more functionality and some visual responsiveness to actions. This was completed with the Semantic and Fomantic UI elements. 
 
 One of my main tasks was to get unique pages for users, topics, and posts. I wanted to use the CRUD method, with a `bitwise.com/user?u=USERNAME` kind of layout that would grab that POST data and give you back the necessary information from the server. However, I was having issues with how firebase Functions work, and they cant call the `sendFile` function, as the Firebase Functions run in their own sandbox away from the website data. I could have worked them harder to do both a redirect and then a function that would run on the same event, but we were on a tight schedule with many other tasks to cover.
 
-![](./bitwise_assets/5.gif)
+![](/projects/img//bitwise_assets/5.gif)
 
 Here is the Firebase Function I attempted to use for the page redirect.
 
@@ -221,7 +222,7 @@ function pageMounted() {
 
 This template is very similar for the post- and topic-specific pages, with only calls to different databases. Looking at this section, you might quickly see the major drawback. If you try to navigate to a user that doesnt exist, the webpage is already *fully loaded*, and you also have to wait for Firebase to get back with the "not found" message **before** you can even redirect to the 404 page, which then still has to load. Like I mentioned earlier, a quick Function may have been able to do some of this work and then send the profile page along with some JSON data that would make things a lot faster.
 
-![](./bitwise_assets/6.gif)
+![](/projects/img//bitwise_assets/6.gif)
 
 Other tasks that were covered include all post interactions (liking, disliking, saving, and commenting) which used some really nice linked list techniques in the database. 
 
@@ -229,17 +230,17 @@ Other tasks that were covered include all post interactions (liking, disliking, 
 
 The third (and final) sprint had more integration that the previous two sprints did, as well as a fair amount of cleanup that was required to make the site as a whole functional and achieve the requirements we set for ourselves. 
 
-![](./bitwise_assets/7.gif)
+![](/projects/img//bitwise_assets/7.gif)
 
 One great improvement that Mark made was implementing Markdown formatting and image attachments to the post utility. This makes the posts have so much more power, moving from something as limited like twitter to a more powerful platform like Reddit or Tumblr. Both Zachs worked on improving the Delete button, which lacked any confirmation or even removing the post from the screen. Now it shows the user the post was deleted on a success, as well as denying unauthorized deletions.
 
-![](./bitwise_assets/8.gif)
+![](/projects/img//bitwise_assets/8.gif)
 
 One of my major tasks was to implement the rules set forward in the Web Content Accessibility Guidelines (WCAG) which was an absolute breeze - Mozilla Firefox browser's accessibility tab under the developer menu uses the most up-to-date guidelines, and programatically checks for compliance. It tells exactly which elements are deviating, and I used them to add tab-navigation and onClick methods to UI elements that needed to be keyboard navigable. I had to do some color inversion for certain elements, but our simple website already fulfilled most criteria without much struggle.
 
 Here you can see me enable the tool on our current website, which is actually fully conformant. You can see a warning on the background for not being selectable, but this is by design.
 
-![](./bitwise_assets/9.gif)
+![](/projects/img//bitwise_assets/9.gif)
 
 My last large task was to fix my implementation of infinite scrolling. When the site was HTML-based, I had found a simple scrolling detector that looked at the window height, page height, and height of certain elements. It would detect when the user had gotten close to the bottom of the loaded page, and then append HTML elements to the DOM. This had to be reworked with the ReactDOM rendering pipeline now that we had converted over.
 
@@ -421,7 +422,7 @@ The `loaded` variable is basically "is the script not currently attempting to ge
 
 Sorry about the huge code block. So many things in here I really wished I could have found examples of while writing, and there was a lot of trial-and-error while under tight deadlines. If this can help someone, if Google indexes this instead of leaving the content in a file on Github, I'll call it a success.
 
-![](./bitwise_assets/10.gif)
+![](/projects/img//bitwise_assets/10.gif)
 
 We finished this sprint, and then were completely ready for our final demonstration to the grader. I personally wish we had been able to show it off more, the TA mentioned we put a lot of good work into this that some of the other groups had not. In a non-COVID semester, we would have gone up in front of the lecture hall and presented live. But we were all very happy with the work we did, and were even a little sad to be done. 
 
