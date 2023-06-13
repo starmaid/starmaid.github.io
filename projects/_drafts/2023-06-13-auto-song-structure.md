@@ -8,6 +8,8 @@ tags: audio, music, librosa
 
 I wanted to learn a little bit about AI, and hopefully make my sightreading a little bit faster.
 
+[project on github]()
+
 ## Preface: what are Song Structure Sheets?
 
 I like making these sheets. Started when playing with parents and bianco because we had to learn a lot of songs fast. good for playing along, and also good for remembering lyrics when you already mostly know how they go.
@@ -24,13 +26,7 @@ Generating them is relatively time-intensive, especially if I have never heard t
 
 ## Idea
 
-I have miraculously avoided any machine learning so far. I finally wanted to change that.
-
-This project seems well-bounded, and deterministic based on patterns that are easily human-recognizable. This seemed like a good option to get started.
-
-
-
-
+I have miraculously avoided any machine learning so far, and I finally wanted to change that. Finding some task that needs pattern recognition is the simplest candidate. Creating these song charts seems well-bounded, and deterministic based on patterns that are easily human-recognizable. This seemed like a good option to get started.
 
 ## Prior Art
 
@@ -85,3 +81,14 @@ However, I decided to keep things quiet and focus on the meat of the problem bef
 
 ## An Analytic Solution
 
+I wanted to finish the pipeline from song to sheet, so I started working on the parts after the individual sections of the song are identified. This includes determining tempo, and writing out the length and number of repeats of the other sections.
+
+This could be done with librosa and beat detection. Some simple math sorts repeats out by likelihood, but isn't perfect. The beat detection is also not perfect, but it is simple enough.
+
+[screenshot of money machine and the beat tracks]
+
+This, combined with manually labeling the tracks in Audacity, is the minimum we can do to make a useful track chart. This leaves the user with the only need to add lyrics and notes, and then touch up the formatting and colors.
+
+## Descision on AI
+
+With the manual solution, I made two charts for songs, and it was pretty quick and easy. Then I realized i was bored, and stopped. AI would be minimally effective, and hard to train. I will have to keep looking for a good project to apply AI to.
