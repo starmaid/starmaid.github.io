@@ -4,6 +4,8 @@ title: Auto Song Structure
 tags: audio, music, librosa
 ---
 
+![Pic of band room](../img/2023-06-13-auto-song-structure/image.png)
+
 *Written June 2023*
 
 I wanted to learn a little bit about AI, and hopefully make my sightreading a little bit faster.
@@ -14,13 +16,15 @@ I wanted to learn a little bit about AI, and hopefully make my sightreading a li
 
 I like making these sheets. Started when playing with parents and bianco because we had to learn a lot of songs fast. good for playing along, and also good for remembering lyrics when you already mostly know how they go.
 
-[pic of the deftones sheet]
+![pic of the deftones sheet](../img/2023-06-13-auto-song-structure/image-2.png)
 
 They have solidified into this format. I am pretty satisfied and know all i need to know on drums. 
 
 Maybe more chord information would be useful when playing gutiar, especially if I still don't know the song. This is when my listens are still relatively low.
 
 [pic from band room here]
+
+![pic of the sugar we're going down printout](../img/2023-06-13-auto-song-structure/image-1.png)
 
 Generating them is relatively time-intensive, especially if I have never heard the song again. Lots of counting on fingers.
 
@@ -32,21 +36,21 @@ I have miraculously avoided any machine learning so far, and I finally wanted to
 
 The most popular and obvious effort in this space is Pychorus ([article](https://towardsdatascience.com/finding-choruses-in-songs-with-python-a925165f94a8) and [github](https://github.com/vivjay30/pychorus)). This is an analytical solution to detecting which part of the song is the chorus, by finding note-time similarity binned by tempo. This is a fast and simple solution that works on steady electronic sounds, but the author states hwo chanigng tempos introduce error (one being worked on) and that an AI model would do much better.
 
-[image of the time-lag similarity matrix]
+![image of the time-lag similarity matrix](<../img/2023-06-13-auto-song-structure/1 USrGPR-SimWBAlQKT8lqFg.webp>)
 
-*The time-lag similarity matrix from pychorus - horizontal lines represent similarity.*
+*The time-lag similarity matrix from pychorus - horizontal black lines represent similarity.*
 
 ## Learning
 
 I first looked at what tools are availible. I wanted to use my own hardware (I paid good money for this GPU) and I wanted to use Python, so looked like pytorch, tensorflow, and scikit-learn were the three most promising options. I picked tensorflow, as they had a set of good audio handling wrappers.
 
-I took their [intro course]() and got down the basics of linear models, the terminology, and other stuff. I came up with a few methods I was considering using:
+I took their [intro course](https://developers.google.com/machine-learning/crash-course/ml-intro) and got down the basics of linear models, the terminology, and other stuff. I came up with a few methods I was considering using:
 
 ### Clustering by Section
 
 [cool pic of section splitting. something stylized]
 
-Split the song into overlapping 1-2 second audio clips. *Cluster* them by similarity. Use the similar times to generate A, B, C, etc sections. If reliable enough, possibly *Classify* those parts as CHORUS or VERSE etc.
+Split the song into overlapping 1-2 second audio clips. *Cluster* them by similarity. Use the similar times to generate A, B, C, etc sections. If reliable enough, possibly *Classify* those parts as CHORUS or VERSE etc. This approach is most similar to the model in pychorus, but leverages the power of AI to do clustering, not relying on exact patterns to match. 
 
 **Problem**: Would training a model would have to be done on EACH SONG? How would this work accross genres?
 
