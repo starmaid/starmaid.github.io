@@ -10,7 +10,7 @@ tags: audio, music, librosa
 
 I wanted to learn a little bit about AI, and hopefully make my sightreading a little bit faster.
 
-[project on github]()
+[project on github](https://github.com/starmaid/songstructure)
 
 ## Preface: what are Song Structure Sheets?
 
@@ -21,8 +21,6 @@ I like making these sheets. Started when playing with parents and bianco because
 They have solidified into this format. I am pretty satisfied and know all i need to know on drums. 
 
 Maybe more chord information would be useful when playing gutiar, especially if I still don't know the song. This is when my listens are still relatively low.
-
-[pic from band room here]
 
 ![pic of the sugar we're going down printout](../img/2023-06-13-auto-song-structure/image-1.png)
 
@@ -48,7 +46,7 @@ I took their [intro course](https://developers.google.com/machine-learning/crash
 
 ### Clustering by Section
 
-[cool pic of section splitting. something stylized]
+![cool pic of section splitting. something stylized](../img/2023-06-13-auto-song-structure/image-3.png)
 
 Split the song into overlapping 1-2 second audio clips. *Cluster* them by similarity. Use the similar times to generate A, B, C, etc sections. If reliable enough, possibly *Classify* those parts as CHORUS or VERSE etc. This approach is most similar to the model in pychorus, but leverages the power of AI to do clustering, not relying on exact patterns to match. 
 
@@ -56,7 +54,7 @@ Split the song into overlapping 1-2 second audio clips. *Cluster* them by simila
 
 ### Split by Difference
 
-[cool pic of two section splitting]
+![cool pic of two section splitting](../img/2023-06-13-auto-song-structure/method2.drawio.png)
 
 Split the song into non-overlapping 1-2 second audio clips, staggered at many start times. For two clips, determine how 'far apart' those clips are, determining if a transition happened.
 
@@ -64,7 +62,7 @@ Split the song into non-overlapping 1-2 second audio clips, staggered at many st
 
 ### Find Visual Changes
 
-[cool pic of spectrogram]
+![cool pic of spectrogram](../img/2023-06-13-auto-song-structure/image-4.png)
 
 Feed the whole song in as a spectrogram image. Detect vertical lines where the song changes section based only on this. 
 
@@ -75,11 +73,11 @@ Feed the whole song in as a spectrogram image. Detect vertical lines where the s
 
 I knew whatever happened I would need training data - songs labeled into sections. I spent some time thinking up ways to do this in react or tkinter, but found out that [Audacity]() has a built-in labeling system - way better than I could ever make. This generates some nice text files to parse.
 
-[gif of audacity ui]
+![gif of audacity ui](../img/2023-06-13-auto-song-structure/5_labeling.gif)
 
 I also was thinking of ways to ~~con my friends~~ *leverage the open-source community* for helping create these labeled tracks. If audacity is easy enough and everyone has it installed, I would just need a way to let them upload mp3's and txt's. I started planning a server and possibly providing a frontend for my own youtube-mp3 service. 
 
-[sketch of yt-mp3 page]
+![sketch of yt-mp3 page](../img/2023-06-13-auto-song-structure/image-8.png)
 
 However, I decided to keep things quiet and focus on the meat of the problem before spending hours making a data collection service.
 
@@ -89,9 +87,17 @@ I wanted to finish the pipeline from song to sheet, so I started working on the 
 
 This could be done with librosa and beat detection. Some simple math sorts repeats out by likelihood, but isn't perfect. The beat detection is also not perfect, but it is simple enough.
 
-[screenshot of money machine and the beat tracks]
+![Money machine](../img/2023-06-13-auto-song-structure/image-5.png)
+
+*Money machine by 100 gecs works pretty well!*
+
+![Pain and pleasure](../img/2023-06-13-auto-song-structure/image-6.png)
+
+*The intro to Pain and Pleasure by Judas Priest does not work...*
 
 This, combined with manually labeling the tracks in Audacity, is the minimum we can do to make a useful track chart. This leaves the user with the only need to add lyrics and notes, and then touch up the formatting and colors.
+
+![welcome home track](../img/2023-06-13-auto-song-structure/image-7.png)
 
 ## Descision on AI
 
