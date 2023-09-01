@@ -7,14 +7,31 @@ title: Resume
 
 ## Things I can do
 
-Using one of these languages...
-- Python
+Write software comfortably in... 
+- [Python](https://github.com/starmaid/pulseofexploration)
 - C/C++
+- [C#](https://github.com/starmaid/augmented-gem)
 - Java
-- Haskell
+- [Haskell](https://github.com/starmaid/adventofcode2022)
+- [MATLAB + Simulink](https://github.com/starmaid/rethi-meteorite)
 - JavaScript
-- Bash/Shell
-- Batch/PS2
+- Bash/Shell Script
+- Batch Script
+- Powershell
+
+With these tools and frameworks...
+- Docker
+- Kubernetes
+- [React](https://github.com/mchartigan/bitwise)
+- [Flask](https://github.com/starmaid/netkiss)
+- [Jekyll](https://github.com/starmaid/starmaid.github.io)
+- Django
+- Figma
+
+With these Databases...
+- SQL + Derivatives
+- Google Firebase
+- [MongoDB](https://github.com/starmaid/Recycle-It)
 
 I can write control software...
 - For an industrial robot
@@ -24,32 +41,22 @@ I can write control software...
 - For a linear time invariant system
 - For a nonlinear system, linearized around an equilibrium
 
-I can write a web service...
-- In a Docker container
-- That runs in Kubernetes
-- That accesses a SQL database
-- Or uses Django
-- Or Flask
-- With a frontend made by hand with HTML and JS
-- Or with React
-- Or Jekyll
-- Or with a tool like Figma
-
 I can write a Game/Simulation...
-- In Unreal Engine
+- In [Unreal Engine](https://github.com/starmaid/NightCourier)
+- In [Unity](https://github.com/starmaid/augmented-gem)
 - For VR
-- That connects to external code
+- That connects to external robotics code
 
 I can make 3D models in...
-- Solidworks
-- Autodesk Inventor
-- Fusion 360
-- CATIA
-- Blender
-- OpenSCAD (please no though)
+- Solidworks (300+ hours)
+- Autodesk Inventor (300+ hours)
+- Blender (~200 hours)
+- CATIA (~100 hours)
+- Fusion 360 (~50 hours)
+- OpenSCAD (3 very fun hours)
 
 I can turn those models into objects with...
-- 3D printers (easy mode)
+- 3D printers
 - Hand tools
 - Power tools
 - Machine tools
@@ -58,7 +65,7 @@ I can turn those models into objects with...
 I can simulate and optimize orbits with...
 - FreeFlyer
 - GMAT
-- Painfully implemented equations myself in MATLAB
+- My own equations in MATLAB
 
 I can manage a project with...
 - Jira+Confluence, Trello
@@ -68,26 +75,25 @@ I can manage a project with...
 
 Make interactive and generative art with...
 - VVVV
-- Hydra
-- TidalCycles
+- [Hydra](https://github.com/starmaid/hydra-stuff)
+- [TidalCycles](https://github.com/starmaid/tidal)
 - Any bits of hardware you toss my direction
 
 Make media with...
 - Adobe Photoshop and Premiere
-- ffmpeg (I'm addicted to .gif)
 - Ableton Live
 - FL Studio
 
 Fly...
 - High-Power solid rockets up to 1280 N-s of impulse
-- my homebuilt FPV racing drones
+- My homebuilt FPV racing drones
 - Your single-engine GA plane (if you dont tell anyone)
 
 Play (in order of skill)...
 - Guitar
 - Bass
-- Drums
 - Trombone
+- Drums
 - Piano
 - Trumpet
 - Tuba
