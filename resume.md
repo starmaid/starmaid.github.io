@@ -20,8 +20,7 @@ Write software comfortably in...
 - Powershell
 
 With these tools and frameworks...
-- Docker
-- Kubernetes
+- Docker + Kubernetes
 - [React](https://github.com/mchartigan/bitwise)
 - [Flask](https://github.com/starmaid/netkiss)
 - [Jekyll](https://github.com/starmaid/starmaid.github.io)
@@ -30,7 +29,7 @@ With these tools and frameworks...
 
 With these Databases...
 - SQL + Derivatives
-- Google Firebase
+- [Google Firebase](https://github.com/mchartigan/bitwise)
 - [MongoDB](https://github.com/starmaid/Recycle-It)
 
 I can write control software...
