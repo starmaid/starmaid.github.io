@@ -2,6 +2,8 @@
 layout: post
 title: PS4EYE Stereo Camera
 tags: ps4eye, stereo, opencv
+image:
+  path: /projects/img/2023-10-27-ps4-stereo-camera/PXL_20231108_121527860.jpg
 ---
 
 ![picture of the ps4 camera](../img/2023-10-27-ps4-stereo-camera/PXL_20231108_121527860.jpg)
