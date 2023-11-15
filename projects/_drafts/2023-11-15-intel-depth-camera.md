@@ -134,7 +134,7 @@ INFO: OpenNI2 Status:
 
 If you want to just download my dlls, [go to the fork on my github.](https://github.com/starmaid/librealsense)
 
-I will update this page if/when my PR is accepted into the main branch.
+I will update this page if/when [my PR is accepted into the main branch.](https://github.com/IntelRealSense/librealsense/pull/12412)
 
 ### Actually Scanning Stuff
 
