@@ -116,6 +116,22 @@ I changed two things in the file `librealsense\wrappers\openni2\src\Rs2StreamPro
 
 With these fixes, Skanect and ReconstructMe function just fine. They were probably just turning OFF mirroring as part of initialization. Yay for stupid fixes! 
 
+![Alt text](../img/2023-11-15-intel-depth-camera/skanect_function.png)
+
+```
+INFO: OpenNI2: Device "043422070239" present.
+INFO: OpenNI2: Device info: [PS1080] [7463] [1537].
+INFO: OpenNI2: Number of devices: 1
+INFO: No support for softkinetic, skipping.
+INFO: OpenNI2: Opening: 043422070239
+INFO: OpenNI2: Number of devices: 1
+WARNING: Could not switch to VGA depth mode.
+INFO: Depth Intrinsics: fx/fy/cx/cy [384.152 | 384.152 | 320.000 | 240.000]
+INFO: Color Intrinsics: fx/fy/cx/cy [384.152 | 384.152 | 320.000 | 240.000]
+WARNING: Could not read device serial number.
+INFO: OpenNI2 Status: 
+```
+
 If you want to just download my dlls, [go to the fork on my github.](https://github.com/starmaid/librealsense)
 
 I will update this page if/when my PR is accepted into the main branch.
