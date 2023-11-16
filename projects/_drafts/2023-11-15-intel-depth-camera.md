@@ -6,7 +6,7 @@ image:
   path: /projects/img/2023-10-27-ps4-stereo-camera/PXL_20231108_121527860.jpg
 ---
 
-![3D scan picture. cool shit. remember to make it small so it can be the embed preview]()
+![3D scan picture. cool shit. remember to make it small so it can be the embed preview](../img/2023-11-15-intel-depth-camera/selfie.png)
 
 Written November 2023
 
@@ -18,6 +18,8 @@ Previously, [I had pretty rotten luck with a hacked stereo camera](/projects/ps4
 
 
 ## Get Started
+
+![near-IR structured light](../img/2023-11-15-intel-depth-camera/ir_dotgrid.gif)
 
 Dead simple. [Intel has a Get Started page.](https://www.intelrealsense.com/get-started-depth-camera/)
 
@@ -37,15 +39,20 @@ The recorded video files are ROS `.bag` files that can be played back in [rviz](
 
 ![Alt text](<../img/2023-11-15-intel-depth-camera/webviz.gif>)
 
+### Calibration
+
+[Intel documents their calibration.](https://dev.intelrealsense.com/docs/calibration) "It may indeed never be required", but "exposure to extreme temperature cycling, or excessive shock and vibe" can make it a necessity. I bought a used camera. But I am also lazy right now. Will calibrate later...
+
 ## 3D Scanning
 
 One of the first applications that someone with a depth camera wants to do is scan stuff. You don't have to write any code, people already did that! I was looking for open source, or at least free applications that would let me take bad scans that I can manually clean up. I don't need dimensional accuracy - sometimes I just want to get something into the computer!
 
 ### Getting a program
 
-- [Skanect](https://structure.io/skanect) is probably the most historically rich free scanning solutions. Relies on OpenNI2. Closed source. Also, doesn't support Nvidia 30-series GPUs or newer for Cuda. That's ok, your CPU is fast enough nowadays anyway. 
-- [RecFusion](https://www.recfusion.net/) has RealSense API support. Closed source, you have to pay for more than 50k tris.
+- Intel says to just use Dot3D. This costs money and you need an account to download. Lets see what else there is.
+- [Skanect](https://structure.io/skanect) is probably the most historically rich free scanning solutions. Relies on OpenNI2. Closed source, you have to pay for more than ~~50,000~~ ***5000*** tris.. Also, doesn't support Nvidia 30-series GPUs or newer for Cuda. That's ok, your CPU is fast enough nowadays anyway. 
 - [ReconstructMe](https://www.reconstructme.net/) is free for non-commercial use. Relies on OpenNI2. Closed source.
+- [RecFusion](https://www.recfusion.net/) has RealSense API support. Closed source, you have to pay. Welp.
 - [Open3D](http://www.open3d.org/docs/latest/tutorial/t_reconstruction_system/index.html) has a depth reconstruction example built-in. This has RealSense API support.
 
 ### Compile RealSense Drivers with OpenNI2 Support
@@ -132,17 +139,49 @@ WARNING: Could not read device serial number.
 INFO: OpenNI2 Status: 
 ```
 
-If you want to just download my dlls, [go to the fork on my github.](https://github.com/starmaid/librealsense)
+If you want to just download my dlls, [go to the fork on my github,](https://github.com/starmaid/librealsense) or just email me if I haven't put them up anywhere.
 
 I will update this page if/when [my PR is accepted into the main branch.](https://github.com/IntelRealSense/librealsense/pull/12412)
 
 ### Actually Scanning Stuff
 
-Each of these programs give varying results.
+Each of these programs give varying results. Things seem very dependent on lighting, and the software has a lot of difficulty. In general. Lets try scanning Pyralspite.
 
-![example 1]()
+![Alt text](../img/2023-11-15-intel-depth-camera/pyral_rgb.jpg)
 
-![example 2]()
+Smooth curves, some visual interest (fuzz), and relatively matte. The white color may be killing me, but from just looking at it through the camera, it seems to be able to capture depth pretty well. For more practical reasons, this is something I want a 3D model of.
+
+![Alt text](../img/2023-11-15-intel-depth-camera/skanect_pyral1.mkv.gif)
+
+Wow thats godawful. Not only is that 5000 tri export limit really killing me, but the software lost tracking several times and wasted geometry on trying to rebuild different sections of the plush.
+
+![Alt text](../img/2023-11-15-intel-depth-camera/skanect_pyral2.mkv.gif)
+
+We can see that from a different angle, and ONLY that angle, the scan is pretty good! Maybe something is wrong with my technique, or lighting, etc. Lets just look around the room.
+
+![Alt text](../img/2023-11-15-intel-depth-camera/skanect_tilt.png)
+
+Why is the wall tilted? Why does the tilt change? who knows. I had the camera on a tripod, and the floor was cut out alright. I wonder if I need to [calibrate the camera](https://dev.intelrealsense.com/docs/self-calibration-for-depth-cameras)...(spoiler alert, I do!)
+
+Lets try ReconstructMe.
+
+![Alt text](../img/2023-11-15-intel-depth-camera/reconstructme_pyral.mkv.gif)
+
+No export limit on the mesh, so you can see more of the crap I left in there. It fully lost tracking once, and then just...recreated the mesh again, about 50 degrees offset. And it kept parts of both. Seems to have used the head spikes+foot as a locating point, and now theres three of each. Lets scan something else?
+
+![Alt text](../img/2023-11-15-intel-depth-camera/reconstructme_headset.mkv.gif)
+
+A VR headset! It tried to do the same thing - it fully lost tracking, and the model you see here is actually the SECOND time it generated this mesh in one scan. Not great. Maybe my technique is bad...
+
+RecFusion, while it was free to download, did not let me export meshes. Welp. Heres a plant I tried to scan.
+
+![Alt text](../img/2023-11-15-intel-depth-camera/recfusion_plant.gif)
+
+The user interface was hard to use, and the scan wasn't great. No reason to purchase this software I think.
+
+In the future, I may simply just take single photos, and align them manually in MeshLab when I actually want to scan stuff. The state of the industry is not perfect here, perhaps I'll perfect a setup and try this more.
+
+On the other hand, making cool glitchy stuff may be the way to go here. At least it will be fresh and interesting.
 
 ### Python Bindings
 
@@ -150,21 +189,12 @@ Ok, so you can take pictures and videos. Now lets do something interesting with 
 
 [Intel Python Developer Ref](https://dev.intelrealsense.com/docs/python2) and [Install pyrealsense2](https://github.com/IntelRealSense/librealsense/tree/master/wrappers/python#installation) pages. They say something about the RealSense SDK for Windows including the Python bindings. But literally all you have to do is `pip install pyrealsense2` so its not that hard.
 
+## Future Stuff
+
 ### Streaming to Three.js
 
-I want to read the depth data to play with during livecoding visuals.
+I want to read the depth data to play with during livecoding visuals. This is in progress as I still have to learn Three.js.
 
 ### Human Pose Estimation
 
-Estimating pose from cameras is one thing, but it should be even better with a depth camera right?
-
-[OpenCV ships with this example](https://github.com/opencv/opencv/blob/master/samples/dnn/openpose.py)
-
-[Using Google's MediaPipe NN](https://techvidvan.com/tutorials/human-pose-estimation-opencv/)
-
-[Using MobileNet](https://github.com/quanhua92/human-pose-estimation-opencv)
-
-But all of those are 2D solutions. Lets see some 3D stuff.
-
-[University of Cordoba paper](https://arxiv.org/pdf/1807.05389.pdf)
-
+Estimating pose from cameras is one thing, but it should be even better with a depth camera right? Lets see if we can make animations for characters in Blender. If we could do it live for VRChat, that would be even cooler.
