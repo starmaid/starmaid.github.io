@@ -6,16 +6,17 @@ image:
   path: /projects/img/2023-10-27-ps4-stereo-camera/PXL_20231108_121527860.jpg
 ---
 
-![3D scan picture. cool shit. remember to make it small so it can be the embed preview](../img/2023-11-15-intel-depth-camera/selfie.png)
+![a 3D scan selfie!](../img/2023-11-15-intel-depth-camera/selfie.png)
 
 Written November 2023
 
 ## Introduction
 
-Previously, [I had pretty rotten luck with a hacked stereo camera](/projects/ps4-stereo-camera/). My frustration caused me to search for a hardware alternative, which I found as the Intel D435. It seemed like a pretty solid platform, had a well-supported API, did processing on the hardware, and a lively developer community. I grabbed a used one off amazon for $160. This post will document how I got it working for the various things I want to do with it.
+Previously, [I had pretty rotten luck with a hacked stereo camera](/projects/ps4-stereo-camera/). My frustration caused me to search for a hardware alternative, which I found as the [Intel D435](https://www.intelrealsense.com/depth-camera-d435/). It seemed like a pretty solid platform, had a well-supported API, did processing on the hardware, and a lively developer community. I grabbed a used one off amazon for $160. This post will document how I got it working for the various things I want to do with it.
+
+![the intel D435...](../img/2023-11-15-intel-depth-camera/image.png)
 
 *Aside - the first package was stolen off my apartment's mailbox. That was annoying, but the seller replaced it at no charge. I later found the original opened box in the locked recycling area for my building >_>. A thief is afoot!*
-
 
 ## Get Started
 
@@ -31,17 +32,54 @@ Dead simple. [Intel has a Get Started page.](https://www.intelrealsense.com/get-
 
 With the RealSense Viewer installed, you can take color/depth photos, which can be saved as images or as point clouds. These can be opened with a tool like [MeshLab](https://www.meshlab.net/) to do cool things.
 
-![A picture of my lunch.](../img/2023-11-15-intel-depth-camera/lunch_Depth.png)
+![A scan picture of my lunch.](../img/2023-11-15-intel-depth-camera/lunch_Depth.png)
 
 ![Cleaning up a one-angle scan of Pyralspite.](../img/2023-11-15-intel-depth-camera/pyralspite_scan.png)
 
 The recorded video files are ROS `.bag` files that can be played back in [rviz](https://wiki.ros.org/rviz), or if you dont want to install all that, just drag and drop the file into [webviz](https://webviz.io/app).
 
-![Alt text](<../img/2023-11-15-intel-depth-camera/webviz.gif>)
+![a gif showing a video preview in webviz](<../img/2023-11-15-intel-depth-camera/webviz.gif>)
 
 ### Calibration
 
-[Intel documents their calibration.](https://dev.intelrealsense.com/docs/calibration) "It may indeed never be required", but "exposure to extreme temperature cycling, or excessive shock and vibe" can make it a necessity. I bought a used camera. But I am also lazy right now. Will calibrate later...
+*Note: I did the tasks in this section after doing my scanning experiments I'm putting it here, because this is where I SHOULD have done it!*
+
+[Intel documents their calibration.](https://dev.intelrealsense.com/docs/calibration) "It may indeed never be required", but "exposure to extreme temperature cycling, or excessive shock and vibe" can make it a necessity. I bought a used camera. Lets see what happens.
+
+The specific procedure I followed was the [Tare+Calibration with Ground-Truth Target](https://dev.intelrealsense.com/docs/self-calibration-for-depth-cameras#addendum-a-march-2022-tare-calibration-with-ground-truth-target). But before you can Tare, you should calibrate focal length.
+
+*"the limiting factors on GT accuracy are the target size and camera focal length. Any errors in either of these parameters directly affect the GT result in a linear manner, e.g., a 0.1% error in F or XT translate to a 0.1% error in GT."*
+
+I printed out the [Ground Truth Target (with the four dots)](https://dev.intelrealsense.com/docs/self-calibration-for-depth-cameras#ground-truth-targets-and-printing--mounting-instructions) which can be used for all three types of calibration. It provides static reference points for the FL calibration, provides known lengths for calculating the actual distance to the wall (tare), and then it has a non-repeating noise pattern to perform accurate calibration. I measured the distance between the points on my print, which were accurate enough within a tenth of a mm. I mounted it to the wall a bit short of one meter away, as Intel reccomends for the D435.
+
+I ran the FL calibration first.
+
+![screenshot of focal length calibration](../img/2023-11-15-intel-depth-camera/fl_calib.png)
+
+*"FL imbalance result is generally accurate to within +/-0.03%...FL errors much larger than +/-0.2% are recommended to be corrected"*
+
+Perfect! We are well into the high-accuracy territory. This evaluation did not provide me with the old value, so we will just have to be glad our new result is good.
+
+Next, without even moving the camera, we can click Tare Calibration. I am using this with good even lighting in the room and the IR pattern on, the docs say this should give best results.
+
+![screenshot of tare calibration](../img/2023-11-15-intel-depth-camera/tare.png)
+
+```
+// The first Tare Calibration I ran - I had not done Focal Length Calibration yet
+Health check numbers from TareCalibrationResult(0x0C): before=0.007776, after=-0.001151
+Z calculated from health check numbers : before=827.688354, after=820.356750
+
+// After FL Calibration, I ran it again.
+Health check numbers from TareCalibrationResult(0x0C): before=0.000396, after=0.000396
+Z calculated from health check numbers : before=821.187927, after=821.187927
+```
+
+Woah! our original health check was 0.7776%! After the FL and Tare Calibration, we got it all the way down to 0.0396%. Lets see how these values compare with Intel's reccomendations... 
+
+![Intel's health check scale](../img/2023-11-15-intel-depth-camera/99d267c-table_1.png)
+
+Wow! I actually needed to do that! That might explain some issues I'm going to have later in this post.
+
 
 ## 3D Scanning
 
@@ -123,7 +161,7 @@ I changed two things in the file `librealsense\wrappers\openni2\src\Rs2StreamPro
 
 With these fixes, Skanect and ReconstructMe function just fine. They were probably just turning OFF mirroring as part of initialization. Yay for stupid fixes! 
 
-![Alt text](../img/2023-11-15-intel-depth-camera/skanect_function.png)
+![screenshot of skanect running](../img/2023-11-15-intel-depth-camera/skanect_function.png)
 
 ```
 INFO: OpenNI2: Device "043422070239" present.
@@ -139,43 +177,43 @@ WARNING: Could not read device serial number.
 INFO: OpenNI2 Status: 
 ```
 
-If you want to just download my dlls, [go to the fork on my github,](https://github.com/starmaid/librealsense) or just email me if I haven't put them up anywhere.
+If you want to just download my code, [go to the fork on my github,](https://github.com/starmaid/librealsense) or just email me if you just want the dlls.
 
-I will update this page if/when [my PR is accepted into the main branch.](https://github.com/IntelRealSense/librealsense/pull/12412)
+I will update this page if/when [my PR is accepted into the main branch.](https://github.com/IntelRealSense/librealsense/pull/12412) I dont know if they will accept a stupid hack like this, as returning OK when the thing is decidedly NOT OK is probably not up to standard. But it works for me!
 
 ### Actually Scanning Stuff
 
 Each of these programs give varying results. Things seem very dependent on lighting, and the software has a lot of difficulty. In general. Lets try scanning Pyralspite.
 
-![Alt text](../img/2023-11-15-intel-depth-camera/pyral_rgb.jpg)
+![picture of a white fabric plush dragon](../img/2023-11-15-intel-depth-camera/pyral_rgb.jpg)
 
 Smooth curves, some visual interest (fuzz), and relatively matte. The white color may be killing me, but from just looking at it through the camera, it seems to be able to capture depth pretty well. For more practical reasons, this is something I want a 3D model of.
 
-![Alt text](../img/2023-11-15-intel-depth-camera/skanect_pyral1.mkv.gif)
+![rotating gif of a lopoly scan](../img/2023-11-15-intel-depth-camera/skanect_pyral1.mkv.gif)
 
 Wow thats godawful. Not only is that 5000 tri export limit really killing me, but the software lost tracking several times and wasted geometry on trying to rebuild different sections of the plush.
 
-![Alt text](../img/2023-11-15-intel-depth-camera/skanect_pyral2.mkv.gif)
+![rotating gif of a slightly better scan](../img/2023-11-15-intel-depth-camera/skanect_pyral2.mkv.gif)
 
 We can see that from a different angle, and ONLY that angle, the scan is pretty good! Maybe something is wrong with my technique, or lighting, etc. Lets just look around the room.
 
-![Alt text](../img/2023-11-15-intel-depth-camera/skanect_tilt.png)
+![screenshot of a warped bedroom scan](../img/2023-11-15-intel-depth-camera/skanect_tilt.png)
 
-Why is the wall tilted? Why does the tilt change? who knows. I had the camera on a tripod, and the floor was cut out alright. I wonder if I need to [calibrate the camera](https://dev.intelrealsense.com/docs/self-calibration-for-depth-cameras)...(spoiler alert, I do!)
+Why is the wall tilted? Why does the tilt change? who knows. I had the camera on a tripod, and the floor was cut out alright. I wonder if I need to **calibrate the camera...**
 
 Lets try ReconstructMe.
 
-![Alt text](../img/2023-11-15-intel-depth-camera/reconstructme_pyral.mkv.gif)
+![rotating gif of a high poly but messy scan](../img/2023-11-15-intel-depth-camera/reconstructme_pyral.mkv.gif)
 
 No export limit on the mesh, so you can see more of the crap I left in there. It fully lost tracking once, and then just...recreated the mesh again, about 50 degrees offset. And it kept parts of both. Seems to have used the head spikes+foot as a locating point, and now theres three of each. Lets scan something else?
 
-![Alt text](../img/2023-11-15-intel-depth-camera/reconstructme_headset.mkv.gif)
+![rotating gif of a messy scan](../img/2023-11-15-intel-depth-camera/reconstructme_headset.mkv.gif)
 
 A VR headset! It tried to do the same thing - it fully lost tracking, and the model you see here is actually the SECOND time it generated this mesh in one scan. Not great. Maybe my technique is bad...
 
 RecFusion, while it was free to download, did not let me export meshes. Welp. Heres a plant I tried to scan.
 
-![Alt text](../img/2023-11-15-intel-depth-camera/recfusion_plant.gif)
+![recording of a potted plant scan. It is lumpy.](../img/2023-11-15-intel-depth-camera/recfusion_plant.gif)
 
 The user interface was hard to use, and the scan wasn't great. No reason to purchase this software I think.
 
@@ -183,17 +221,19 @@ In the future, I may simply just take single photos, and align them manually in 
 
 On the other hand, making cool glitchy stuff may be the way to go here. At least it will be fresh and interesting.
 
+## Future Stuff
+
+I've owned the camera for two weeks, and I haven't done the things I actually want to do with a depth camera! However, this post is already long enough. In a later post, I will generalize into the applications and not spend time on the sensor specifics. A preview:
+
 ### Python Bindings
 
-Ok, so you can take pictures and videos. Now lets do something interesting with them.
+Ok, so you can take pictures and videos. If we want to do something interesting, we have to manipulate the feed directly.
 
-[Intel Python Developer Ref](https://dev.intelrealsense.com/docs/python2) and [Install pyrealsense2](https://github.com/IntelRealSense/librealsense/tree/master/wrappers/python#installation) pages. They say something about the RealSense SDK for Windows including the Python bindings. But literally all you have to do is `pip install pyrealsense2` so its not that hard.
-
-## Future Stuff
+[Intel Python Developer Ref](https://dev.intelrealsense.com/docs/python2) and [Install pyrealsense2](https://github.com/IntelRealSense/librealsense/tree/master/wrappers/python#installation) pages. They say something about the RealSense SDK for Windows including the Python bindings. But literally all you have to do is `pip install pyrealsense2` so its not that hard. From there, the camera data is just a Numpy ndarray.
 
 ### Streaming to Three.js
 
-I want to read the depth data to play with during livecoding visuals. This is in progress as I still have to learn Three.js.
+I want to read the depth data to play with during livecoding visuals. This is in progress as I still have to learn [Three.js](https://threejs.org/).
 
 ### Human Pose Estimation
 
