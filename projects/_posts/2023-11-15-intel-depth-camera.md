@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Intel Depth Camera
-tags: intel, realsense, d435, stereo, opencv
+tags: intel, realsense, d435, stereo, opencv, vision
 image:
-  path: /projects/img/2023-10-27-ps4-stereo-camera/PXL_20231108_121527860.jpg
+  path: /projects/img/2023-11-15-intel-depth-camera/selfie.png
 ---
 
 ![a 3D scan selfie!](../img/2023-11-15-intel-depth-camera/selfie.png)
