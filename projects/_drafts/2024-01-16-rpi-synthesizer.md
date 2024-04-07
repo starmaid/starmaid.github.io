@@ -24,7 +24,7 @@ The concept is simple. A lightweight and easy to move electric keyboard. I could
 
 In 2019, while living in a dorm on a military base for 3 months, I critically needed to play an instrument. I bought a [KORG Microkey 37](https://www.korg.com/us/products/computergear/microkey/), the smallest and lightest keyboard availible, and plugged it into a raspberry pi. I found what would become my favorite synth engine - [SunVox](https://warmplace.ru/soft/sunvox/) and got the settings dialed in so that it was great to use. 
 
-![picture of the original setup, bare]()
+![picture of the original setup, bare](/projects/img/2024-01-16-rpi-synthesizer/2-original.jpg)
 
 I later added a LiPo, charge controller, and a 3D printed case to make it self-contained. To use it, you power on the device, connect to a speaker with an audio cable, connect to the broadcast wifi network with your phone, SSH into the pi, and start the synthesizer.
 
@@ -89,4 +89,4 @@ The worst part was when switching the display between HDMI and SPI, it would edi
 
 But whatever, I don't want to work on it anymore. So its done! Last thought, if I were to do this again I would probably just buy an old android phone dirt cheap and slap it in a case with a USB hub.
 
-![Image of final assembly]()
+![Image of final assembly](/projects/img/2024-01-16-rpi-synthesizer/7-with-lid.png)
