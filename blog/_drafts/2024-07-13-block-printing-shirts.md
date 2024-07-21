@@ -46,16 +46,31 @@ At the end of the material tests, I still felt like not enough ink would stay on
 
 Personally, hard to say. I don't think it hurt!
 
+### Ink
+
+I prefer to use Speedball screenprinting ink, because it keeps a very good look on fabric as well as being very thin and easy to work with. Ian used this on his shirts as well, so there was an example of it working well.
+
+![picture of the two ink containers]()
+
+I also tried the super-cheap tube fabric paint they sell at Michael's, which I have good results with hand-painting but it was too thick and globby for screens. Perhaps this viscosity buff would improve the block printing? No, I don't think so. The decrease in opacity probably hurt it a little bit.
+
 ### Braying Technique
 
 I then stopped hand-painting ink onto the stamp and tried a few different methods of getting ink on. The sponge brush and rubber brayer were pitted against each other.
 
-![braying technique]()
+![image of the brayers near the paper comparing braying technique]()
 
-The sponge needed to absorb so much ink before it could deposit any reasonable amount. The rubber brayer just feels like it slips around and squishes ink out in front. I don't think I've cracked the mystery on these yet, unless I'm just supposed to use very little ink!
+The sponge needed to absorb so much ink before it could deposit any reasonable amount. Also, it left the surface pattern of the sponge as outlines on the block, which transfered to the work piece. This was kind of cool, definitely the sort of thing a sponge roller is for - adding texture. I didn't like it however.
+
+The rubber brayer just feels like it slips around and squishes ink out in front. It was maybe enough for the paper prints, but I don't see how the block could hold enough ink to make a successful print. I just don't think I've cracked the mystery yet!
 
 ### Substrate Composition
 
-Should the material underneath the printing surface be rigid or flexible?
+Should the material underneath the printing surface be rigid or flexible? I tried a bit of both. I think the results on a rigid surface were clearer and showed less printing from places on the negative of the stamp.
 
+![the drawio comparing the layers underneath]()
+
+### Hacks
+
+Reddit suggested that if you are using water-based ink, to spray a little water on the fabric surface before printing. I think this helped a little, but its hard to say for this one.
 
