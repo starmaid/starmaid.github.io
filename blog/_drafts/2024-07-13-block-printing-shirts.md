@@ -8,7 +8,7 @@ image:
 
 ![Image of someone wearing the shirt]()
 
-I like making stupid little shirts. I think screenprinting is a lot of effort, especially for runs with less than like 20 shirts. I don't exactly have an audience that would buy that many shirts, and I also don't want to start printing shirts full time just because I have a few funny jokes to make. Thus, I set out looking for a more efficient way to make designs.
+I like making custom shirts. I think screenprinting is a lot of effort, especially for runs with less than like 20 shirts. I don't exactly have an audience that would buy that many shirts, and I also don't want to start printing shirts full time just because I have a few funny jokes to make. Thus, I set out looking for a more efficient way to make designs.
 
 ![picture of those iron on shirts i did for christmas]()
 
@@ -36,7 +36,7 @@ I first tried a simple test between rigid PLA and the flexible TPU plastic. Same
 
 The results seem to say PLA is better. My theory is that the center of large stamp areas were flexing inward, not applying pressure to the surface of the paper. This would reduce performance.
 
-![diagram of TPU flexing]()
+![diagram of TPU flexing](/blog/img/2024-07-13-block-printing-shirts/tpu-flex.png)
 
 ### Surface Finish
 
@@ -44,7 +44,9 @@ At the end of the material tests, I still felt like not enough ink would stay on
 
 ![sanding tests]()
 
-Personally, hard to say. I don't think it hurt!
+Personally, hard to say. I don't think it hurt! However, even after printing there would be a non-insignificant amount of ink left on the stamp. Not sure how to deal with that. Here I scratched it with my fingernail to show how much residual ink there was.
+
+![ink left on stamp](/blog/img/2024-07-13-block-printing-shirts/ink-left-on-stamp.jpg)
 
 ### Ink
 
@@ -68,9 +70,22 @@ The rubber brayer just feels like it slips around and squishes ink out in front.
 
 Should the material underneath the printing surface be rigid or flexible? I tried a bit of both. I think the results on a rigid surface were clearer and showed less printing from places on the negative of the stamp.
 
-![the drawio comparing the layers underneath]()
+![the drawio comparing the layers underneath](/blog/img/2024-07-13-block-printing-shirts/layers.png)
 
 ### Hacks
 
-Reddit suggested that if you are using water-based ink, to spray a little water on the fabric surface before printing. I think this helped a little, but its hard to say for this one.
+Reddit suggested that if you are using water-based ink, to spray a little water on the fabric surface before printing. I think this helped a little, but I also forgot to do that on my production shirts because I didn't read my own notes.
 
+### Small Scale
+
+I did some small scale tests on white and black. It seemed mostly fine.
+
+![](/blog/img/2024-07-13-block-printing-shirts/print-onwhite.jpg)
+
+![](/blog/img/2024-07-13-block-printing-shirts/print-onblack.jpg)
+
+## The Finished Product
+
+![picture of a done shirt](/blog/img/2024-07-13-block-printing-shirts/shirt_done.jpg)
+
+It didn't come out the way I wanted. But I don't think it will get much better! So I'm calling it here.
