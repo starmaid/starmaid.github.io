@@ -32,7 +32,7 @@ I couldn't find any forum posts or blogs about doing this exact kind of thing. T
 
 I first tried a simple test between rigid PLA and the flexible TPU plastic. Same mini version of stamp, and done on paper.
 
-![paper PLA vs TPU]()
+![paper PLA vs TPU](/blog/img/2024-07-13-block-printing-shirts/plavstpu.jpg)
 
 The results seem to say PLA is better. My theory is that the center of large stamp areas were flexing inward, not applying pressure to the surface of the paper. This would reduce performance.
 
@@ -42,7 +42,7 @@ The results seem to say PLA is better. My theory is that the center of large sta
 
 At the end of the material tests, I still felt like not enough ink would stay on the surface of the stamp. I tried sanding the PLA surface to both smooth out bumps that would reduce surface contact, as well as add micro-grooves for ink to reside in.
 
-![sanding tests]()
+![sanding tests](/blog/img/2024-07-13-block-printing-shirts/sanding.jpg)
 
 Personally, hard to say. I don't think it hurt! However, even after printing there would be a non-insignificant amount of ink left on the stamp. Not sure how to deal with that. Here I scratched it with my fingernail to show how much residual ink there was.
 
@@ -52,7 +52,7 @@ Personally, hard to say. I don't think it hurt! However, even after printing the
 
 I prefer to use Speedball screenprinting ink, because it keeps a very good look on fabric as well as being very thin and easy to work with. Ian used this on his shirts as well, so there was an example of it working well.
 
-![picture of the two ink containers]()
+![picture of the two ink containers](/blog/img/2024-07-13-block-printing-shirts/paints.jpg)
 
 I also tried the super-cheap tube fabric paint they sell at Michael's, which I have good results with hand-painting but it was too thick and globby for screens. Perhaps this viscosity buff would improve the block printing? No, I don't think so. The decrease in opacity probably hurt it a little bit.
 
@@ -60,7 +60,7 @@ I also tried the super-cheap tube fabric paint they sell at Michael's, which I h
 
 I then stopped hand-painting ink onto the stamp and tried a few different methods of getting ink on. The sponge brush and rubber brayer were pitted against each other.
 
-![image of the brayers near the paper comparing braying technique]()
+![image of the brayers near the paper comparing braying technique](/blog/img/2024-07-13-block-printing-shirts/rollers.jpg)
 
 The sponge needed to absorb so much ink before it could deposit any reasonable amount. Also, it left the surface pattern of the sponge as outlines on the block, which transfered to the work piece. This was kind of cool, definitely the sort of thing a sponge roller is for - adding texture. I didn't like it however.
 
