@@ -10,7 +10,7 @@ image:
 
 I like making custom shirts. I think screenprinting is a lot of effort, especially for runs with less than like 20 shirts. I don't exactly have an audience that would buy that many shirts, and I also don't want to start printing shirts full time just because I have a few funny jokes to make. Thus, I set out looking for a more efficient way to make designs.
 
-![picture of those iron on shirts i did for christmas]()
+![picture of those iron on shirts i did for christmas](/blog/img/2024-07-13-block-printing-shirts/iron-on.jpg)
 
 I tried the iron-on printer sheets, which totally work! They just are TOO digital. I want to involve real ink, and hopefully last a bit longer. Two-tone or maybe three-tone maximum.
 
@@ -22,7 +22,7 @@ My friend Ian used linocut printing to make a custom shirt for his boyfriend Har
 
 The other aspect, however, was that I wanted to generate these stamps with a computer. This would allow me to do very clean design work and then line up multiple colors super carefully. The misalignment during printing would still make it organic, but I prefer that look to actual stamps that aren't sized properly. 3D printing seems like a good way to get material set down.
 
-![blender screenshot]()
+![blender screenshot](/blog/img/2024-07-13-block-printing-shirts/blender_screenshot.png)
 
 ## Testing
 
