@@ -6,7 +6,7 @@ image:
   path: /blog/img/2024-07-13-block-printing-shirts/shirt_done.jpg
 ---
 
-![Image of someone wearing the shirt]()
+![Image of someone wearing the shirt](/blog/img/2024-07-13-block-printing-shirts/me_redblue.jpg)
 
 I like making custom shirts. I think screenprinting is a lot of effort, especially for runs with less than like 20 shirts. I don't exactly have an audience that would buy that many shirts, and I also don't want to start printing shirts full time just because I have a few funny jokes to make. Thus, I set out looking for a more efficient way to make designs.
 
@@ -74,7 +74,7 @@ Should the material underneath the printing surface be rigid or flexible? I trie
 
 ### Hacks
 
-Reddit suggested that if you are using water-based ink, to spray a little water on the fabric surface before printing. I think this helped a little, but I also forgot to do that on my production shirts because I didn't read my own notes.
+Reddit suggested that if you are using water-based ink, to spray a little water on the fabric surface before printing. I think this helped a little, but I also forgot to do that on the green and yellow shirts because I didn't read my own notes.
 
 ### Small Scale
 
@@ -88,4 +88,4 @@ I did some small scale tests on white and black. It seemed mostly fine.
 
 ![picture of a done shirt](/blog/img/2024-07-13-block-printing-shirts/shirt_done.jpg)
 
-It didn't come out the way I wanted. But I don't think it will get much better! So I'm calling it here.
+It didn't come out the way I wanted. But I don't think it will get much better! So I'm calling it here. Time to do the next thing.
