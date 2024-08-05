@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Block Printing on Shirts
-tags: printing, screenprinting, stamp, paint
+tags: printing, screenprinting, stamp, paint, art
 image:
-  path: /projects/img/2024-01-16-rpi-synthesizer/finished.jpg
+  path: /blog/img/2024-07-13-block-printing-shirts/shirt_done.jpg
 ---
 
 ![Image of someone wearing the shirt]()
@@ -18,7 +18,7 @@ I tried the iron-on printer sheets, which totally work! They just are TOO digita
 
 My friend Ian used linocut printing to make a custom shirt for his boyfriend Harry's birthday. This opened my mind up to doing stamping. The pattern was really clear, and linocut seemed to take some practice but wasn't the most difficult thing. It worked well!
 
-![harry's birthday shirt]()
+![harry's birthday shirt](/blog/img/2024-07-13-block-printing-shirts/harry_combined.png)
 
 The other aspect, however, was that I wanted to generate these stamps with a computer. This would allow me to do very clean design work and then line up multiple colors super carefully. The misalignment during printing would still make it organic, but I prefer that look to actual stamps that aren't sized properly. 3D printing seems like a good way to get material set down.
 

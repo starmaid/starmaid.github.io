@@ -15,8 +15,8 @@ This project documents some stage lights I made for my friend, musical artist [H
 
 We were taking pictures while getting drinks at [B-side on Coventry](https://bsideliquorlounge.com/about/) when we realized we shared a love for blinding neon.
 
-![](./hallielights_assets/2.jpg)
-![](./hallielights_assets/3.jpg)
+![](../img/hallielights_assets/2.jpg)
+![](../img/hallielights_assets/3.jpg)
 
 
 I showed some pictures of my own lights and she said she would love some for her shows.
