@@ -60,6 +60,7 @@ async def handle_client(self,reader,writer):
 Okay that was easy. I had to dig through the `asyncio` library for their TCP server code but I figured it out. Now we can toss a few lines in the `configuration.yaml` file:
 
 ```yaml
+{% raw %}
 command_line:
   - switch:
         name: The Pulse
@@ -68,7 +69,9 @@ command_line:
         command_off: 'echo "OFF" | nc dsn.local 9996'
         command_state: 'echo "STATUS" | nc dsn.local 9996'
         value_template: '{{ value == "ON" }}'
+{% endraw %}
 ```
+
 
 ## One more thing
 

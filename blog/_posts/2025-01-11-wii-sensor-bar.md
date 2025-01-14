@@ -3,7 +3,7 @@ layout: post
 title: Wii Sensor Bar
 tags: wii, nintendo, gaming
 image:
-  path: /blog/img/2024-07-13-block-printing-shirts/shirt_done.jpg
+  path: /blog/img/2025-01-11-wii-sensor-bar/1.png
 ---
 
 ![Gif of the light turning on](/blog/img/2025-01-11-wii-sensor-bar/GIF%201-13-2025%2023-42-02.gif)
