@@ -20,6 +20,12 @@ This also means theres no need to link the bar to the Wii. This is so simple tha
 
 Thanks to nefarious circumstances, some of my friends got me a set of the right diodes for the job for my birthday!
 
+### Build
+
+- [950nm Infrared LED](https://www.sparkfun.com/led-infrared-950nm.html) x4
+- 47Ω Resistor x2
+- USB C connector (to taste)
+
 I used the new [FreeCAD version 1.0.0](https://www.freecad.org/) (seriously, if you are a post-college engineer, check this new release out - they fixed my major problem with it) to quickly model a little case for the four bulbs. Throw a USB-C port on there, some resistors, and slop some hot glue all over it and were done!
 
 ![picture of it done](/blog/img/2025-01-11-wii-sensor-bar/Screenshot%202025-01-13%20235755.png)
