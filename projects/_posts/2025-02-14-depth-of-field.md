@@ -64,6 +64,8 @@ I decided not to look into encoding video from my program. I'll do that another 
 
 And with that, things are complete!
 
+![the camera setup](/projects/img/2025-02-14-depth-of-field/20250217_125617.jpg)
+
 ## Functionality
 
 First - the realsense gives a 1280x720 depth stream at 30 fps. This is not exactly the highest resolution, but its nothing to laugh at. The depth filtering and smoothing algorithms also reduce this resolution on certain parts. The depth also has some minor hole filling and other algorithms that make the depth less accurate - this results in blocky, harsh transitions that might not line up with the pixels.
