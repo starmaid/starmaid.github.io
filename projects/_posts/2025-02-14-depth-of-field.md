@@ -3,7 +3,7 @@ layout: post
 title: Depth of Field
 tags: imaging, camera, realsense, opengl
 image:
-  path: /projects/img/2024-06-01-peppers-ghost/small_2.jpg
+  path: /projects/img/2025-02-14-depth-of-field/3_pen.gif
 ---
 
 ![gif of the pen](/projects/img/2025-02-14-depth-of-field/3_pen.gif)
@@ -50,7 +50,7 @@ I ran into issues that I didnt understand and lost interest in the project.
 
 After some time, I learned a little more at my job and thought another look would help. I used renderdoc to help with debugging. I was having many issues with flipping the quad, the order of the corners, and such. Some things are just not very clear. But through trial and error, and a fresh set of eyes, I was able to make some more progress.
 
-![screenshot of renderdoc?]()
+![screenshot of renderdoc?](/projects/img/2025-02-14-depth-of-field/renderdoc.png)
 
 This was also when I got the first version of gaussian blur working.
 
@@ -68,7 +68,9 @@ And with that, things are complete!
 
 First - the realsense gives a 1280x720 depth stream at 30 fps. This is not exactly the highest resolution, but its nothing to laugh at. The depth filtering and smoothing algorithms also reduce this resolution on certain parts. The depth also has some minor hole filling and other algorithms that make the depth less accurate - this results in blocky, harsh transitions that might not line up with the pixels.
 
-![me on the bed](/projects/img/2025-02-14-depth-of-field/1_bed_static.gif)
+{% include youtube_embed.html id="F80fNMDXu4w" %}
+
+The outdoor depth performance suprised me! You can get good looking footage at way further than the 10 meters advertised from Intel. Also, the lack of infrared in good lighting conditions wasn't noticeably worse than the indoor stuff.
 
 The realsense camera is effectively a pretty good webcam. The dynamic range is okay, and the low light performance is not that great. There is also a bit of motion blur when trying to take still images in low light, obviously.
 
@@ -80,9 +82,7 @@ Gaussian blur only, even three passes, is just not that good. It lacks character
 
 I sacrificed all the other effects - bokeh, tonemapping, and other techniques, in order to complete this project and be done. Someone else can fork my code and finish it if they want it to look even better.
 
-The algorithm struggles on all things that depth cameras struggle on - thin objects like hair and cables, for example, are either lost completely or bring many pixels of the background into focus. Absorptive and even slightly reflective objects don't work. Direct sunlight degrades depth performance as well, as the infrared pattern is obscured.
-
-![plants outside?]()
+The algorithm struggles on all things that depth cameras struggle on - thin objects like hair, leaves, and cables, for example, are either lost completely or bring many pixels of the background into focus. Absorptive and even slightly reflective objects don't work.
 
 For the good things, pulling focus has a really weird and jarring look that looks really artificial. The image doesn't breathe at all - things just come into focus. It looks almost like scanning a room, like a video game effect. The blockiness also adds to this digital, glitchy look. Good thing I like cyberpunk aesthetics.
 
@@ -90,6 +90,6 @@ For the good things, pulling focus has a really weird and jarring look that look
 
 The result is always very dreamlike, I frequently percieve my dreams as being out of focus - or only the important thing is in focus. Its hard to read text sometimes. This effect can recreate it.
 
-![another cool one]()
+![me on the bed](/projects/img/2025-02-14-depth-of-field/1_bed_static.gif)
 
-Again, thanks for reading. I'm just glad this project is done.
+Again, thanks for reading. I'm just glad this project is done. Oh and happy valentines day!
