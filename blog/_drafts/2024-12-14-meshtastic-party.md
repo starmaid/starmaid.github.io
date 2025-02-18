@@ -40,3 +40,13 @@ Talk about game rules
 
 Table for all equipment
 
+|   Item    |   Qty.  |   I paid...    |
+|   ---     |   ---   |   ---     |
+| [3D printed case (0.04 kg)](https://www.thingiverse.com/thing:5989952) | 1 | $1 |
+| [Arduino Pro Micro](https://www.amazon.com/dp/B08THVMQ46) | 1 | $7
+| [B10K Potentiometer](https://www.amazon.com/dp/B07VQTFFGC) | 8 | $5 |
+| (optional stuff below) | --- | --- |
+| [USB Type C Female Connector](https://www.amazon.com/dp/B091CRLJM2) | 1 | $1 |
+| Mico-USB Male Connector | 1 | --- |
+| 5V LED | 1 | --- |
+| 200 Ohm Resistor | 1 | --- |
