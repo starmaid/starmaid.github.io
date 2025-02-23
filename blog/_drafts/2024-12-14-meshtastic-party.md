@@ -116,6 +116,13 @@ At 7pm, after dinner arrived, I put an orientation powerpoint on the screen. I m
 
 I handed out the radios, and most people got right set up! An unforseen hiccup was that the usb cable for connecting meshtastic didn't seem to work on iphone. I then tried to get the bluetooth working, and that didn't work either. There was probably some kind of stupid 'security' feature or developer mode I had to enable to get the app to work, and I had not researched it ahead of time. Sorry iphone users. Not really though. of the 14 or so people at the party, only 2 had iphones. One user had an android phone that could not act as a host device, so that didn't work either. I had a spare phone with meshtastic loaded, so I was able to loan one out. The rest had to just buddy up with someone.
 
+| RED | --- | BLU | --- | TGT | --- |
+| --- | --- | --- | --- | --- | --- |
+| RED1| Bree | BLU1| Nick(?) | TGT1| Brooke |
+| RED2| Kunal(?) | BLU2| Cat(?) | TGT1| Ian |
+| RED3| Harry(?) | BLU3| June(?) | | |
+| RED4| Lucy(?) | BLU4| AJ(?) | | |
+
 The first game began - I was a little drunk, so I accidentally gave the targets some extra head start time (by forgetting to tell everyone when it was time to leave). Then, everyone hopped the fence and started the game. I stayed at home with my second beacon device, which could hear the main beacon mounted above my apartment so I could monitor the conversations and see everyone (except the targets). 
 
 ![screenshots of texting]()
@@ -139,4 +146,4 @@ I was with RED team when they managed to capture one of the targets! I didn't ev
 note to self: can we scrib exif data from all photos here???
 
 
-exiftool -gps:all= -r -overwrite_original -ext jpg png .
+exiftool -gps:all= -r -overwrite_original -ext jpg -ext png -ext jpeg .
