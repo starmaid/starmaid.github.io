@@ -116,12 +116,12 @@ At 7pm, after dinner arrived, I put an orientation powerpoint on the screen. I m
 
 I handed out the radios, and most people got right set up! An unforseen hiccup was that the usb cable for connecting meshtastic didn't seem to work on iphone. I then tried to get the bluetooth working, and that didn't work either. There was probably some kind of stupid 'security' feature or developer mode I had to enable to get the app to work, and I had not researched it ahead of time. Sorry iphone users. Not really though. of the 14 or so people at the party, only 2 had iphones. One user had an android phone that could not act as a host device, so that didn't work either. I had a spare phone with meshtastic loaded, so I was able to loan one out. The rest had to just buddy up with someone.
 
-| RED | --- | BLU | --- | TGT | --- |
-| --- | --- | --- | --- | --- | --- |
-| RED1| Bree | BLU1| Nick(?) | TGT1| Brooke |
-| RED2| Kunal(?) | BLU2| Cat(?) | TGT1| Ian |
-| RED3| Harry(?) | BLU3| June(?) | | |
-| RED4| Lucy(?) | BLU4| AJ(?) | | |
+| RED | ---   | BLU | --- | TGT | --- |
+| --- | ---   | --- | --- | --- | --- |
+| RED1| Bree  | BLU1| Cheem and Maude(?) | TGT1| Brooke |
+| RED2| Lucy  | BLU2| Cat and June | TGT1| Ian |
+| RED3| Harry | BLU3| June(?) | | |
+| RED4| Kunal | BLU4| Nick | | |
 
 The first game began - I was a little drunk, so I accidentally gave the targets some extra head start time (by forgetting to tell everyone when it was time to leave). Then, everyone hopped the fence and started the game. I stayed at home with my second beacon device, which could hear the main beacon mounted above my apartment so I could monitor the conversations and see everyone (except the targets). 
 
@@ -141,9 +141,69 @@ I was with RED team when they managed to capture one of the targets! I didn't ev
 
 ## Processing
 
+*Lets check the replay.*
+
+Notes: RED3 and RED1 sent me their GPS data as well, which means their traces have more detail. In game one, RED2 did not participate (so there is no data).
+
+### Game 1
+
+![full screenshot of game 1](/blog/img/2024-12-14-meshtastic-party/game1_overview.png)
+
+| Event      | Time  |
+| ---        | ---   |
+| Head start | 20:15 |
+| Hunt start | 20:30 |
+| End        | 21:00 |
+
+Game 1 had a large playing field.
+
+![closeup of ian hiding](/blog/img/2024-12-14-meshtastic-party/game1_focus1.png)
+
+Early in the game, BLUE3 got close to TARGET2 - who stayed hidden while they searched the area.
+
+![closeup of bree and kunal near brooke](/blog/img/2024-12-14-meshtastic-party/game1_focus2.png)
+
+TARGET1 may have seen RED1 and RED4 close in on her, and turned around here? The timestamps don't quite line up, so unlikely. She was just being unpredictable.
+
+The first game ended with no captures.
+
+### Game 2
+
+![full game 2 map](/blog/img/2024-12-14-meshtastic-party/game2_overview.png)
+
+I shrank the map, and shortened the time periods for the second game.
+
+| Event      | Time  |
+| ---        | ---   |
+| Head start | 21:25 |
+| Hunt start | 21:35 |
+| End        | 21:55 |
+
+![panel of ian in the parking lot](/blog/img/2024-12-14-meshtastic-party/game2_focus1.png)
+
+TARGET2 had yet another set of close calls, this one even crazier - while sitting still in a parking lot, BLU2, BLU3, RED1, and RED3 all had locks on him - but none got close enough. 
+
+![catching brooke](/blog/img/2024-12-14-meshtastic-party/game2_focus2.png)
+
+However, while in a fruitless search for TARGET2, the RED team caught a strong signal on TARGET1 - and they managed to converge on her location just as the game drew to a close. 
+
+## Conclusion
+
+I think this was a really fun game. I would love to play again, either in the same location or in a new one. I had just as much fun learning about the capabilities of the radios and have some more ideas about what to do to improve the overall game. 
+
+Quick improvements:
+- Increase frequency of position reporting from users, or get better usage of the recording app. The data is really sparse.
+- Have a better way to record messages on the mesh - I think many got lost. (maybe just download from multiple/all devices?)
+- Simply tell the users the times of events, and then they will be able to come back home at the appropriate time.
+
+Also side note, I'm not putting a map of my address on the internet. If you know me and want to see the real and interactive maps, just message me.
+
+![](/blog/img/2024-12-14-meshtastic-party/7_party2.jpg)
+
+Very cool, very fun! Good way to start off being 26. Thanks everyone for playing!
 
 
-note to self: can we scrib exif data from all photos here???
 
 
-exiftool -gps:all= -r -overwrite_original -ext jpg -ext png -ext jpeg .
+
+
