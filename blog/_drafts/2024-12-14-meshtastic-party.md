@@ -22,6 +22,8 @@ I had my brother hold a radio in his jacket pocket. I held the radio in mine. We
 
 ![picture of head mount](/blog/img/2024-12-14-meshtastic-party/2_design.jpg)
 
+[The CAD files are here.](https://www.thingiverse.com/thing:6962294) Assembly only requires zipties and heatshrink.
+
 ### Head mounted with base station
 
 The question would be - how do you get the antenna above your head? I entertained asking everyone to wear a hat, and having the radios clip onto the band, or elastics, or something. But then, like a lightning strike, I realized there was only one solution. I could make cat ears for them. This was something I already had a design for, but it was made in Autodesk Inventor - and I had to remake it from scratch in FreeCAD. Learning B-splines was a trip and took several hours.
