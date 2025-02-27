@@ -22,17 +22,17 @@ The first thing I had to do was establish what the radios were even capable of. 
 
 I had my brother hold a radio in his jacket pocket. I held the radio in mine. We walked around my town, and basically as soon as we lost line of sight we lost signal. On street intersections, we could get reception if we faced each other - even our bodies were attenuating the signal enough that it wasn't getting through. If we held the radios above our heads, we could get slightly better results - but even having your hand near the antenna would reduce the effectiveness, and also you look kind of like an idiot.
 
-![picture of head mount](/blog/img/2024-12-14-meshtastic-party/2_design.jpg)
-
-[The CAD files are here.](https://www.thingiverse.com/thing:6962294) Assembly only requires zipties and heatshrink.
-
 ### Head mounted with base station
 
 The question would be - how do you get the antenna above your head? I entertained asking everyone to wear a hat, and having the radios clip onto the band, or elastics, or something. But then, like a lightning strike, I realized there was only one solution. I could make cat ears for them. This was something I already had a design for, but it was made in Autodesk Inventor - and I had to remake it from scratch in FreeCAD. Learning B-splines was a trip and took several hours.
 
+![picture of head mount](/blog/img/2024-12-14-meshtastic-party/2_design.jpg)
+
+[The CAD files are here.](https://www.thingiverse.com/thing:6962294) Assembly only requires zipties and heatshrink.
+
 ![picture of base station](/blog/img/2024-12-14-meshtastic-party/3_basestation.jpg)
 
-For base station, I wanted to get something above the roof of my apartment - and had some brainstorming about it. I settled on battery power, so I didn't have to run antenna, DC, or really, any cables up to the top of my tower. I also bought higher-gain tuned antennae for these base stations, because many people suggested upgrading the ones that come with the Heltec. The PVC is just taped to a camera tripod with gaff tape. Simple, straightforward, cheap, and I put a little sign that says to call me if anyone has trouble. 
+For base station, I wanted to get something above the roof of my apartment - and had some brainstorming about it. I settled on battery power, so I didn't have to run antenna, DC, or really, any cables up to the top of my tower. I also bought higher-gain tuned antennae for these base stations, because many people suggested upgrading the ones that come with the Heltec. The PVC is just taped to a camera tripod with gaff tape. Simple, straightforward, cheap, and I put a little sign that says to call me if anyone has trouble. [I used this availible model for the heltec to keep it safe, and to mount the external antenna](https://www.printables.com/model/466818-heltec-v3-mini-case-for-meshtastic).
 
 ![](/blog/img/2024-12-14-meshtastic-party/5_tower.jpg)
 
@@ -92,7 +92,7 @@ This is everything that I used during the party.
 | 3D Prints | a bunch | not much |
 | PVC Pipes for mounting base stations | 2 | $10 |
 
-So the Heltec [v3.1 and v3.2 revision](https://docs.heltec.org/en/node/esp32/wifi_lora_32/hardware_update_log.html) did improve things, and I did notice slightly better range out of the update + new antenna. But I would be remiss to not use all the hardware I had, so I gave the targets the two worse radios (maybe would make them harder to track?)
+So the Heltec [v3.1 to v3.2 revision](https://docs.heltec.org/en/node/esp32/wifi_lora_32/hardware_update_log.html) did improve things, and I did notice slightly better range out of the update + new antenna. But I would be remiss to not use all the hardware I had, so I gave the targets the two worse radios (maybe would make them harder to track?)
 
 The batteries, switches, and antennae were used in assembling the base stations. The Heltec boards have LiPo charging circuits so thats super handy. They are now good to use as my own personal mobile devices, and I connected over bluetooth while everyone else had to use a cable.
 
