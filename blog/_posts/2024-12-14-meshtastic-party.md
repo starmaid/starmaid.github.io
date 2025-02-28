@@ -131,7 +131,7 @@ I handed out the radios, and most people got right set up! An unforseen hiccup w
 | RED | ---   | BLU | --- | TGT | --- |
 | --- | ---   | --- | --- | --- | --- |
 | RED1| Bree  | BLU1| Cheem and Maude | TGT1| Brooke |
-| RED2| Lucy  | BLU2| Cat and June | TGT1| Ian |
+| RED2| Lucy  | BLU2| Cat and June | TGT2| Ian |
 | RED3| Harry | BLU3| June | | |
 | RED4| Kunal | BLU4| Nick | | |
 
