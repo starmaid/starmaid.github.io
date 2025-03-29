@@ -12,7 +12,7 @@ My response comes subtly. There was a time before advertisers dominated the web,
 
 ### The Manifesto
 
-Read my [manifesto](http://www.nickmasso.com/blog/2021/12/05/blogging-manifesto.html), if you want some context. I have some ideals for the kind of blogger who can help bring us into an enlightened age. Some of the items are sanity checks, some are asking a little more. This will be my guiding document as I work.
+Read my [manifesto](http://starmaid.github.io/blog/2021/12/05/blogging-manifesto.html), if you want some context. I have some ideals for the kind of blogger who can help bring us into an enlightened age. Some of the items are sanity checks, some are asking a little more. This will be my guiding document as I work.
 
 
 ### Why 2022?

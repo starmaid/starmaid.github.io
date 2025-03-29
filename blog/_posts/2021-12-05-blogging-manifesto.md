@@ -13,9 +13,6 @@ There is no shortage of blog manifestos, in fact by 2012 it seems [every](http:/
 
 I'm mixing this manifesto with some other tech/hacker mindsets. See the *Other Readings* section at the end for some influences. More will be added to this post as i find them.
 
-[A companion piece will be linked here for more detail.](https://nickmasso.com)
-
-
 ## 1. The Blogger Exists
 
 THE BLOGGER has three options. First, to blog publicly and openly as their OFFLINE IDENTITY. Second, to blog in a restricted sphere, but still as their OFFLINE IDENTITY - a RESTRICTED IDENTITY. Third, to blog truly anonymously, as a PERSONA. THE BLOGGER must make this choice, and resist temptation to mix these spheres. WEB 2.0 aims to destroy the boundary between a PERSONA and an OFFLINE IDENTITY, but THE BLOGGER crafts their own existence.

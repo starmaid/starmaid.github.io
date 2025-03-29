@@ -100,13 +100,16 @@ Play (in order of skill)...
 
 ## Places I've Worked
 
-**SRI International**
+### SRI International 
 
 *Menlo Park, CA*
 
-[in progress]
+Software Engineer - Sept. 2021 - May 2025
 
-**Resilient Extra-Terrestrial Habitat Institute**
+At SRI, I worked under the Products, and later Commercialization groups. My high-level directive was "work with researchers and labs to bring their early-TRL code closer to production, and assist with efforts to work with external clients." Under this directive, I worked in a handful of different labs on many different levels of the stack. Because I was funded from a different organization, the labs were appreciative of another person to help with the work.
+
+
+### Resilient Extra-Terrestrial Habitat Institute
 
 *Purdue University, West Lafayette IN*
 
@@ -119,7 +122,7 @@ conference in Spring 2020, software model presented in Fall 2020.
 Rotorcraft Aeromechanics - NASA Ames Research Center
 
 
-**Rotorcraft Aeromechanics**
+### Rotorcraft Aeromechanics
 
 *NASA Ames Research Center, Mountain View CA*
 
@@ -131,7 +134,7 @@ year-old predecessor. Results documented in NASA report.
 Introduction to Honors Engineering - Purdue University
 
 
-**Introduction to Honors Engineering**
+### Introduction to Honors Engineering
 
 *Purdue University, West Lafayette IN*
 
@@ -142,7 +145,7 @@ repositories and writing Python software for TAs and students. Pushing Linux con
 and firmware to over 300 student raspberry pi devices over the internet.
 
 
-**Commercial Rocketry Team**
+### Commercial Rocketry Team
 
 *Purdue Orbital, West Lafayette IN*
 
