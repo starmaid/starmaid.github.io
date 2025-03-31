@@ -106,7 +106,7 @@ Play (in order of skill)...
 
 Software Engineer - Sept. 2021 - May 2025
 
-At SRI, I worked under the Products, and later Commercialization groups. My high-level directive was "work with researchers and labs to bring their early-TRL code closer to production, and assist with efforts to work with external clients." Under this directive, I worked in a handful of different labs on many different levels of the stack. Because I was funded from a different organization, the labs were appreciative of another person to help with the work.
+
 
 
 ### Resilient Extra-Terrestrial Habitat Institute
