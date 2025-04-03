@@ -3,7 +3,7 @@ author: Nicky Masso # name of site's author
 email: nmasso@protonmail.com # email of site's author
 url: https://starmaid.github.io # root address of the site
 description: > 
-  I am Calypso and this page is my island
+  My cool internet site :)
 
 permalink: /:categories/:title/
 

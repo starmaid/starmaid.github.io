@@ -3,13 +3,13 @@ layout: post
 title: Resume
 ---
 
-[View my standard PDF resume](https://github.com/starmaid/starmaid.github.io/blob/master/resume.pdf)
+[View my regular PDF resume](https://github.com/starmaid/starmaid.github.io/blob/master/resume.pdf)
 
 ## Things I can do
 
 Write software comfortably in... 
 - [Python](https://github.com/starmaid/pulseofexploration)
-- C/C++
+- [C/C++](https://github.com/starmaid/depth-of-field-cpp)
 - [C#](https://github.com/starmaid/augmented-gem)
 - Java
 - [Haskell](https://github.com/starmaid/adventofcode2022)
@@ -20,7 +20,7 @@ Write software comfortably in...
 - Powershell
 
 With these tools and frameworks...
-- Docker + Kubernetes
+- [Docker + Kubernetes](https://github.com/starmaid/birdflight)
 - [React](https://github.com/mchartigan/bitwise)
 - [Flask](https://github.com/starmaid/netkiss)
 - [Jekyll](https://github.com/starmaid/starmaid.github.io)
@@ -86,17 +86,6 @@ Make media with...
 Fly...
 - High-Power solid rockets up to 1280 N-s of impulse
 - My homebuilt FPV racing drones
-- Your single-engine GA plane (if you dont tell anyone)
-
-Play (in order of skill)...
-- Guitar
-- Bass
-- Trombone
-- Drums
-- Piano
-- Trumpet
-- Tuba
-- Flute
 
 ## Places I've Worked
 
@@ -106,8 +95,38 @@ Play (in order of skill)...
 
 Software Engineer - Sept. 2021 - May 2025
 
+At SRI, I worked under the Products, and later Commercialization groups. My high-level directive was "work with researchers and labs to bring their early-TRL code closer to production, and assist with efforts to work with external clients." I worked in a handful of different labs on every part of the stack.
 
+**SynFini Chemistry Automation**: The [SynFini lab]((https://synfini.com/)) was just starting to do [commercial work for clients](https://www.sri.com/press/press-release/sri-international-enters-drug-discovery-and-research-collaboration-with-sanofi/) when I started, everal new chemists had been hired, and they were expected to run the system and approach high throughput. While they did this, the hardware and software would need maintenance and upgrades.
 
+- Programming FANUC robot industrial robots
+- C++ and C# interfacing with hardware, rebuilding and deploying in lab
+- rebuilding and deploying docker images to hardware in lab
+- diagnosing networking issues, finding out IT had changed things, DNS records, firewalls, etc.
+- Testing and rolling out updated versions of the django+postgresql web platform on kubernetes (developed by external contractors)
+- Investigating and fixing bugs on web platform
+- Custom lab hardware
+- Vacuum pumps
+- Speedvac
+- Rotovap
+- HPLC pumps
+
+I also spent a significant time writing manuals for our custom hardware, as well as compiling the regular maintenance procedures for COTS hardware. This helped make sure all operations were to the standards of our EH&S department, who would periodically evaluate our hardware for compliance. These manuals also helped the lab [spin out as a startup in late 2023](https://www.sri.com/biomedical-sciences/sri-spins-off-ai-powered-drug-discovery-platform-synfini-inc/)
+
+**Taurus and XRGo Teleoperated Robots**: SRI makes a general-purpose, bi-manual, teleoperated robot that is battery-powered and light enough to fit on the tool arm of an EOD or other mobile robot. I contributed to the effort to turn the software into a standalone product that could be integrated with commercial robot arms, called [XRGo](https://www.sri.com/product/xrgo/).
+
+- Writing c++ code for low-latency robotic control
+- Using DirectX 11 and CUDA libraries in c++ for fast image encoding, streaming, and processing
+- Developing for VR with Unreal Engine
+- Programming industrial 6-axis arms from
+    - Staubli
+    - Denso
+    - Universal Robots
+    - RealMan
+
+As part of an Internal Research and Development effort, I worked with a PI from our Vision and AI group to use a trained diffusion policy to control the robot. My focus was to add interfaces into our low latency netcode and shared memory from the AI-level code. These high-level functions extended the capabilities and made our software much easier to develop new applications for.
+
+**Medical Devices Corner**: [MDC Inc.](https://www.meddevcorner.com/) is a startup created by three Stanford grad students - the core idea is a [hydraulically-actuated robot for teleoperation inside an MRI bore](https://patents.google.com/patent/WO2024086666A1/en). I was asked to help with the creation of an Unreal Engine-based simulator for their robot. Additionally, I worked on a visualizer that used instanced geometry in Unreal Engine to render voxel clouds of live-updating MRI data as it was captured by a machine, so an operator in VR could take arbitrary slices of 3D MRI data.
 
 ### Resilient Extra-Terrestrial Habitat Institute
 
