@@ -126,7 +126,10 @@ I also spent a significant time writing manuals for our custom hardware, as well
 
 As part of an Internal Research and Development effort, I worked with a PI from our Vision and AI group to use a trained diffusion policy to control the robot. My focus was to add interfaces into our low latency netcode and shared memory from the AI-level code. These high-level functions extended the capabilities and made our software much easier to develop new applications for.
 
-**Medical Devices Corner**: [MDC Inc.](https://www.meddevcorner.com/) is a startup created by three Stanford grad students - the core idea is a [hydraulically-actuated robot for teleoperation inside an MRI bore](https://patents.google.com/patent/WO2024086666A1/en). I was asked to help with the creation of an Unreal Engine-based simulator for their robot. Additionally, I worked on a visualizer that used instanced geometry in Unreal Engine to render voxel clouds of live-updating MRI data as it was captured by a machine, so an operator in VR could take arbitrary slices of 3D MRI data.
+**AVSR Autonomous Robots**: [AVSR](https://www.avsr.io/) is a new startup out of Montreal that is working on bringing dextrous, AI controlled mobile robots into small/medium businesses. I customized our hardware interface code for their target hardware, and using our code they will be able to scale teleoperation and collect massive amounts of training data. I also performed a study on teleoperation efficiency with latency, as well as characterizing latency from remote sites. 
+
+**Medical Devices Corner**: [MDC Inc.](https://www.meddevcorner.com/) is a startup in residence at SRI created by three Stanford grad students - the core idea is a [hydraulically-actuated robot for teleoperation inside an MRI bore](https://patents.google.com/patent/WO2024086666A1/en). I helped with the creation of an Unreal Engine-based simulator for their robot. Additionally, I worked on a visualizer that used instanced geometry in Unreal Engine to render voxel clouds of live-updating MRI data as it was captured by a machine, so an operator in VR could take arbitrary slices of 3D MRI data.
+
 
 ### Resilient Extra-Terrestrial Habitat Institute
 
