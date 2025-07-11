@@ -1,7 +1,7 @@
 let
   pkgs = import <nixpkgs> {};
 in pkgs.mkShell {
-  packages = [
+  packages = with pkgs; [
     jekyll
     bundler
   ];

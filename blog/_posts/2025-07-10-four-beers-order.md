@@ -14,7 +14,7 @@ This shirt was designed by my friend [Modawful](https://www.youtube.com/watch?v=
 
 Theyre $10 because this stuff costs money sorry. I'm just trying to break even.
 
-[**Fill out this form here!**](https://starmaid.us.to:450/apps/forms/s/a95cG7yQ5DkHNWKwSfkXFbya) *If you get an SSL error just hit more -> accept the risk. I'm self hosting this form instead of using google.*
+[**Fill out this form here!**](https://starmaid.us.to/apps/forms/s/a95cG7yQ5DkHNWKwSfkXFbya)
 
 ![](/blog/img/2025-07-10-four-beers-order/design2.png)
 
