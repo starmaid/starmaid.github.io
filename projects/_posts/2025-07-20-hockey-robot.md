@@ -108,8 +108,8 @@ Friday was loadin and systems check. We all got to make sure things were working
 
 Our team:
 
-- [Orion Beach](https://www.research.autodesk.com/people/orion-beach/) also captain of Offbeat Robotics, and their bigbot Hijinx
-- [Nick Hom](https://battlebots.com/robot/ribbot-2021/) from bigbot team Ribbot
+- **Orion Beach**, also engineering lead of [Offbeat Robotics](https://www.offbeatrobotics.com/), and their bigbot Hijinx
+- **Nick Hom** from bigbot team [Ribbot](https://battlebots.com/robot/ribbot-2021/)
 - Me :) its my first time lol
 
 ![](/projects/img/2025-07-20-hockey-robot/team_1.jpg)
@@ -153,5 +153,6 @@ My robot got pretty beat up, but most of it was just on the tape I slapped all o
 ![](/projects/img/2025-07-20-hockey-robot/everyone.jpg)
 
 Thanks to the tournament runners, Bunny, Alex, and all the other teams. It was a great time and I plan to keep playing this fun game with all of you.
+
 
 [https://bothockeyleague.com/bot-hockey-info/](https://bothockeyleague.com/bot-hockey-info/)
