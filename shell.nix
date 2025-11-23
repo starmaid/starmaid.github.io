@@ -4,5 +4,7 @@ in pkgs.mkShell {
   packages = with pkgs; [
     jekyll
     bundler
+    exiftool
+    ffmpeg_6  
   ];
 }
