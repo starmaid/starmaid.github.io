@@ -3,7 +3,7 @@ layout: post
 title: Haptic Feedback Suit
 tags: xbox, gaming, armored core 6, arduino
 image:
-  path: /projects/img/2025-02-14-depth-of-field/3_pen.gif
+  path: /blog/img/2025-03-30-haptic-suit/2_arduino.jpg
 ---
 
 video of the system working
@@ -40,7 +40,7 @@ I tried using pygame to test the device - this would allow me to constantly send
 
 Sidenote about vjoy and smartpropoplus - it's been years since they were updated, but they totally still work great. If you don't have a TX that supports HID mode for simulators, give them a shot. Also shoutout to Windows-specific software I'll miss on Linux.
 
-some other picture
+smartpropoplus gif
 
 ### Mapping
 
