@@ -6,7 +6,7 @@ image:
   path: /blog/img/2025-03-30-haptic-suit/2_arduino.jpg
 ---
 
-video of the system working
+{% include youtube_embed.html id="UMwNldFz4C4" %}
 
 This was a quick project that I made to have some fun while playing Fromsoft's 2016 game **Armored Core 6**. 
 
@@ -16,7 +16,7 @@ I really like playing AC6 on mouse and keyboard. However, I want to feel like I'
 
 However, this is not optimal. It's a little annoying to have to keep adjusting this loose controller, and you can accidentally push buttons or move joysticks a little, which is really annoying. So I started thinking of ways to get around this. One thing I've been doing is using Arduino ProMicro devices as native USB controllers, like MIDI or HID type devices. One of the HID libraries is set up for pretending to be an xbox contorller. I also have motor drivers, so all I have to do is convert a rumble command into a command for the motor driver!
 
-drawio diagram
+![drawio diagram](/blog/img/2025-03-30-haptic-suit/wiring.drawio.png)
 
 First I had to make some enclosed haptic actuators, so that I could just mount them however. I already had a bunch of 12V DC brushed motors, and I had been curious about trying out one of the laser fabrication houses that shills on youtube have been pitching. So I got sendcutsend to make some counterweights, and also send me some sheets of aluminum so I got free shipping and had some stock on hand for machining myself.
 
@@ -40,7 +40,7 @@ I tried using pygame to test the device - this would allow me to constantly send
 
 Sidenote about vjoy and smartpropoplus - it's been years since they were updated, but they totally still work great. If you don't have a TX that supports HID mode for simulators, give them a shot. Also shoutout to Windows-specific software I'll miss on Linux.
 
-smartpropoplus gif
+![smartpropoplus demo gif](/blog/img/2025-03-30-haptic-suit/smartpropo.gif)
 
 ### Mapping
 
@@ -48,7 +48,7 @@ Xbox HID specifies two vibrate values, one for the low frequency and one for the
 
 I did end up putting a single connector - 4 wire plug that allowed me to stand up and walk away from my desk.
 
-armored core gif
+![armored core gif](/blog/img/2025-03-30-haptic-suit/ac.gif)
 
 ## Playing the Game
 
@@ -58,7 +58,7 @@ Its fun!
 
 I actually was probably 75% of the way done with my first playthrough when I started this project, so I had only the most interesting and emotional battles left. I really feel like the setup helped me focus more, feel more connected to the story, and get the most enjoyment out of a genre and game that I really love. 
 
-(For those of you who know, I was doing the corpo route. Those last two battles were crazy. Sorry Rusty <3)
+(For those of you who know, I was doing the corpo route at the time. Those last two battles were crazy. Sorry Rusty <3)
 
 ## Further Work
 
