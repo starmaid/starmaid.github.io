@@ -8,7 +8,7 @@ image:
 
 {% include youtube_embed.html id="UMwNldFz4C4" %}
 
-This was a quick project that I made to have some fun while playing Fromsoft's 2016 game **Armored Core 6**. 
+This was a quick project that I made to have some fun while playing Fromsoft's 2023 game **Armored Core 6**. 
 
 ## Idea
 
