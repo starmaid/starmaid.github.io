@@ -7,6 +7,14 @@ title: Resume
 
 ## Places I've Worked
 
+### Reliable Robotics
+
+*Mountain View, CA*
+
+Flight Software Engineer - July 2025 - Present
+
+I work here now! [Check out the things we are getting up to here](https://reliable.co/news)
+
 ### SRI International 
 
 *Menlo Park, CA*
