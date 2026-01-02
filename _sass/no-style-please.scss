@@ -46,6 +46,10 @@ p { margin: 1rem 0; }
 
 a { color: hotpink;}
 
+ul {
+  padding-left: 1rem;
+}
+
 li { margin: 0.4rem 0; }
 
 *:target { background: yellow; }
@@ -98,4 +102,31 @@ img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+}
+
+.home-thumb {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+}
+
+.item-columns {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.item-left {
+    flex: 1 1 auto;
+    width: 40%;
+    flex-flow: row;
+    align-content: center;
+}
+
+.item-right {
+    flex: 1 1 auto;
+    width: 50%;
+    display: flex;
+    flex-flow: row;
+    justify-content: right;
 }

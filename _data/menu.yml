@@ -21,7 +21,7 @@ entries:
   - title: projects
     post_list:
       category: projects
-      limit: 10
+      limit: 3
       show_more: true
       show_more_text: see all projects...
       show_more_url: ./archives/archive-project
@@ -29,7 +29,7 @@ entries:
   - title: blog
     post_list:
       category: blog
-      limit: 5
+      limit: 2
       show_more: true
       show_more_text: see all posts...
       show_more_url: ./archives/archive-blog
