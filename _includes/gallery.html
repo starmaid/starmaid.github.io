@@ -1,0 +1,23 @@
+{%-if include.category-%}
+{%-assign posts = site.categories[include.category]-%}
+{%-else-%}
+{%-assign posts = site.posts-%}
+{%-endif-%}
+
+{%-if include.limit and posts.size > include.limit-%}
+{%-assign limit_exceeded = true-%}
+{%-else-%}
+{%-assign limit_exceeded = false-%}
+{%-endif-%}
+
+<div class="gridcontainer">
+  <div class="grid">
+    {%- for post in posts limit: include.limit -%}
+    <div class="item-grid">
+      <a href="{{ post.url | relative_url }}">
+        <img src="{{ post.image.path }}" class="home-thumb">
+      </a>
+    </div>
+    {%- endfor -%}
+  </div>
+</div>

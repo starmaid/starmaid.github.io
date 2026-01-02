@@ -130,3 +130,23 @@ img {
     flex-flow: row;
     justify-content: right;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+    width: 100%;
+}
+
+.gridcontainer {
+    flex: 1 1 auto;
+    margin: 3%;
+    text-align: center;
+    min-width: 600px;
+}
+
+.item-grid {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row;
+}
