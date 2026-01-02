@@ -18,3 +18,6 @@ Theyre $10 because this stuff costs money sorry. I'm just trying to break even.
 
 ![](/blog/img/2025-07-10-four-beers-order/design2.png)
 
+![](/blog/img/2025-07-10-four-beers-order/stack.jpg)
+
+![](/blog/img/2025-07-10-four-beers-order/signature.jpg)
