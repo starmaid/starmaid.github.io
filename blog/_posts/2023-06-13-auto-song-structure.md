@@ -2,6 +2,8 @@
 layout: post
 title: Auto Song Structure
 tags: audio, music, librosa
+image:
+  path: /blog/img/2023-06-13-auto-song-structure/image-4.png
 ---
 
 ![Pic of band room](../img/2023-06-13-auto-song-structure/image.png)

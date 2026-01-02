@@ -2,6 +2,8 @@
 layout: post
 title: Gerard Way's 2022 NA Tour Outfits
 tags: MCR, My Chemical Romance, Gerard Way, MCR 2022
+image:
+  path: /blog/img/gerardway/20220918.jpg
 ---
 
 I like making lists. Heres every outfit from the 2022 North America tour, in order, with links.

@@ -2,6 +2,8 @@
 layout: post
 title: MIDI Knob Bank
 tags: midi, arduino
+image:
+  path: /blog/img/midiknobs/0_title2.png
 ---
 
 *I don't want to touch a keyboard while holding a guitar!!!*

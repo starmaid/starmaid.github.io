@@ -2,6 +2,8 @@
 layout: post
 title: Smart Home Adventures
 tags: homeassistant, esp32, raspberrypi
+image:
+  path: /blog/img/2023-11-23-smart-home/lightson_crop2.gif
 ---
 
 ![gif of my room turning on](../img/2023-11-23-smart-home/lightson_crop2.gif)

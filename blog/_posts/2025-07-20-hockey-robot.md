@@ -3,7 +3,7 @@ layout: post
 title: Hockey Robot
 tags: nhrl, combat robot
 image:
-  path: /blog/img/2025-07-20-hockey-robot/bunny_draw.png
+  path: /blog/img/2025-07-20-hockey-robot/goal.gif
 ---
 
 {% include youtube_embed.html id="Y_yZiCNvSLQ" %}

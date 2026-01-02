@@ -2,6 +2,8 @@
 layout: post
 title: Plant Monitor
 tags: plants, raspberry pi
+image:
+  path: /blog/img/2023-07-29-plant-monitor/render6.png
 ---
 
 ![](../img/2023-07-29-plant-monitor/render6.png)

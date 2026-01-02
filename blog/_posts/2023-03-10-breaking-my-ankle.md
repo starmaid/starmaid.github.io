@@ -2,6 +2,8 @@
 layout: post
 title: Breaking my Ankle
 tags: 
+image: 
+  path: /blog/img/ankle/1.png
 ---
 
 On December 26th, 2022, I fell down and broke my ankle. I got surgery about a week and a half later.
