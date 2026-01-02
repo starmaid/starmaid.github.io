@@ -18,18 +18,10 @@ entries:
       - title: conferences
         url: conferences
 
-  - title: projects
-    post_list:
-      category: projects
-      limit: 3
-      show_more: true
-      show_more_text: see all projects...
-      show_more_url: ./archives/archive-project
-
   - title: blog
     post_list:
       category: blog
-      limit: 2
+      limit: 4
       show_more: true
       show_more_text: see all posts...
       show_more_url: ./archives/archive-blog

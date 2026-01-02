@@ -3,10 +3,10 @@ layout: post
 title: Peppers Ghost
 tags: illusion, peppers_ghost, miku, hologram
 image:
-  path: /projects/img/2024-06-01-peppers-ghost/small_2.jpg
+  path: /blog/img/2024-06-01-peppers-ghost/small_2.jpg
 ---
 
-![](/projects/img/2024-06-01-peppers-ghost/dance.gif)
+![](/blog/img/2024-06-01-peppers-ghost/dance.gif)
 
 ## Experiments
 
@@ -20,9 +20,9 @@ This is how Hatsune Miku, hologram-Tupac, and Gorillaz work.
 
 I just grabbed some extrusion, a monitor, and some plastic wrap. Open a youtube video.
 
-![](/projects/img/2024-06-01-peppers-ghost/small_2.jpg)
+![](/blog/img/2024-06-01-peppers-ghost/small_2.jpg)
 
-![](/projects/img/2024-06-01-peppers-ghost/small_1.jpg)
+![](/blog/img/2024-06-01-peppers-ghost/small_1.jpg)
 
 Well I'll be darned if that isnt Hat-soo-nay Mee-Koo right here in my sleeping quarters. Even in daylight she was perfectly legible and even pretty contrasty. The shrink wrap worked, but needed to be pulled taut at all edges. Thats probably going to be the killer.
 
@@ -30,19 +30,19 @@ Well I'll be darned if that isnt Hat-soo-nay Mee-Koo right here in my sleeping q
 
 So I built a larger version using some 2x4's I had lying around. I tilted it between a two tables because it would support the screen without something like a tripod in my way. I moved and rotated the projector to the side and at 90 degrees to get the most hight out of our superstar.
 
-![](/projects/img/2024-06-01-peppers-ghost/large_setup.jpg)
+![](/blog/img/2024-06-01-peppers-ghost/large_setup.jpg)
 
 First thing I noticed is that pointing the projector through the screen to the floor underneath it doesnt really work. Theres a weird "Real" reflection that appears slightly behind but perfectly superimposed with the "Virtual" projection (the apparent location of the projection target location)
 
 This was obvious as soon as I realized what was happening, and now I knew why productions always have the projector somewhere else. This obviously isnt a problem for the display-based technique.
 
-![](/projects/img/2024-06-01-peppers-ghost/peppers.drawio.png)
+![](/blog/img/2024-06-01-peppers-ghost/peppers.drawio.png)
 
 I moved the projector off-axis to do the rest of these.
 
-![](/projects/img/2024-06-01-peppers-ghost/large_2.jpg)
+![](/blog/img/2024-06-01-peppers-ghost/large_2.jpg)
 
-![](/projects/img/2024-06-01-peppers-ghost/large_1.jpg)
+![](/blog/img/2024-06-01-peppers-ghost/large_1.jpg)
 
 Obviously these don't look good. It was hard to attach multiple sheets of plastic wrap, so that they all tensioned each other. I just got one flat enough to work. This is the one on the far left. As soon as the transition happens, it goes unreadable.
 

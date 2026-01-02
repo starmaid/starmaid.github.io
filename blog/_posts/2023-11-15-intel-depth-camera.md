@@ -3,7 +3,7 @@ layout: post
 title: Intel Depth Camera
 tags: intel, realsense, d435, stereo, opencv, vision
 image:
-  path: /projects/img/2023-11-15-intel-depth-camera/selfie.png
+  path: /blog/img/2023-11-15-intel-depth-camera/selfie.png
 ---
 
 ![a 3D scan selfie!](../img/2023-11-15-intel-depth-camera/selfie.png)
@@ -12,7 +12,7 @@ Written November 2023
 
 ## Introduction
 
-Previously, [I had pretty rotten luck with a hacked stereo camera](/projects/ps4-stereo-camera/). My frustration caused me to search for a hardware alternative, which I found as the [Intel D435](https://www.intelrealsense.com/depth-camera-d435/). It seemed like a pretty solid platform, had a well-supported API, did processing on the hardware, and a lively developer community. I grabbed a used one off amazon for $160. This post will document how I got it working for the various things I want to do with it.
+Previously, [I had pretty rotten luck with a hacked stereo camera](/blog/ps4-stereo-camera/). My frustration caused me to search for a hardware alternative, which I found as the [Intel D435](https://www.intelrealsense.com/depth-camera-d435/). It seemed like a pretty solid platform, had a well-supported API, did processing on the hardware, and a lively developer community. I grabbed a used one off amazon for $160. This post will document how I got it working for the various things I want to do with it.
 
 ![the intel D435...](../img/2023-11-15-intel-depth-camera/image.png)
 

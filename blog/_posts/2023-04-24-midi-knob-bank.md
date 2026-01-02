@@ -6,7 +6,7 @@ tags: midi, arduino
 
 *I don't want to touch a keyboard while holding a guitar!!!*
 
-![Image of the knobs and the launchpad and a keyboard](/projects/img/midiknobs/0_title2.png)
+![Image of the knobs and the launchpad and a keyboard](/blog/img/midiknobs/0_title2.png)
 
 ## Idea
 
@@ -24,7 +24,7 @@ Hydra is great for livecoding, when the experience is meant to include the perfo
 
 Obviously the first thing I thought about was the Korg NanoKontrol. 
 
-![Nanokontrol](/projects/img/midiknobs/0_nanokontrol.jpg)
+![Nanokontrol](/blog/img/midiknobs/0_nanokontrol.jpg)
 
 But two things stopped me; I needed two separately addressed devices so ableton and hydra didn't have to share, and I also wanted a drumpad-like device to control the tracks and scenes.
 
@@ -34,7 +34,7 @@ The concept of building your own midi knob set is not new, many people have done
 
 I decided to buy a Novation Launchpad, and construct two knob banks of ??? knobs each. If I really need some sliders, I can build/buy that then.
 
-![](/projects/img/midiknobs/1_ideas.jpg)
+![](/blog/img/midiknobs/1_ideas.jpg)
 
 I liked the idea of a super slim row of knobs, that can be oriented however fits your setup. No nonsense, no buttons. I also preferred an extra empty space to fit the microcontroller instead of making the whole thing thicker.
 
@@ -44,23 +44,23 @@ I liked the idea of a super slim row of knobs, that can be oriented however fits
 - USB Type-C connector
 - Native MIDI device (no serial->midi program needed)
 
-![](/projects/img/midiknobs/2_design.jpg)
+![](/blog/img/midiknobs/2_design.jpg)
 
 ### Aside about CAD
 
 I started modeling this in blender using the [CAD Sketcher Plugin](https://www.cadsketcher.com/), but found one massive limitation: **You cannot reference geometry from a different out-of-plane sketch.** Especially if that geometry has since been extruded. By the looks of it, this is a limitation that will never be fixed. The 'Thicken' modifier that functions as extrude will forever create meshes, not parameterized geometry. Also, even creating a sketch on a face seems to be missing. This plugin, while awesome, will never match true parameterized modeling (but I will keep using it for my Blender-native projects as needed, to quickly generate properly-sized objects).
 
-![](/projects/img/midiknobs/4_blender.png)
+![](/blog/img/midiknobs/4_blender.png)
 
 So I opened up [FreeCAD](https://www.freecad.org/), something I had put down about two years ago when I got frustrated after not immediately understanding everything about it. I read their (very helpful) wiki and got to work. It was much easier than I remembered! I must have been drunk or impatient when I tried it the first time. I even used the spreadsheet for named parameters. And I didn't even need to pirate solidworks!
 
-![](/projects/img/midiknobs/5_freecad.png)
+![](/blog/img/midiknobs/5_freecad.png)
 
 ### Hardware
 
 Heres a list of the stuff inside one knob bank:
 
-![](/projects/img/midiknobs/6_parts.png)
+![](/blog/img/midiknobs/6_parts.png)
 
 |   Item    |   Qty.  |   I paid...    |
 |   ---     |   ---   |   ---     |
@@ -94,34 +94,34 @@ I 3D printed the case. I accidentally got a cool two-tone on my first attempt wh
 
 I broke off the positioning tabs on the knobs because I was too lazy to model the little holes for them. Sorry :/.
 
-![](/projects/img/midiknobs/7.5_break.png)
+![](/blog/img/midiknobs/7.5_break.png)
 
 I then installed the pots and started soldering the ground and 5V in a chain. I did this weird over-under pattern to prevent the wires from getting in my way.
 
-![](/projects/img/midiknobs/8_solder_knobs.png)
+![](/blog/img/midiknobs/8_solder_knobs.png)
 
 Then I soldered the wires for the out pin of all the pots. I left some slack to be cut later.
 
-![](/projects/img/midiknobs/9_solder_control.png)
+![](/blog/img/midiknobs/9_solder_control.png)
 
 Then I made my adapter from Micro to Type-C
 
-![](/projects/img/midiknobs/10_adapter.png)
+![](/blog/img/midiknobs/10_adapter.png)
 
 And soldered together the LED and resistor.
 
-![](/projects/img/midiknobs/11_led.png)
+![](/blog/img/midiknobs/11_led.png)
 
 I soldered all the connections from the pots to the analog pins, and glued down the Type-C and LED.
 
-![](/projects/img/midiknobs/12_glue.png)
+![](/blog/img/midiknobs/12_glue.png)
 
 I then cut a backing out of foam board. You could make this out of cardboard, plastic, aluminum, or anything. I cant justify 3D printing something like this.
 
-![](/projects/img/midiknobs/13_backl.png)
+![](/blog/img/midiknobs/13_backl.png)
 
 And it works!
 
-![](/projects/img/midiknobs/14_done.png)
+![](/blog/img/midiknobs/14_done.png)
 
-![](/projects/img/midiknobs/15_ableton.gif)
+![](/blog/img/midiknobs/15_ableton.gif)
