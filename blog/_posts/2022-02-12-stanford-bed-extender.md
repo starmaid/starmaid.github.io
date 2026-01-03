@@ -2,6 +2,8 @@
 layout: post
 title: Stanford Mattress Extender
 tags: dorm, stanford university
+image:
+  path: /blog/img/bed/3.jpg
 ---
 
 ![](/blog/img/bed/3.jpg)

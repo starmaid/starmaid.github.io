@@ -3,6 +3,8 @@ layout: post
 title: Onstage Lighting for HALLIE
 comments: true
 tags: [rgb, lighting, "stage lights", HALLIE]
+image:
+  path: /blog/img/hallielights_assets/14.gif
 ---
 
 Written 10/16/2021
