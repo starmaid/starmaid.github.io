@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hockey Robot
-tags: nhrl, combat robot
+tags: combat, robot, bhl, hockey 
 image:
   path: /blog/img/2025-07-20-hockey-robot/goal.gif
 ---

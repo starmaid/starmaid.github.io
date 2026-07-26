@@ -12,6 +12,6 @@ exiftool -gps:all= -r -overwrite_original -ext jpg -ext png -ext jpeg .
 #!/bin/bash
 mkdir ./scaled
 for filename in ./*.jpg; do
-    ffmpeg -i "$filename" -vf scale="iw/2:ih/2" "./scaled/$filename"
+    ffmpeg -i "$filename" -vf scale="iw/4:ih/4" "./scaled/$filename"
 done
 ```
