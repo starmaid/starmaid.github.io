@@ -7,7 +7,7 @@
 *"I don't know what programmer needs to hear this, but focus on the content of your personal website - don't obsess over coding your theme" - Unknown*
 
 ```
-exiftool -gps:all= -r -overwrite_original -ext jpg -ext png -ext jpeg .
+exiftool -all= -tagsfromfile @ -all:all -unsafe -gps:all= -r -overwrite_original -ext jpg -ext png -ext jpeg .
 
 #!/bin/bash
 mkdir ./scaled
