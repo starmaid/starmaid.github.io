@@ -53,7 +53,7 @@ So obviously the biggest challenge was traction - our robots have 60A hard rubbe
 The second issue was running into piles of snow on the ice. These were surprisingly sticky and would fully immobilize our robots, requiring someone to hit the robot with some object, or to just wait for someone with hockey skates to give them a nudge.
 
 ![me, lucy, scott, and victor](/blog/img/2026-04-25-robots-on-ice/4_group_photo.jpg)
-*Lucy, Victor, Scott, and myself.*
+*Me, Lucy, Victor, and Scott.*
 
 Another issue was water. The bots were not meant to be watertight, and moisture was not an anticipated issue. We ended up taping up all likely ingress points, which saved our internals. However, the annoying issue came months later - Scott's robots specifically ended up rusting their black oxide bolts after not drying them fully before storage.
 

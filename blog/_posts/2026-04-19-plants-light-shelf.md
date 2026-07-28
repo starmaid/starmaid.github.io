@@ -12,7 +12,7 @@ This one is a fast one. Problem: I'm running out of shelf space for plants on my
 
 ## Design
 
-I have a [A19](https://en.wikipedia.org/wiki/A-series_light_bulb) bulb that I bought a while ago for putting in a lamp in my bathroom and keeping a plant alive. However, the lamp I bought for that was too short and ended up cooking the plant I used at the time. So with no other real use for it, the bulb has been sitting in a box.
+I have an [A19](https://en.wikipedia.org/wiki/A-series_light_bulb) bulb that I bought a while ago for putting in a lamp in my bathroom and keeping a plant alive. However, the lamp I bought for that was too short and ended up cooking the plant I used at the time. So with no other real use for it, the bulb has been sitting in a box.
 
 I didn't want this to take up too much space, so the footprint is just big enough to get the bulb centered in the square. The height is also the minimum for holding the bulb horizontally.
 
