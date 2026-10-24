@@ -3,26 +3,26 @@ layout: post
 title: Computer Benchmarking
 tags: hardware, raspberry pi, programming
 image:
-  path: /blog/img/2026-06-02-lights-rectangle/thumb_sm.gif
+  path: /blog/img/2026-09-16-benchmarking/bench.gif
 ---
 
-This was a fun little side project that helped distract me upgrade my [Homeassistant install]({ link ./2023-11-23-smart-home.md }), and also a good distraction while I was working on [my protogen head]({ link ./2026-09-29-protogen.md }).
+![Screenshot of a computer running a command line program idk with btop open or something](/blog/img/2026-09-16-benchmarking/bench.gif)
 
-![Screenshot of a computer running a command line program]
+This was a fun little side project that helped distract me upgrade my [Homeassistant install]({ link ./2023-11-23-smart-home.md }), and also a good distraction while I was working on [my protogen head]({ link ./2026-09-29-protogen.md }).
 
 ## Problem
 
 I have a large collection of single-board computers (SBCs) I have acquired over the years. The large majority are Raspberry Pi 3Bs, and the random Raspberry Pi 4 and NVidia Jetson Nano have clear performance improvements over the base model 3B. I then came into possession of several random other devices. These did not have clear comparisons, and some were even x86 instead of ARM. I no longer knew which was better.
 
-![picture of some SBCs]()
+![picture of some SBCs](/blog/img/2026-09-16-benchmarking/lineup.jpg)
 
 I have been having issues with the RPI 3B running my Homeassistant server for a little while. It is fine 90% of the time, but updates will normally cause the whole system to lock up for 20-30 minutes at a time. Also annoying is that the ESPHome integration does not work well. Attempting to compile a hex file for an ESP32 maxes out the memory on the 1GB device. I first attempted to add swap, and this worked for a while! Definitely a good year of extra functionality. 
 
-![photo of an esp32 in my house somewhere]()
+![photo of an esp32 in my house somewhere](/blog/img/2026-09-16-benchmarking/esp32.jpg)
 
 However, at some point my server's memory footprint grew and attempting to compile in ESPHome would try to move the entire Homeassistant into swap, and it would crash. Then it would come back a few minutes later, and the compilation was failed. I would use the ESPHome docker container on my PC to flash new devices, and then copy the YAML files into the Homeassistant integration for safe keeping.
 
-![screenshot of the HA documentation changing to show the RPI is sucks]()
+![screenshot of the HA documentation changing to show the RPI is sucks](/blog/img/2026-09-16-benchmarking/rpi3_not_good_enough.png)
 
 When I started to look into it, I found that in April 2025, the [Raspberry Pi 3 was explicitly defined as insufficient](https://github.com/home-assistant/home-assistant.io/commit/74d9ca828b3921a1d6bf81378e0c9c73802e0728) and I even saw it in some release notes at some point. I had already planted the seed of needing to replace it, but didn't know what with.
 
@@ -69,7 +69,7 @@ I decided to just limit scope and do two tests. Timed linux kernel compilation a
 
 I got it running on my M4 Macbook Pro for work, and my Surface Pro 8. It took a few minutes but got running fine, maybe 21 minutes to run all the tests. The reports are nice and it runs the tests a few times to average the scores. A nice plus of this approach was that I could have a single flake command and it would pull from a public github, so I just had to manually type in a single command instead of like authenticating with my personal github account. I tried this on a raspberry pi and...
 
-![Picture of RPI sitting on workbench]()
+![Picture of RPI sitting on workbench with a fan on it](/blog/img/2026-09-16-benchmarking/rpi_fan.jpg)
 
 I don't know what score it got on the benchmark. I don't know because downloading and building the flake was taking longer than 30 minutes!!! I cant imagine how long the actual compilation of the linux kernel would take, probably over an hour.
 
@@ -87,6 +87,7 @@ So after a week or so of testing, lets find out - which board should I use?
 
 | Hardware | Cores | RAM | Runtime (s) |
 | --- | --- | --- | --- |
+| [NVidia Jetson Nano](https://en.wikipedia.org/wiki/Paperweight) | 4 | 4050824 kB | 18.3511 |
 | [Raspberry Pi 3b](https://carnivalcandiesicecream.com/collections/character-faces-1) | 4 | 890236 kB | 17.5603 |
 | [Raspberry Pi 4b](https://www.lexibook.com/en-us/product/bilingual-educational-barbie-computer-with-124-activities-in-english-and-spanish) | 4 | 1853444 kB | 13.3627 |
 | [Minisforum Z83-F](https://minis-pc.com/product/minisforum-z83-f-mini-pc-windows-10-pro-processor-intel-atom-x5-z8350/) | 4 | 3934012 kB | 12.0969 |
@@ -95,11 +96,16 @@ So after a week or so of testing, lets find out - which board should I use?
 | [Surface Pro 8 i5-1135G7](https://en.wikipedia.org/wiki/Surface_Pro_8) | 8 | 7960716 kB | 5.05076 |
 | [My Desktop]({ link ./2022-02-17-the-setup-2.md }) | 12 | 32673592 kB | 4.61138 |
 
-Things that affect this score
+**Things that affect this score**
 
 - Other stuff you are running when you run the benchmark (do you have a browser open?)
 - If its a laptop, if its plugged in or not
 - How close to thermal throttling you already were
+
+**Things that this misses**
+
+- Doesn't cover power draw (important to me!)
+- Doesn't cover video stuff - the jetson is worst?
 
 So what board do I use? For Homeassistant, my major two problems were mostly long compile times and not enough memory. I just needed something with more memory and a little better performance. This seems like the Minisforum Z83-F would be our winner, which is awesome because it also draws very little power with that Intel Atom X5-Z8350. It also has gigabit ethernet, which is a nice plus - update downloads go a lot faster.
 
@@ -136,4 +142,3 @@ Feel free to run it yourself. You will need the [nix package manager](https://ni
 ```
 nix run --refresh github:starmaid/benchmark --extra-experimental-features nix-command --extra-experimental-features flakes
 ```
-

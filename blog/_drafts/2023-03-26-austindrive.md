@@ -16,4 +16,4 @@ image:
 
 ## Setup
 
-My dad's friend [Rick Wilkinson](https://www.instagram.com/thehotholder/) has been making DIY electronic kits for a while now. This means my dad gets a lot of cool prototypes, 
+My dad's friend [Rick Wilkinson](https://www.instagram.com/thehotholder/) has been making DIY electronic kits for a while now. This means some fun prototypes once in a while, and this time I got an email about doing a test build of a new overdrive DIY kit. 
