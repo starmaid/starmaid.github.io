@@ -8,7 +8,7 @@ image:
 
 ![Screenshot of a computer running a command line program idk with btop open or something](/blog/img/2026-09-16-benchmarking/bench.gif)
 
-This was a fun little side project that helped distract me upgrade my [Homeassistant install]({ link ./2023-11-23-smart-home.md }), and also a good distraction while I was working on [my protogen head]({ link ./2026-09-29-protogen.md }).
+This was a fun little side project that helped distract me upgrade my [Homeassistant install]({% link blog/_posts/2023-11-23-smart-home.md %}), and also a good distraction while I was working on [my protogen head]({/% link blog/_posts/2026-09-29-protogen.md %}).
 
 ## Problem
 
