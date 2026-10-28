@@ -16,7 +16,7 @@ exiftool -gps:all= -r -overwrite_original -ext jpg -ext png -ext jpeg .
 mkdir ./scaled
 for filename in ./*.jpg; do
     size=`stat --printf="%s" "$filename"`
-    if (( size > 1500000 )); then
+    if (( size > 900000 )); then
         echo "shrinking $filename"
         ffmpeg -i "$filename" -vf scale="iw/2:ih/2" "./scaled/$filename"
     fi
