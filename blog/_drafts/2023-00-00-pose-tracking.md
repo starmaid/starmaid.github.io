@@ -10,3 +10,8 @@
 But all of those are 2D solutions. Lets see some 3D stuff.
 
 [University of Cordoba paper](https://arxiv.org/pdf/1807.05389.pdf)
+
+SimpleDepthPose is one
+
+theres others. Just search RGB-D Human Pose Estimation.
+

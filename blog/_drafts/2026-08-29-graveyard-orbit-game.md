@@ -1,20 +1,40 @@
+---
+layout: post
+title: Necromancy Gamejam - Graveyard Orbit
+tags: godot, gamedev, ebro
+image:
+  path: /blog/img/2026-06-02-lights-rectangle/thumb_sm.gif
+---
 
+![some gif of gameplay. Record a fresh one.]()
 
+*This is a space-based game I made solo for a month-long gamejam hosted by a Discord server.*
 
+- [Play the game on Itch.io](https://st4rm41d.itch.io/graveyard-orbit)
+- [Ebro Game Jam 2026 Homepage](https://itch.io/jam/ebro-game-jam-2026)
+- [Ebro Game Jam 2026 Submissions Page](https://itch.io/jam/ebro-game-jam-2026/entries)
+- [Source Code on GitHub](https://github.com/starmaid/graveyard-orbit)
 
-This was for a gamejam.
+## The Idea
+
+Mimi, who is a mod of a friend group discord server, makes a lot of games. E also was the leader of [the last gamejam we did as a server, in 2023]({% link blog/_posts/2023-09-05-gem-game.md %}). Summer was going by, and none of us had gotten very inspired for a new game. Its tough to decide to gamejam, because:
+
+- You have to have some free time (relative to the length of the jam)
+- The jam has to be long enough to get what you need done in the free time you have
+- The jam has to be short enough to keep you motivated and not just give up
+- The theme has to be at least mildly intriguing
 
 I had a previous idea that i made into the flashstep demo. I had envisioned that originally as a multiplayer game, but i wanted to only make a single player game here.
 
 So I knew the basics of what I wanted to do for the gamejam, but it wasn't until the theme poll came out that I had the idea. I think I only spent like 30 seconds after seeing the option of necromancy to remember that graveyard orbits are called that, and reviving a satellite could be the angle. I also liked the secret garden idea, I could feasibly make a game where it took place inside a space station that was overgrown. That could even be an idea for the eventual multiplayer movement shooter.
 
-picture of the poll
+![screenshot of the theme poll]()
 
 Anyway, I decided to keep it simple and stay in orbit. Timeline of the jam, I spent the first weekend working on flashtep, which went public on Aug 3. 
 
 Since I had the movement figured out on paper, I wanted to focus on vibes. I feel like atmosphere and style is very easy to lose sight of when you have a limited time, so I made sure to prioritize some of it first. This resulted in the first demo gif that was specifically for this game on Aug 4.
 
-gif of stars
+![gif of stars]()
 
 This was an interesting demo because I knew I wanted the game to be low-resolution. This was partially due to the vibes, but also a performance choice - I needed it to be playable in browser by the most terrible hardware. This would give me good reach and all members of the ebrosystem could enjoy it.
 
